@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const allPrefectures = await getCollection("prefectures", ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<BaseLayout
+  title="Japan by Prefecture — history, data, and travel guides"
+  description="Deep-dive guides to Japan's prefectures and municipalities, grounded in history and data."
+>
+  <h1 class="text-2xl font-semibold">Japan by Prefecture</h1>
+  <p class="mt-2 text-slate-600">
+    History- and data-driven guides to Japan's 47 prefectures, written for
+    people planning a visit.
+  </p>
+
+  <ul class="mt-6 space-y-3">
+    {
+      prefectures.map((prefecture) => (
+        <li>
+          <a
+            href={`${import.meta.env.BASE_URL}prefectures/${prefecture.id}/`}
+            class="block rounded-lg border border-slate-200 p-4 hover:border-slate-400"
+          >
+            <span class="font-medium">{prefecture.data.name}</span>
+            <span class="ml-2 text-sm text-slate-500">{prefecture.data.region}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

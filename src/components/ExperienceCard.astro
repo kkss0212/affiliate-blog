@@ -1,0 +1,28 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  bookingUrl: string;
+  provider: "klook" | "viator" | "getyourguide" | "rakuten-travel";
+}
+
+const { name, description, bookingUrl, provider } = Astro.props;
+
+const providerLabel: Record<Props["provider"], string> = {
+  klook: "Klook",
+  viator: "Viator",
+  getyourguide: "GetYourGuide",
+  "rakuten-travel": "Rakuten Travel",
+};
+---
+
+<a
+  href={bookingUrl}
+  rel="sponsored noopener"
+  target="_blank"
+  class="block rounded-lg border border-slate-200 p-4 transition hover:border-slate-400"
+>
+  <p class="font-medium">{name}</p>
+  <p class="mt-1 text-sm text-slate-600">{description}</p>
+  <p class="mt-2 text-sm text-teal-700">Book via {providerLabel[provider]} →</p>
+</a>
