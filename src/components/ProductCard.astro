@@ -2,19 +2,25 @@
 interface Props {
   name: string;
   description: string;
-  amazonUrl: string;
+  url: string;
+  retailer: "amazon" | "japan-trend-shop";
 }
 
-const { name, description, amazonUrl } = Astro.props;
+const { name, description, url, retailer } = Astro.props;
+
+const retailerLabel: Record<Props["retailer"], string> = {
+  amazon: "View on Amazon",
+  "japan-trend-shop": "View on Japan Trend Shop",
+};
 ---
 
 <a
-  href={amazonUrl}
+  href={url}
   rel="sponsored noopener"
   target="_blank"
   class="block rounded-lg border border-slate-200 p-4 transition hover:border-slate-400"
 >
   <p class="font-medium">{name}</p>
   <p class="mt-1 text-sm text-slate-600">{description}</p>
-  <p class="mt-2 text-sm text-amber-700">View on Amazon →</p>
+  <p class="mt-2 text-sm text-amber-700">{retailerLabel[retailer]} →</p>
 </a>

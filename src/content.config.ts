@@ -4,7 +4,8 @@ import { glob } from "astro/loaders";
 const product = z.object({
   name: z.string(),
   description: z.string(),
-  amazonUrl: z.string().url(),
+  url: z.string().url(),
+  retailer: z.enum(["amazon", "japan-trend-shop"]),
 });
 
 const experience = z.object({

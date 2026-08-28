@@ -1,9 +1,10 @@
 ---
 # EXAMPLE / PLACEHOLDER CONTENT
 # This entry demonstrates the content schema only. Facts should be re-verified
-# against primary sources (e-Stat / Kyoto Prefecture statistics) and all
-# affiliate URLs replaced with real tagged links before this is published
-# (set draft: false only after that review).
+# against primary sources (e-Stat / Kyoto Prefecture statistics), Amazon
+# products should be confirmed as AmazonGlobal-eligible (see DECISIONS.md),
+# and all affiliate URLs replaced with real tagged links before this is
+# published (set draft: false only after that review).
 name: "Kyoto"
 nameJa: "京都府"
 region: "Kansai"
@@ -19,11 +20,13 @@ updatedDate: 2026-08-28
 draft: true
 products:
   - name: "Uji Matcha Green Tea Set"
-    description: "Ceremonial-grade matcha from Uji, one of Japan's oldest tea-growing regions."
-    amazonUrl: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    description: "Ceremonial-grade matcha from Uji, one of Japan's oldest tea-growing regions. Confirm AmazonGlobal eligibility for this listing before publishing."
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    retailer: "amazon"
   - name: "Kiyomizu-yaki Ceramic Cup"
-    description: "Traditional hand-painted pottery from the Kiyomizu district."
-    amazonUrl: "https://www.amazon.co.jp/dp/EXAMPLE2?tag=YOUR-ASSOCIATE-ID-22"
+    description: "Traditional hand-painted pottery from the Kiyomizu district, shipped worldwide."
+    url: "https://www.japantrendshop.com/EXAMPLE-kiyomizu-cup-p-0000.html?a_aid=YOUR-AFFILIATE-ID"
+    retailer: "japan-trend-shop"
 experiences:
   - name: "Arashiyama Bamboo Grove & Fushimi Inari Full-Day Tour"
     description: "Guided day tour covering Kyoto's most iconic sights."
