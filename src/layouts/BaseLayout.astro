@@ -12,7 +12,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const base = import.meta.env.BASE_URL;
 
 const navLinks = [
-  { href: base, label: "Prefectures" },
+  { href: `${base}prefectures/`, label: "Prefectures" },
   { href: `${base}rankings/`, label: "Rankings" },
   { href: `${base}music/`, label: "Music" },
   { href: `${base}manga/`, label: "Manga" },

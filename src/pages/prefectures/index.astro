@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+
+const allPrefectures = await getCollection("prefectures", ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<BaseLayout
+  title="Prefectures | Japan Unpacked"
+  description="History- and data-driven guides to Japan's 47 prefectures, each linking down to its cities, wards, towns, and villages."
+>
+  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
+  <div class="mt-2 flex items-baseline justify-between">
+    <h1 class="font-display text-3xl font-semibold tracking-tight">Prefectures</h1>
+    <a href={`${base}municipalities/`} class="text-sm text-ink-soft hover:text-accent">
+      Browse all municipalities →
+    </a>
+  </div>
+  <p class="mt-4 max-w-xl text-ink-soft">
+    History- and data-driven guides to Japan's 47 prefectures. Each
+    prefecture's page also links down to its cities, wards, towns, and
+    villages.
+  </p>
+
+  <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+    {
+      prefectures.map((prefecture) => (
+        <li>
+          <a
+            href={`${base}prefectures/${prefecture.id}/`}
+            class="flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <span class="font-medium">{prefecture.data.name}</span>
+            <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">
+              {prefecture.data.region}
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    prefectures.length === 0 && (
+      <p class="mt-4 text-sm text-ink-faint">More guides are on the way.</p>
+    )
+  }
+</BaseLayout>
