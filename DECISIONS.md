@@ -122,8 +122,15 @@ readers who never set foot in Japan can still buy (see "Monetization").
   historical/statistical research + fact-checking pass for each (the
   `kyoto.md` file in the repo is a structural example only, not verified
   publishable content).
-- Amazon Associates JP / Japan Trend Shop / Klook / Viator / GetYourGuide /
-  Rakuten Travel account applications — not yet started.
+- ASP account applications: see `docs/asp-checklist.md` for step-by-step
+  procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
+  Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend
+  Shop have no content-count requirement and can be applied for any time.
+  **Amazon Associates requires at least 10 published (`draft: false`)
+  articles first** — as of 2026-08-28 there are 0 (kyoto.md is still a
+  draft structural example). The user explicitly asked to be told once
+  that threshold is hit: whenever a session brings the published count to
+  10+, prompt them to start the Amazon Associates application.
 - Whether to add TokyoTreat/Sakuraco once their affiliate payout tax
   treatment (W-9 vs. W-8BEN at signup) is confirmed.
 - Instagram/X account setup and posting cadence.

@@ -6,7 +6,9 @@ through data and history, funneling readers toward tour/activity bookings
 Amazon Associates.
 
 See [`DECISIONS.md`](./DECISIONS.md) for the business/architecture decisions
-behind this project and what's still open.
+behind this project and what's still open, and
+[`docs/asp-checklist.md`](./docs/asp-checklist.md) for step-by-step ASP
+application procedures.
 
 ## Stack
 
