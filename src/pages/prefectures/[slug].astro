@@ -27,27 +27,27 @@ const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
   title={`${data.name} (${data.nameJa}) — history, data & travel guide | Japan Unpacked`}
   description={`A history- and data-driven guide to ${data.name} Prefecture, Japan.`}
 >
-  <p class="text-sm text-slate-500">{data.region}</p>
-  <h1 class="text-2xl font-semibold">
-    {data.name} <span class="text-slate-400">{data.nameJa}</span>
+  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">{data.region}</p>
+  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">
+    {data.name} <span class="text-ink-faint">{data.nameJa}</span>
   </h1>
 
-  <dl class="mt-4 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
+  <dl class="mt-6 grid grid-cols-2 gap-4 rounded-xl border border-line bg-white p-4 text-sm sm:grid-cols-4">
     <div>
-      <dt class="text-slate-500">Capital</dt>
+      <dt class="text-ink-faint">Capital</dt>
       <dd class="font-medium">{data.capital}</dd>
     </div>
     <div>
-      <dt class="text-slate-500">Population</dt>
-      <dd class="font-medium">{populationFormatted} <span class="text-slate-400">({data.populationSourceYear})</span></dd>
+      <dt class="text-ink-faint">Population</dt>
+      <dd class="font-medium">{populationFormatted} <span class="text-ink-faint">({data.populationSourceYear})</span></dd>
     </div>
     <div>
-      <dt class="text-slate-500">Area</dt>
+      <dt class="text-ink-faint">Area</dt>
       <dd class="font-medium">{areaFormatted} km²</dd>
     </div>
   </dl>
 
-  <ul class="mt-4 list-inside list-disc text-sm text-slate-700">
+  <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
     {data.highlights.map((highlight) => <li>{highlight}</li>)}
   </ul>
 
@@ -57,13 +57,13 @@ const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
     </div>
   )}
 
-  <article class="prose prose-slate mt-6 max-w-none">
+  <article class="prose prose-stone mt-6 max-w-none">
     <Content />
   </article>
 
   {data.experiences.length > 0 && (
-    <section class="mt-8">
-      <h2 class="text-lg font-semibold">Book an experience</h2>
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Book an experience</h2>
       <div class="mt-3 grid gap-3 sm:grid-cols-2">
         {data.experiences.map((experience) => (
           <ExperienceCard {...experience} />
@@ -73,8 +73,8 @@ const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
   )}
 
   {data.products.length > 0 && (
-    <section class="mt-8">
-      <h2 class="text-lg font-semibold">Bring a piece of {data.name} home</h2>
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Bring a piece of {data.name} home</h2>
       <div class="mt-3 grid gap-3 sm:grid-cols-2">
         {data.products.map((product) => (
           <ProductCard {...product} />

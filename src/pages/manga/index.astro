@@ -12,18 +12,19 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
   title="Manga Guides | Japan Unpacked"
   description="Guides to Japanese manga series and genres, with ways to read."
 >
-  <h1 class="text-2xl font-semibold">Manga</h1>
-  <p class="mt-2 text-slate-600">
+  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
+  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">Manga</h1>
+  <p class="mt-4 max-w-xl text-ink-soft">
     Guides to manga series and genres for people who want to read deeper.
   </p>
 
-  <ul class="mt-6 space-y-3">
+  <ul class="mt-8 grid gap-3 sm:grid-cols-2">
     {
       entries.map((entry) => (
         <li>
           <a
             href={`${import.meta.env.BASE_URL}manga/${entry.id}/`}
-            class="block rounded-lg border border-slate-200 p-4 hover:border-slate-400"
+            class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <span class="font-medium">{entry.data.title}</span>
           </a>
@@ -31,4 +32,5 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
       ))
     }
   </ul>
+  {entries.length === 0 && <p class="mt-4 text-sm text-ink-faint">More guides are on the way.</p>}
 </BaseLayout>

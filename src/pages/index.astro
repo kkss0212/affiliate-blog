@@ -2,36 +2,69 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const base = import.meta.env.BASE_URL;
+
 const allPrefectures = await getCollection("prefectures", ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
 });
 const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const sections = [
+  { href: base, label: "Prefectures", desc: "History & data, region by region" },
+  { href: `${base}music/`, label: "Music", desc: "Artists and genres worth hearing" },
+  { href: `${base}manga/`, label: "Manga", desc: "Series worth starting" },
+];
 ---
 
 <BaseLayout
   title="Japan Unpacked — Japan's prefectures, music, and manga, unpacked"
-  description="History- and data-driven guides to Japan's prefectures, plus guides to Japanese music and manga."
+  description="History- and data-driven guides to Japan's prefectures, music, and manga — for anyone learning about Japan, dreaming of a future trip, or planning one now."
 >
-  <h1 class="text-2xl font-semibold">Japan Unpacked</h1>
-  <p class="mt-2 text-slate-600">
-    Japan's prefectures, music, and manga — unpacked with history and data,
-    written for people planning a visit or just exploring from afar.
+  <p class="font-display text-sm uppercase tracking-[0.2em] text-accent">Japan Unpacked</p>
+  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+    Japan, told through history and data
+  </h1>
+  <p class="mt-4 max-w-xl text-ink-soft">
+    Guides to Japan's prefectures, music, and manga — for anyone learning
+    about Japan, dreaming of a trip they can't take yet, or planning one
+    right now.
   </p>
 
-  <h2 class="mt-8 text-lg font-semibold">Prefectures</h2>
-  <ul class="mt-3 space-y-3">
+  <div class="mt-8 grid gap-3 sm:grid-cols-3">
+    {
+      sections.map((section) => (
+        <a
+          href={section.href}
+          class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <p class="font-display font-semibold">{section.label}</p>
+          <p class="mt-1 text-sm text-ink-soft">{section.desc}</p>
+        </a>
+      ))
+    }
+  </div>
+
+  <h2 class="mt-14 font-display text-xl font-semibold">Prefectures</h2>
+  <ul class="mt-4 grid gap-3 sm:grid-cols-2">
     {
       prefectures.map((prefecture) => (
         <li>
           <a
-            href={`${import.meta.env.BASE_URL}prefectures/${prefecture.id}/`}
-            class="block rounded-lg border border-slate-200 p-4 hover:border-slate-400"
+            href={`${base}prefectures/${prefecture.id}/`}
+            class="flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <span class="font-medium">{prefecture.data.name}</span>
-            <span class="ml-2 text-sm text-slate-500">{prefecture.data.region}</span>
+            <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">
+              {prefecture.data.region}
+            </span>
           </a>
         </li>
       ))
     }
   </ul>
+  {
+    prefectures.length === 0 && (
+      <p class="mt-4 text-sm text-ink-faint">More guides are on the way.</p>
+    )
+  }
 </BaseLayout>
