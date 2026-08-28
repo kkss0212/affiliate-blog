@@ -260,8 +260,12 @@ set foot in Japan can still buy (see "Monetization").
   threshold is hit: whenever a session brings the published count to 10+,
   prompt them to start the Amazon Associates application (which also
   unlocks the Amazon Music Unlimited / Kindle Unlimited referral links).
-- GA4 property not yet created — `src/consts.ts`'s `GA_MEASUREMENT_ID` is
-  still blank. See "Analytics, CVR, and traffic security" above.
+- GA4 property created and `GA_MEASUREMENT_ID` (`G-ZF4DS1T7V5`) set in
+  `src/consts.ts` as of 2026-08-28 — analytics + consent banner are live.
+  Still open: bump data retention to 14 months in GA4 Admin → Data
+  Settings (see "Analytics, CVR, and traffic security" above), and start
+  actually reconciling GA4 numbers against each ASP's dashboard once
+  there's real traffic and at least one ASP is approved.
 - Whether to add TokyoTreat/Sakuraco once their affiliate payout tax
   treatment (W-9 vs. W-8BEN at signup) is confirmed.
 - Instagram/X account setup and posting cadence.
