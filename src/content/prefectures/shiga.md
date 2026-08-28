@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Lake Biwa"
     description: "Japan's largest lake, ringed by parks, beaches, and boat cruises, including trips to Chikubushima, a small sacred island with a shrine dating to the 8th century."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20view%20of%20the%20Lake%20Biwa.jpg"
+      alt: "An aerial view of Lake Biwa, Japan's largest lake"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Hikone Castle"
     description: "One of only five Japanese castles designated a National Treasure, with its original Edo-period keep intact rather than a modern reconstruction."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hikone%20castle5537.JPG"
+      alt: "The original Edo-period keep of Hikone Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Omi-Hachiman"
     description: "A well-preserved former merchant town built around a network of canals once used to move goods to and from Lake Biwa, now toured by small boat."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hachiman-bori%20Canal%20ac%20(9).jpg"
+      alt: "A boat on the historic Hachiman-bori canal in Omi-Hachiman"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Miidera Temple, Otsu"
     description: "A large temple complex on the slopes above Lake Biwa, with a bell said to have been the subject of a famous folk tale about a treacherous bell-ringing contest."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mii-dera%20Otsu%20Shiga%20pref01s5s4592.jpg"
+      alt: "A building at Miidera Temple overlooking Lake Biwa"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Shigaraki-yaki Tanuki Statue"
     description: "Shigaraki ware is one of Japan's 'Six Ancient Kilns,' best known outside Japan for its ceramic tanuki (raccoon dog) statues, a common sight outside shops and restaurants nationwide. Confirm AmazonGlobal eligibility before publishing."

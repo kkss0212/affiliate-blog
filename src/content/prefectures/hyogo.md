@@ -35,12 +35,28 @@ draft: false
 touristSpots:
   - name: "Himeji Castle"
     description: "Japan's best-preserved original castle complex, a UNESCO World Heritage Site nicknamed 'White Heron Castle' for its striking white plaster walls."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Himeji%20castle.JPG"
+      alt: "The white plaster walls and keep of Himeji Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kitano-cho, Kobe"
     description: "A hillside district of preserved Western-style houses ('ijinkan') built by foreign merchants after Kobe opened as a treaty port in 1868."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kitano-dori%20Street%20in%20Kitano-cho,%20Kobe.jpg"
+      alt: "Preserved Western-style houses along Kitano-dori Street in Kobe"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kobe Harborland & Port Tower"
     description: "Kobe's redeveloped waterfront, with the red steel-frame Port Tower as its landmark, largely rebuilt after the 1995 earthquake."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Kobe%20Port%20Tower%20&%20Maritime%20Museum%203.jpg"
+      alt: "Kobe Port Tower and the Maritime Museum at Harborland"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Arima Onsen"
     description: "One of Japan's oldest hot spring towns, mentioned in texts dating back over 1,000 years, a short trip from central Kobe."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Arima%20Onsen%20Yumotozaka01s3200.jpg"
+      alt: "The Yumotozaka street in the hot spring town of Arima Onsen"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Tamba-yaki Ceramic Vase"
     description: "Tamba ware, from Hyogo's Tamba region, is one of Japan's 'Six Ancient Kilns,' known for simple, earthy glazes produced with minimal decoration. Confirm AmazonGlobal eligibility before publishing."

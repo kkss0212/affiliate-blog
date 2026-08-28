@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Koyasan & Okunoin Cemetery"
     description: "A mountaintop monastic town of over 100 temples, many offering overnight shukubo (temple lodging) stays, centered on the vast Okunoin cemetery."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Okunoin%20Cemetery,%20Koyasan,%20Japan.JPG"
+      alt: "The moss-covered gravestones and cedar trees of Okunoin Cemetery on Koyasan"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Nachi Falls & Seiganto-ji"
     description: "Japan's tallest single-drop waterfall, framed alongside a three-story pagoda — one of the country's most iconic combined nature-and-temple views, part of the Kumano Sanzan shrine complex."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Seigantoji%20temple%2002.jpg"
+      alt: "Seiganto-ji's three-story pagoda framed against Nachi Falls"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Shirahama"
     description: "One of Japan's oldest hot spring resorts, mentioned in 8th-century chronicles, paired today with a white sand beach and coastal cliffs."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/131221%20Shirarahama%20Beach%20Shirahama%20Wakayama%20pref%20Japan08bs.jpg"
+      alt: "The white sand of Shirahama Beach in Wakayama"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Wakayama Castle"
     description: "A reconstructed castle in central Wakayama City, with grounds that make for an easy stop between the station and the harbor."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wakayama%20Castle19nt3200.jpg"
+      alt: "Wakayama Castle in central Wakayama City"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kishu Kuroe-nuri Lacquerware"
     description: "Kuroe-nuri, from Wakayama's Kainan area, is one of Japan's three major lacquerware traditions, dating to the 15th century. Confirm AmazonGlobal eligibility before publishing."

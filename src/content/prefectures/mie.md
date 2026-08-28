@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Ise Jingu"
     description: "Shinto's most sacred shrine complex, split between the Inner Shrine (Naiku, dedicated to Amaterasu) and Outer Shrine (Geku), rebuilt in an identical new form every 20 years in a ritual called Shikinen Sengu."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Naiku%20Ise-jingu%20Grand%20Shrine%2001.JPG"
+      alt: "The Naiku (Inner Shrine) of Ise Jingu"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Mikimoto Pearl Island, Toba"
     description: "A museum and demonstration site on Kokichi Mikimoto's original pearl farm, including displays on how cultured pearls are grown and traditional female pearl divers (ama)."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mikimoto%20Pearl%20Island%20from%20Toba%20Auqarium.jpg"
+      alt: "Mikimoto Pearl Island in Toba"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Kumano Kodo"
     description: "A network of ancient pilgrimage trails through the Kii Peninsula's mountains, connecting sacred sites across Mie, Nara, and Wakayama — twinned with Spain's Camino de Santiago."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kumano%20Kodo%20pilgrimage%20route%20Yunomine%20Onsen%20World%20heritage%20%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93%20%E6%B9%AF%E3%81%AE%E5%B3%B0%E6%B8%A9%E6%B3%8998.JPG"
+      alt: "A forested section of the Kumano Kodo pilgrimage trail"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Suzuka Circuit"
     description: "A major motorsport circuit built by Honda in 1962, which has hosted the Formula 1 Japanese Grand Prix since 1987."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Suzuka%20Circuit%20Final%20Corner.jpg"
+      alt: "The final corner of the Suzuka Circuit racetrack"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Ise-katagami Stencil Print"
     description: "Ise-katagami are intricately hand-cut paper stencils historically used to dye kimono fabric, produced in Mie for centuries and once supplied to textile dyers across Japan. Confirm AmazonGlobal eligibility before publishing."

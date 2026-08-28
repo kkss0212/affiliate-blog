@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Todai-ji"
     description: "A temple housing a 15-meter bronze Great Buddha inside the world's largest wooden building, completed in 752 as a centerpiece of Nara-period Buddhism."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Todai-ji.jpg"
+      alt: "The Great Buddha Hall (Daibutsuden) of Todai-ji"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Nara Park"
     description: "A large park home to roughly 1,200 free-roaming sika deer, considered sacred messengers in Shinto belief and famous for learning to bow in exchange for deer crackers."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/A%20pair%20of%20deer%20in%20Nara%20Park,%20Japan.jpg"
+      alt: "Free-roaming sika deer in Nara Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Horyu-ji"
     description: "A temple complex whose core buildings, dating to around 607, are believed to be the world's oldest surviving wooden structures, part of a UNESCO World Heritage listing."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Horyu-ji10s3200.jpg"
+      alt: "The five-storied pagoda and inner gate of Horyu-ji"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kasuga Taisha"
     description: "A Shinto shrine famous for thousands of bronze and stone lanterns donated by worshippers over the centuries, lit twice a year for special festivals."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lanterns%20at%20Kasuga%20Taisha.JPG"
+      alt: "Rows of stone and bronze lanterns at Kasuga Taisha"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Nara Fude Calligraphy Brush Set"
     description: "Nara has produced calligraphy brushes since the 800s and remains one of Japan's leading centers for the craft. Confirm AmazonGlobal eligibility before publishing."
