@@ -106,9 +106,9 @@ W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベ�
 
 - **申請条件**: オリジナルコンテンツの記事が最低10件、公開済み(`draft: false`)
   であること。サインアップ後180日以内に3件の適格販売がないと本審査に進めない。
-- **現状(2026-08-28時点)**: 公開記事0件(`kyoto.md`・`uji.md`・`city-pop.md`・
-  `one-piece.md`すべて`draft: true`の構造サンプルのみ)。この条件を満たすまで
-  申請しない。
+- **現状(2026-08-28時点)**: 公開記事1件(`kyoto.md`、新フォーマットで公開済み)。
+  `uji.md`・`city-pop.md`・`one-piece.md`は`draft: true`の構造サンプルのまま。
+  残り9件に達するまで申請しない。
 - **カウント対象**: `src/content/prefectures/`・`src/content/municipalities/`・
   `src/content/music/`・`src/content/manga/` の4ディレクトリ合計で10件
   (すべて同じサイト・同じAssociatesアカウントで運用するため)。
@@ -150,5 +150,5 @@ W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベ�
 - [ ] GetYourGuide(Awin経由): 登録・申請
 - [x] Japan Trend Shop: PayPalビジネスアカウント作成
 - [ ] Japan Trend Shop: 申請ページ接続不可のため保留、時間を置いて再試行
-- [ ] Amazon Associates: 10記事公開後に申請(保留中)
+- [ ] Amazon Associates: 10記事公開後に申請(保留中、現在1/10 — kyoto.md公開済み)
 - [ ] Amazon Music Unlimited / Kindle Unlimitedメンバー紹介プログラム: Amazon Associates承認後

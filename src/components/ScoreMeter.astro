@@ -1,0 +1,25 @@
+---
+// A 1-10 editorial score rendered as a filled bar, kessan-shiryou-style —
+// scannable at a glance, with the raw number kept right next to it since
+// these scores are subjective (see DECISIONS.md) and shouldn't read as
+// more precise/authoritative than they are.
+interface Props {
+  label: string;
+  value: number;
+  description?: string;
+}
+
+const { label, value, description } = Astro.props;
+const pct = Math.max(0, Math.min(100, (value / 10) * 100));
+---
+
+<div>
+  <div class="flex items-center justify-between text-sm">
+    <span class="font-medium text-ink">{label}</span>
+    <span class="text-ink-faint">{value}/10</span>
+  </div>
+  <div class="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-line">
+    <div class="h-full rounded-full bg-accent" style={`width: ${pct}%`} />
+  </div>
+  {description && <p class="mt-1 text-xs text-ink-faint">{description}</p>}
+</div>

@@ -86,13 +86,19 @@ const allEntries = await getRankingEntries(base);
       list.innerHTML = "";
       emptyNote.classList.toggle("hidden", ranked.length > 0);
 
+      const rankBadgeClass = [
+        "bg-amber-400 text-white",
+        "bg-slate-300 text-white",
+        "bg-amber-700 text-white",
+      ];
+
       ranked.forEach((entry, index) => {
         const li = document.createElement("li");
         li.className =
           "flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md";
         li.innerHTML = `
           <a href="${entry.url}" class="flex items-center gap-3">
-            <span class="font-display w-6 text-ink-faint">${index + 1}</span>
+            <span class="font-display flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${rankBadgeClass[index] ?? "bg-accent-soft text-accent"}">${index + 1}</span>
             <span>
               <span class="font-medium">${entry.name}</span>
               ${entry.parentName ? `<span class="ml-1 text-xs text-ink-faint">(${entry.parentName})</span>` : ""}

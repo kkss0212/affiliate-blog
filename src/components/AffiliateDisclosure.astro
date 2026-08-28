@@ -1,11 +1,15 @@
 ---
 // FTC guidance requires this to be clear and placed near the affiliate
 // links themselves, not just buried in a footer.
+import { Info } from "@lucide/astro";
 ---
 
-<p class="rounded-lg border border-line bg-accent-soft px-3 py-2 text-sm text-ink-soft">
-  <strong class="text-ink">Disclosure:</strong> This page contains affiliate links (Amazon Associates,
-  Japan Trend Shop, and tour/activity booking partners). We may earn a
-  commission if you make a purchase or booking through them, at no extra
-  cost to you.
+<p class="flex items-start gap-2 rounded-lg border border-line bg-accent-soft px-3 py-2 text-sm text-ink-soft">
+  <Info size={16} class="mt-0.5 shrink-0 text-accent" />
+  <span>
+    <strong class="text-ink">Disclosure:</strong> This page contains affiliate links (Amazon Associates,
+    Japan Trend Shop, and tour/activity booking partners). We may earn a
+    commission if you make a purchase or booking through them, at no extra
+    cost to you.
+  </span>
 </p>

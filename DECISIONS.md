@@ -304,12 +304,12 @@ prefecture article follows the same shape:
   `draft: false`.**
 - `kyoto.md` was rewritten as the first full example of this format —
   real (not placeholder) historical content and figures researched
-  in-session, but **kept at `draft: true`** pending the user's review
-  (fact-check the subjective bits especially — `prefecturalCharacter`,
-  `comparedTo` — and re-verify population/area against e-Stat), rather
-  than publishing unilaterally. Once approved and flipped to
-  `draft: false`, it becomes article 1 of the 10 needed for Amazon
-  Associates.
+  in-session — and published (`draft: false`, 2026-08-28) at the user's
+  explicit direction ("not promoted yet, so fine to publish and fix
+  later"). It's article 1 of the 10 needed for Amazon Associates. Facts
+  weren't checked against primary sources in-session; re-verify
+  population/area against e-Stat and sanity-check the subjective bits
+  (`prefecturalCharacter`, `comparedTo`) when convenient.
 - `JapanMap.astro` is a schematic, not-to-scale illustration (a handful of
   thick rounded strokes standing in for Hokkaido/Honshu/Shikoku/Kyushu,
   plus three dots for Okinawa), not a real coastline — hand-authoring an
@@ -318,6 +318,57 @@ prefecture article follows the same shape:
   entry's `lat`/`lng` (a representative point — the capital city for a
   prefecture), so different prefectures/municipalities do land in
   visibly different, roughly-correct places relative to each other.
+
+## Visual design pass (2026-08-28)
+
+Per explicit feedback that the site read as "too plain" for a page people
+are meant to actually spend time on — added a real visual layer rather
+than text-on-white-cards:
+
+- **Icons**: `@lucide/astro` (the actively maintained package; the older
+  `lucide-astro` is deprecated and was swapped out). Every stat, section
+  heading, homepage card, and affiliate card (Product/Experience/
+  Subscription/Disclosure) now carries an icon in a small accent-tinted
+  circle badge — a repeated visual unit instead of one-off decoration.
+- **`StatCard.astro`**: icon + label + value tile, used for the
+  prefecture page's "at a glance" facts. Learned the hard way that a
+  5-column grid truncates real values (e.g. "4,612 km²" → "4,612...") —
+  fixed by dropping to 3 columns max and letting values wrap instead of
+  truncating.
+- **`ScoreMeter.astro`**: renders `natureScore`/`subcultureScore` (1–10)
+  as a filled bar with the raw number alongside it, kessan-shiryou/KPI-tile
+  style — previously computed but never actually shown on the prefecture
+  page itself, only used for Rankings.
+- **`ShareBar.astro`**: a genuinely new data point, not just a restyle —
+  "this prefecture is X% of Japan's population/land area," computed
+  against `JAPAN_TOTAL_POPULATION`/`JAPAN_TOTAL_AREA_KM2` (src/consts.ts,
+  2020 census total / total land area — both stable, well-known
+  figures). The bar gets a small minimum width purely so tiny shares
+  stay visible on-screen; the printed percentage is always the real
+  number, never inflated by that minimum.
+- **Hero banner**: prefecture pages now use a full-bleed image/gradient
+  banner (breaks out of the `max-w-4xl` content column via
+  `left-1/2 w-screen -translate-x-1/2`, a standard escape-the-container
+  technique), with the "at a glance" stat panel rendered as a white card
+  that overlaps the bottom of the hero. `BaseLayout`'s content column
+  widened from `max-w-3xl` to `max-w-4xl` site-wide to give the stat
+  grid/tourist-spot grid more room to breathe.
+- **Tourist spot cards without a sourced photo** now render an
+  accent-gradient placeholder with a camera icon instead of blank white
+  space — this was actually a visible bug in the first version of
+  `kyoto.md` (2 of 4 spots had no `image`, per the "don't fabricate a
+  license credit" call in "Prefecture page format" above) before the
+  fallback existed.
+- **Rankings**: rank badges are now circular and gold/silver/bronze for
+  the top 3 (both the homepage widget and `/rankings/`), instead of a
+  bare number.
+- This pass touched the prefecture template, the three affiliate card
+  components, `AffiliateDisclosure`, and the homepage — i.e. the whole
+  site's visual language, not just one page, per the user's "全体的に"
+  feedback. Municipality pages (`[prefecture]/[municipality].astro`)
+  still use the older plain `dl`-table layout and haven't been brought
+  up to the new visual system yet — worth doing once the prefecture
+  format itself is confirmed stable.
 
 ## Editorial/publishing gate
 
@@ -337,12 +388,13 @@ prefecture article follows the same shape:
 - Which prefectures/municipalities/music topics/manga series to launch
   with, and the actual research + fact-checking pass for each. `uji.md`,
   `city-pop.md`, and `one-piece.md` are still structural examples only.
-  `kyoto.md` was rewritten 2026-08-28 as the first real draft in the new
-  prefecture format (see "Prefecture page format" above) — content, not
-  just structure — but still needs the user's fact-check pass before
-  `draft: false`. The other 46 prefectures haven't been started; decide
-  with the user whether to draft them in batches for review or one at a
-  time.
+  `kyoto.md` was rewritten and published 2026-08-28 as the first real
+  article in the new prefecture format (see "Prefecture page format"
+  above) — content, not just structure. Facts still want a fact-check
+  pass against primary sources when convenient (see that section). The
+  other 46 prefectures haven't been started — per the user, confirm the
+  page's visual format first (in progress 2026-08-28), then draft them
+  in batches for review.
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend

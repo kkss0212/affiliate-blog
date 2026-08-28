@@ -1,0 +1,23 @@
+---
+// A single "at a glance" stat: icon badge + label + big value. Pass the
+// icon via the "icon" named slot (a lucide-astro icon component).
+interface Props {
+  label: string;
+  value: string;
+  sublabel?: string;
+  class?: string;
+}
+
+const { label, value, sublabel, class: className } = Astro.props;
+---
+
+<div class={`flex items-start gap-3 rounded-xl border border-line bg-white p-4 shadow-sm ${className ?? ""}`}>
+  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+    <slot name="icon" />
+  </div>
+  <div class="min-w-0">
+    <p class="text-xs font-medium uppercase tracking-wide text-ink-faint">{label}</p>
+    <p class="mt-0.5 font-display text-base font-semibold leading-tight text-ink break-words">{value}</p>
+    {sublabel && <p class="mt-0.5 text-xs text-ink-faint">{sublabel}</p>}
+  </div>
+</div>

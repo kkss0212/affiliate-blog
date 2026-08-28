@@ -1,4 +1,6 @@
 ---
+import { Music, BookOpen } from "@lucide/astro";
+
 interface Props {
   name: string;
   description: string;
@@ -12,6 +14,7 @@ const serviceLabel: Record<Props["service"], string> = {
   "amazon-music-unlimited": "Try Amazon Music Unlimited",
   "kindle-unlimited": "Try Kindle Unlimited",
 };
+const ServiceIcon = service === "amazon-music-unlimited" ? Music : BookOpen;
 ---
 
 <a
@@ -21,9 +24,14 @@ const serviceLabel: Record<Props["service"], string> = {
   data-affiliate-kind="subscription"
   data-affiliate-channel={service}
   data-affiliate-name={name}
-  class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+  class="flex gap-3 rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
 >
-  <p class="font-medium">{name}</p>
-  <p class="mt-1 text-sm text-ink-soft">{description}</p>
-  <p class="mt-2 text-sm font-medium text-accent">{serviceLabel[service]} →</p>
+  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+    <ServiceIcon size={18} />
+  </div>
+  <div class="min-w-0">
+    <p class="font-medium">{name}</p>
+    <p class="mt-1 text-sm text-ink-soft">{description}</p>
+    <p class="mt-2 text-sm font-medium text-accent">{serviceLabel[service]} →</p>
+  </div>
 </a>

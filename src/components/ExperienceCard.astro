@@ -1,4 +1,6 @@
 ---
+import { Ticket, Hotel } from "@lucide/astro";
+
 interface Props {
   name: string;
   description: string;
@@ -14,6 +16,7 @@ const providerLabel: Record<Props["provider"], string> = {
   getyourguide: "GetYourGuide",
   "rakuten-travel": "Rakuten Travel",
 };
+const ProviderIcon = provider === "rakuten-travel" ? Hotel : Ticket;
 ---
 
 <a
@@ -23,9 +26,14 @@ const providerLabel: Record<Props["provider"], string> = {
   data-affiliate-kind="experience"
   data-affiliate-channel={provider}
   data-affiliate-name={name}
-  class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+  class="flex gap-3 rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
 >
-  <p class="font-medium">{name}</p>
-  <p class="mt-1 text-sm text-ink-soft">{description}</p>
-  <p class="mt-2 text-sm font-medium text-accent">Book via {providerLabel[provider]} →</p>
+  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
+    <ProviderIcon size={18} />
+  </div>
+  <div class="min-w-0">
+    <p class="font-medium">{name}</p>
+    <p class="mt-1 text-sm text-ink-soft">{description}</p>
+    <p class="mt-2 text-sm font-medium text-accent">Book via {providerLabel[provider]} →</p>
+  </div>
 </a>

@@ -1,14 +1,12 @@
 ---
-# Format demonstration for the new prefecture template. Facts below were
-# researched in-session with moderate-to-high confidence but have NOT been
-# checked against primary sources (e-Stat, Kyoto Prefecture statistics) —
-# re-verify population/area figures before publishing. All affiliate URLs
-# are placeholders (no ASP is approved yet). Wikimedia Commons image
-# licenses/authors below should be re-confirmed on the file page before
-# this goes live, since automated fetching couldn't verify them in-session.
-# Kept as draft: true pending human review — flip to draft: false only
-# after that review (this will also count toward the 10-article Amazon
-# Associates threshold).
+# Published 2026-08-28 as the first article in the new prefecture format.
+# Facts were researched in-session with moderate-to-high confidence but
+# have NOT been checked against primary sources (e-Stat, Kyoto Prefecture
+# statistics) — re-verify population/area figures when convenient. All
+# affiliate URLs are placeholders (no ASP is approved yet) — replace with
+# real tagged links once each ASP is live. Wikimedia Commons image
+# licenses/authors on touristSpots below should be re-confirmed on the
+# file page (automated fetching couldn't verify them in-session).
 name: "Kyoto"
 nameJa: "京都府"
 tagline: "Japan's imperial capital for over a thousand years, and still its most convincing argument that history and daily life aren't separate things."
@@ -34,7 +32,7 @@ highlights:
   - "17 UNESCO World Heritage sites collectively inscribed as the Historic Monuments of Ancient Kyoto"
   - "Global headquarters of Nintendo, along with Kyocera, Omron, and Wacom"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Fushimi Inari Taisha"
     description: "The head shrine for Inari, dedicated to over 10,000 vermilion torii gates that climb the wooded slopes of Mount Inari. Open 24 hours, free to enter, and best walked early morning before the crowds."

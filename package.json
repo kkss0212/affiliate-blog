@@ -11,14 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.2.9",
     "@astrojs/sitemap": "^3.7.3",
-    "@tailwindcss/vite": "^4.3.3",
+    "@lucide/astro": "^1.35.0",
     "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.9",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "playwright": "^1.62.1",
     "typescript": "^6.0.3"
   }
 }
