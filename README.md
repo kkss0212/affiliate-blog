@@ -1,10 +1,10 @@
 # Japan Unpacked
 
-English-language guides across three sections — Prefectures, Music, and
-Manga — funneling readers toward tour/activity bookings (Klook, Viator,
-GetYourGuide, Rakuten Travel), shippable products (Amazon Associates, Japan
-Trend Shop), and subscription referrals (Amazon Music Unlimited, Kindle
-Unlimited).
+English-language guides across four sections — Prefectures, Municipalities,
+Music, and Manga — funneling readers toward tour/activity bookings (Klook,
+Viator, GetYourGuide, Rakuten Travel), shippable products (Amazon
+Associates, Japan Trend Shop), and subscription referrals (Amazon Music
+Unlimited, Kindle Unlimited).
 
 Live at <https://kkss0212.github.io/japan-unpacked/>.
 
@@ -17,7 +17,8 @@ application procedures.
 
 - [Astro](https://astro.build) + TypeScript, static output
 - Content Collections for structured content (`src/content.config.ts`):
-  `prefectures`, `music`, `manga` — entries under `src/content/<collection>/*.md`
+  `prefectures`, `municipalities`, `music`, `manga` — entries under
+  `src/content/<collection>/*.md`
 - Tailwind CSS v4
 - Deploys to GitHub Pages on push to `main` (`.github/workflows/deploy.yml`)
 
@@ -33,9 +34,11 @@ npm run preview   # serve the production build locally
 
 ## Adding content
 
-Add a Markdown file under `src/content/prefectures/`, `src/content/music/`,
-or `src/content/manga/`. See `kyoto.md`, `city-pop.md`, and `one-piece.md`
-for the schemas — those files are structural examples only, not
-fact-checked publishable content. Keep `draft: true` until the content and
-affiliate links have been reviewed; only flip it to `false` when it's ready
-to go live.
+Add a Markdown file under `src/content/prefectures/`,
+`src/content/municipalities/`, `src/content/music/`, or
+`src/content/manga/`. See `kyoto.md`, `uji.md`, `city-pop.md`, and
+`one-piece.md` for the schemas — those files are structural examples only,
+not fact-checked publishable content. A municipality's `prefecture` field
+must match an existing prefecture entry's filename (e.g. `kyoto`). Keep
+`draft: true` until the content and affiliate links have been reviewed;
+only flip it to `false` when it's ready to go live.

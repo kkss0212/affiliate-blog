@@ -84,11 +84,12 @@
 
 - **申請条件**: オリジナルコンテンツの記事が最低10件、公開済み(`draft: false`)
   であること。サインアップ後180日以内に3件の適格販売がないと本審査に進めない。
-- **現状(2026-08-28時点)**: 公開記事0件(`kyoto.md`・`city-pop.md`・`one-piece.md`
-  すべて`draft: true`の構造サンプルのみ)。この条件を満たすまで申請しない。
-- **カウント対象**: `src/content/prefectures/`・`src/content/music/`・
-  `src/content/manga/` の3ディレクトリ合計で10件(すべて同じサイト・同じ
-  Associatesアカウントで運用するため)。
+- **現状(2026-08-28時点)**: 公開記事0件(`kyoto.md`・`uji.md`・`city-pop.md`・
+  `one-piece.md`すべて`draft: true`の構造サンプルのみ)。この条件を満たすまで
+  申請しない。
+- **カウント対象**: `src/content/prefectures/`・`src/content/municipalities/`・
+  `src/content/music/`・`src/content/manga/` の4ディレクトリ合計で10件
+  (すべて同じサイト・同じAssociatesアカウントで運用するため)。
 - **TODO**: 上記3ディレクトリ合計で `draft: false` の記事が10件に達したら、
   次にこのプロジェクトを扱うセッションはAmazon Associatesの申請を案内すること。
   (ユーザーからの明示的な依頼: 「10件記事作ったら案内して」)

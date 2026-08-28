@@ -1,0 +1,95 @@
+---
+import { getCollection, getEntry, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import ExperienceCard from "../../components/ExperienceCard.astro";
+
+export async function getStaticPaths() {
+  const municipalities = await getCollection("municipalities", ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+  return municipalities.map((municipality) => ({
+    params: { slug: municipality.id },
+    props: { municipality },
+  }));
+}
+
+const { municipality } = Astro.props;
+const { data } = municipality;
+const { Content } = await render(municipality);
+const prefecture = await getEntry(data.prefecture);
+
+const kindLabel: Record<typeof data.kind, string> = {
+  city: "City",
+  "special-ward": "Special Ward",
+  town: "Town",
+  village: "Village",
+};
+
+const populationFormatted = new Intl.NumberFormat("en-US").format(data.population);
+const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title={`${data.name} (${data.nameJa}) — history, data & travel guide | Japan Unpacked`}
+  description={`A history- and data-driven guide to ${data.name}, ${prefecture.data.name} Prefecture, Japan.`}
+>
+  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">
+    {kindLabel[data.kind]} ·{" "}
+    <a href={`${base}prefectures/${prefecture.id}/`} class="hover:underline">
+      {prefecture.data.name} Prefecture
+    </a>
+  </p>
+  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">
+    {data.name} <span class="text-ink-faint">{data.nameJa}</span>
+  </h1>
+
+  <dl class="mt-6 grid grid-cols-2 gap-4 rounded-xl border border-line bg-white p-4 text-sm sm:grid-cols-3">
+    <div>
+      <dt class="text-ink-faint">Population</dt>
+      <dd class="font-medium">{populationFormatted} <span class="text-ink-faint">({data.populationSourceYear})</span></dd>
+    </div>
+    <div>
+      <dt class="text-ink-faint">Area</dt>
+      <dd class="font-medium">{areaFormatted} km²</dd>
+    </div>
+  </dl>
+
+  <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
+    {data.highlights.map((highlight) => <li>{highlight}</li>)}
+  </ul>
+
+  {(data.products.length > 0 || data.experiences.length > 0) && (
+    <div class="mt-6">
+      <AffiliateDisclosure />
+    </div>
+  )}
+
+  <article class="prose prose-stone mt-6 max-w-none">
+    <Content />
+  </article>
+
+  {data.experiences.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Book an experience</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+        {data.experiences.map((experience) => (
+          <ExperienceCard {...experience} />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {data.products.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Bring a piece of {data.name} home</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+        {data.products.map((product) => (
+          <ProductCard {...product} />
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

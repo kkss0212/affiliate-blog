@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 const product = z.object({
@@ -39,32 +39,52 @@ const cultureGuide = z.object({
   draft: z.boolean().default(true),
 });
 
+// Shared fields for anything with a location profile (population/area/
+// history + the products/experiences affiliate tracks). Prefectures and
+// municipalities both use this; municipalities add a `prefecture`
+// reference and drop `region` (derived from the parent prefecture instead
+// of duplicated).
+const placeFields = {
+  name: z.string(),
+  nameJa: z.string(),
+  population: z.number(),
+  populationSourceYear: z.number(),
+  areaKm2: z.number(),
+  highlights: z.array(z.string()),
+  products: z.array(product).default([]),
+  experiences: z.array(experience).default([]),
+  heroImageAlt: z.string().optional(),
+  updatedDate: z.date(),
+  draft: z.boolean().default(true),
+};
+
+const region = z.enum([
+  "Hokkaido",
+  "Tohoku",
+  "Kanto",
+  "Chubu",
+  "Kansai",
+  "Chugoku",
+  "Shikoku",
+  "Kyushu",
+  "Okinawa",
+]);
+
 const prefectures = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/prefectures" }),
   schema: z.object({
-    name: z.string(),
-    nameJa: z.string(),
-    region: z.enum([
-      "Hokkaido",
-      "Tohoku",
-      "Kanto",
-      "Chubu",
-      "Kansai",
-      "Chugoku",
-      "Shikoku",
-      "Kyushu",
-      "Okinawa",
-    ]),
+    ...placeFields,
     capital: z.string(),
-    population: z.number(),
-    populationSourceYear: z.number(),
-    areaKm2: z.number(),
-    highlights: z.array(z.string()),
-    products: z.array(product).default([]),
-    experiences: z.array(experience).default([]),
-    heroImageAlt: z.string().optional(),
-    updatedDate: z.date(),
-    draft: z.boolean().default(true),
+    region,
+  }),
+});
+
+const municipalities = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/municipalities" }),
+  schema: z.object({
+    ...placeFields,
+    prefecture: reference("prefectures"),
+    kind: z.enum(["city", "special-ward", "town", "village"]),
   }),
 });
 
@@ -78,4 +98,4 @@ const manga = defineCollection({
   schema: cultureGuide,
 });
 
-export const collections = { prefectures, music, manga };
+export const collections = { prefectures, municipalities, music, manga };

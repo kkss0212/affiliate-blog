@@ -6,17 +6,24 @@ rather than rewriting history; update the "current state" sections in place.
 
 ## Concept
 
-**Site name: Japan Unpacked.** An English-language blog with three sections:
-**Prefectures** (profiles of Japan's prefectures and municipalities through
-data and history, aimed at readers planning a visit to Japan or already
-there, as well as readers abroad who want Japanese regional goods shipped
-to them directly), **Music**, and **Manga** (guides to Japanese music and
-manga, added specifically because they open Amazon Music Unlimited and
-Kindle Unlimited as monetization — see "Monetization"). All three sections
-live on one site/domain rather than separate projects, since that means one
-Amazon Associates application covers all of them and articles from any
-section count toward the 10-published-article threshold (see "Open / not
-yet decided"). The content format (data + history deep-dives, artist/series
+**Site name: Japan Unpacked.** An English-language blog with four sections:
+**Prefectures** and **Municipalities** (profiles of Japan's 47 prefectures
+and, at finer grain, individual cities/wards/towns/villages within them,
+through data and history — aimed at readers planning a visit to Japan or
+already there, as well as readers abroad who want Japanese regional goods
+shipped to them directly), **Music**, and **Manga** (guides to Japanese
+music and manga, added specifically because they open Amazon Music
+Unlimited and Kindle Unlimited as monetization — see "Monetization").
+Municipalities are a separate content collection from prefectures (schema
+in `src/content.config.ts`), each pointing back at its parent prefecture
+via a typed `reference()`, rather than being folded into the prefecture
+entry itself — a municipality profile (e.g. Uji within Kyoto Prefecture)
+goes into more local detail than its prefecture-level parent, with its own
+history, products, and experiences. All four sections live on one
+site/domain rather than separate projects, since that means one Amazon
+Associates application covers all of them and articles from any section
+count toward the 10-published-article threshold (see "Open / not yet
+decided"). The content format (data + history deep-dives, artist/series
 guides) suits affiliate tracks with no shipping friction: tour/activity
 bookings and subscription referrals carry zero delivery risk; shippable
 products are split across two retailers so international readers who never
@@ -114,12 +121,15 @@ set foot in Japan can still buy (see "Monetization").
 
 - **Astro** (static site generation) + **TypeScript** + **Content
   Collections** for structured content (schema in `src/content.config.ts`).
-  Three collections: `prefectures` (population, area, history, products,
-  experiences), and `music`/`manga` (shared `cultureGuide` schema: title,
-  highlights, `products` + `subscriptions`). Chosen for SEO performance
-  (minimal JS, fast builds) and because this data maps cleanly onto typed
-  collection schemas instead of a general-purpose CMS. Pages live under
-  `src/pages/{prefectures,music,manga}/`.
+  Four collections: `prefectures` and `municipalities` (shared `placeFields`
+  schema: population, area, history, products, experiences — municipalities
+  add a `prefecture: reference("prefectures")` link back to their parent
+  and drop the prefecture-only `region`/`capital` fields), and `music`/
+  `manga` (shared `cultureGuide` schema: title, highlights, `products` +
+  `subscriptions`). Chosen for SEO performance (minimal JS, fast builds)
+  and because this data maps cleanly onto typed collection schemas instead
+  of a general-purpose CMS. Pages live under
+  `src/pages/{prefectures,municipalities,music,manga}/`.
 - **Tailwind CSS v4** (`@tailwindcss/vite`) for styling.
 - **Hosting: GitHub Pages** via `.github/workflows/deploy.yml`, deploying on
   push to `main`. Chosen as the default because it requires no new external
@@ -186,7 +196,8 @@ set foot in Japan can still buy (see "Monetization").
 
 ## Editorial/publishing gate
 
-- Content lives as Markdown files under `src/content/{prefectures,music,manga}/`,
+- Content lives as Markdown files under
+  `src/content/{prefectures,municipalities,music,manga}/`,
   each with a `draft: true/false` flag. Production builds (`import.meta.env.PROD`)
   filter out drafts, so a page only goes live once someone flips `draft` to
   `false` — this is the manual confirmation gate (same principle as
@@ -200,20 +211,22 @@ set foot in Japan can still buy (see "Monetization").
 - Custom domain and final hosting choice.
 - Which prefectures/municipalities/music topics/manga series to launch
   with, and the actual research + fact-checking pass for each (`kyoto.md`,
-  `city-pop.md`, and `one-piece.md` in the repo are structural examples
-  only, not verified publishable content).
+  `uji.md`, `city-pop.md`, and `one-piece.md` in the repo are structural
+  examples only, not verified publishable content).
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend
   Shop have no content-count requirement and can be applied for any time.
   **Amazon Associates requires at least 10 published (`draft: false`)
-  articles first**, counted across all three sections (prefectures + music
-  + manga) since they'll all be covered by the same Associates account —
-  as of 2026-08-28 there are 0 (all three example files are still drafts).
-  The user explicitly asked to be told once that threshold is hit: whenever
-  a session brings the published count to 10+, prompt them to start the
-  Amazon Associates application (which also unlocks the Amazon Music
-  Unlimited / Kindle Unlimited referral links).
+  articles first**, counted across all four sections (prefectures +
+  municipalities + music + manga) since they'll all be covered by the same
+  Associates account — as of 2026-08-28 there are 0 (all four example
+  files are still drafts). The user explicitly asked to be told once that
+  threshold is hit: whenever a session brings the published count to 10+,
+  prompt them to start the Amazon Associates application (which also
+  unlocks the Amazon Music Unlimited / Kindle Unlimited referral links).
+- GA4 property not yet created — `src/consts.ts`'s `GA_MEASUREMENT_ID` is
+  still blank. See "Analytics, CVR, and traffic security" above.
 - Whether to add TokyoTreat/Sakuraco once their affiliate payout tax
   treatment (W-9 vs. W-8BEN at signup) is confirmed.
 - Instagram/X account setup and posting cadence.

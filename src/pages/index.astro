@@ -11,26 +11,27 @@ const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.da
 
 const sections = [
   { href: base, label: "Prefectures", desc: "History & data, region by region" },
+  { href: `${base}municipalities/`, label: "Municipalities", desc: "Cities, wards, towns & villages" },
   { href: `${base}music/`, label: "Music", desc: "Artists and genres worth hearing" },
   { href: `${base}manga/`, label: "Manga", desc: "Series worth starting" },
 ];
 ---
 
 <BaseLayout
-  title="Japan Unpacked — Japan's prefectures, music, and manga, unpacked"
-  description="History- and data-driven guides to Japan's prefectures, music, and manga — for anyone learning about Japan, dreaming of a future trip, or planning one now."
+  title="Japan Unpacked — Japan's prefectures, municipalities, music, and manga, unpacked"
+  description="History- and data-driven guides to Japan's prefectures, municipalities, music, and manga — for anyone learning about Japan, dreaming of a future trip, or planning one now."
 >
   <p class="font-display text-sm uppercase tracking-[0.2em] text-accent">Japan Unpacked</p>
   <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
     Japan, told through history and data
   </h1>
   <p class="mt-4 max-w-xl text-ink-soft">
-    Guides to Japan's prefectures, music, and manga — for anyone learning
-    about Japan, dreaming of a trip they can't take yet, or planning one
-    right now.
+    Guides to Japan's prefectures, cities, music, and manga — for anyone
+    learning about Japan, dreaming of a trip they can't take yet, or
+    planning one right now.
   </p>
 
-  <div class="mt-8 grid gap-3 sm:grid-cols-3">
+  <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
     {
       sections.map((section) => (
         <a
