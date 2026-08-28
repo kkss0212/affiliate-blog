@@ -6,6 +6,10 @@ const product = z.object({
   description: z.string(),
   url: z.string().url(),
   retailer: z.enum(["amazon", "japan-trend-shop"]),
+  // Groups products on a place page into "Local specialties" / "Featured
+  // companies" / "Set here in manga" sections. Optional so music/manga
+  // collection products (which don't use these sections) can omit it.
+  category: z.enum(["local-specialty", "company", "manga", "other"]).optional(),
 });
 
 const experience = z.object({
@@ -44,11 +48,37 @@ const cultureGuide = z.object({
 // municipalities both use this; municipalities add a `prefecture`
 // reference and drop `region` (derived from the parent prefecture instead
 // of duplicated).
+const image = z.object({
+  url: z.string().url(),
+  alt: z.string(),
+  // Attribution string (photographer/source + license), e.g. "Photo by
+  // Jane Doe / Wikimedia Commons, CC BY-SA 4.0". Required in practice for
+  // anything but a public-domain/self-shot photo — enforce at review time,
+  // not in the schema, since some images genuinely need none.
+  credit: z.string().optional(),
+});
+
+const touristSpot = z.object({
+  name: z.string(),
+  description: z.string(),
+  image: image.optional(),
+});
+
 const placeFields = {
   name: z.string(),
   nameJa: z.string(),
+  // One-line hook shown right under the name in the hero.
+  tagline: z.string().optional(),
+  heroImage: image.optional(),
+  // Approximate coordinates (representative point — a prefecture's capital
+  // city, or the municipality itself) used only to place a marker on the
+  // schematic JapanMap component. Not surveyed/precise.
+  lat: z.number().optional(),
+  lng: z.number().optional(),
   population: z.number(),
   populationSourceYear: z.number(),
+  populationTrend: z.enum(["increasing", "decreasing", "stable"]).optional(),
+  populationTrendNote: z.string().optional(),
   areaKm2: z.number(),
   // Optional ranking metrics (src/pages/rankings.astro). All optional
   // because they're harder to source than population/area and entries
@@ -57,10 +87,20 @@ const placeFields = {
   foreignVisitorsAnnual: z.number().optional(),
   natureScore: z.number().min(1).max(10).optional(),
   subcultureScore: z.number().min(1).max(10).optional(),
+  // Light, clearly-subjective editorial color — frame as "often described
+  // as," never as settled fact.
+  prefecturalCharacter: z.string().optional(),
+  comparedTo: z
+    .object({
+      place: z.string(),
+      country: z.string(),
+      reason: z.string(),
+    })
+    .optional(),
   highlights: z.array(z.string()),
+  touristSpots: z.array(touristSpot).default([]),
   products: z.array(product).default([]),
   experiences: z.array(experience).default([]),
-  heroImageAlt: z.string().optional(),
   updatedDate: z.date(),
   draft: z.boolean().default(true),
 };

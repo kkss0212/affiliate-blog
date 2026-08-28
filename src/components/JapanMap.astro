@@ -1,0 +1,73 @@
+---
+// Schematic "you are here" map: a simplified, illustrative silhouette of
+// Japan (not a surveyed coastline) with a red marker plotted from
+// lat/lng via a simple linear projection. Good enough to orient a reader
+// at a glance; not meant to be geographically precise, so it's captioned
+// as a simplified map.
+interface Props {
+  lat?: number;
+  lng?: number;
+  label: string;
+  class?: string;
+}
+
+const { lat, lng, label, class: className } = Astro.props;
+
+// Projection constants tuned so Japan's real lat/lng range lands inside
+// the 0–190 x / 0–230 y viewBox used by the silhouette below.
+const LNG_MIN = 128;
+const LNG_SCALE = 10.56; // ~190 / (146 - 128)
+const LAT_MIN = 24;
+const LAT_SCALE = 10.45; // ~230 / (46 - 24)
+const VIEW_H = 230;
+
+function clamp(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, value));
+}
+
+const marker =
+  lat !== undefined && lng !== undefined
+    ? {
+        x: clamp((lng - LNG_MIN) * LNG_SCALE, 2, 188),
+        y: clamp(VIEW_H - (lat - LAT_MIN) * LAT_SCALE, 2, 228),
+      }
+    : null;
+---
+
+<figure class={`inline-block ${className ?? ""}`}>
+  <svg
+    viewBox="-6 -6 202 242"
+    class="h-40 w-auto sm:h-48"
+    role="img"
+    aria-label={`Simplified map of Japan with ${label} marked`}
+  >
+    <g fill="none" stroke="#cbd0c9" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Hokkaido -->
+      <path d="M118,25 L150,15 L170,35 L150,55 L120,48 Z" />
+      <!-- Honshu (Tohoku through Chugoku) -->
+      <path d="M150,65 L136,81 L123,108 L100,110 L82,115 L65,118 L47,121 L35,124" />
+      <!-- Shikoku -->
+      <path d="M60,122 L75,130" stroke-width="14" />
+      <!-- Kyushu -->
+      <path d="M30,128 L22,145 L28,160" stroke-width="20" />
+    </g>
+    <!-- Okinawa island chain -->
+    <g fill="#cbd0c9">
+      <circle cx="2" cy="200" r="4" />
+      <circle cx="6" cy="212" r="5" />
+      <circle cx="11" cy="222" r="4" />
+    </g>
+
+    {
+      marker && (
+        <g>
+          <circle cx={marker.x} cy={marker.y} r="7" fill="#dc2626" fill-opacity="0.25" />
+          <circle cx={marker.x} cy={marker.y} r="4" fill="#dc2626" stroke="white" stroke-width="1.5" />
+        </g>
+      )
+    }
+  </svg>
+  <figcaption class="mt-1 text-xs text-ink-faint">
+    Simplified map, not to scale{marker ? ` — ${label} marked in red` : ""}
+  </figcaption>
+</figure>

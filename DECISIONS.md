@@ -254,9 +254,70 @@ set foot in Japan can still buy (see "Monetization").
 - **Latest Updates** (homepage, `src/lib/recent.ts`): a "recent releases"
   -style feed — up to 5 most-recently-`updatedDate` entries across all
   four collections (prefectures, municipalities, music, manga), each shown
-  as a category pill + title + date, linking to the entry. Same
-  draft-filtering as everywhere else, so nothing unpublished shows up
-  here either.
+  as a category pill + title + date, linking to the entry. Positioned
+  below Rankings on the homepage (2026-08-28: moved down from between the
+  3-card grid and Rankings, per user direction).
+
+## Prefecture page format (2026-08-28)
+
+Fixed the section order/content for all 47 prefecture pages
+(`src/pages/prefectures/[slug].astro`), based on the user's spec, so every
+prefecture article follows the same shape:
+
+1. **Hero**: name, one-line `tagline`, a schematic "you are here" map
+   (`src/components/JapanMap.astro`), optional `heroImage`.
+2. **At a glance**: region, capital, population(+year)/trend, area,
+   population density (computed, `population / areaKm2`), the existing
+   `natureScore`/`subcultureScore` context, plus two new lighter/subjective
+   fields — `prefecturalCharacter` (県民性, framed as "often described as,"
+   not fact) and `comparedTo` (a Europe/US analog with a stated reason —
+   e.g. Kyoto ↔ Florence).
+3. **History** (free-form Markdown body, `<Content />`): editorial
+   convention (not schema-enforced) is to spend real space on relations
+   with the West — since that's what an English-reading, non-Japan-expert
+   audience finds most orienting — and on which prefectures/cities this
+   one is historically friendly or rivalrous with. See `kyoto.md` for the
+   pattern (a "Kyoto and the wider world" + "Neighbors" subsection pair).
+4. **Where to go** (`touristSpots[]`): name + description + optional
+   `image` (url/alt/credit).
+5. **Book an experience** / **Local specialties** / **Made or set in
+   {prefecture}**: existing `experiences[]` and `products[]` fields.
+   `product.category` (`local-specialty` / `company` / `manga` / `other`)
+   is new — it's what lets the page auto-split products into "Local
+   specialties" (deliberately weighted away from food, since that's the
+   Amazon-affiliate-eligible track — see AmazonGlobal note above),
+   "Companies from {prefecture}" (a famous local company's actual
+   product — e.g. Nintendo for Kyoto), and "Manga set here" (an Amazon
+   link to the manga itself, not a cross-link to the `manga` collection,
+   since the `manga` collection is an editorial guide, not "which
+   volume is set in this prefecture").
+- **Images**: `heroImage`/`touristSpots[].image` are
+  `{ url, alt, credit }`. Sourcing plan is Wikimedia Commons via its
+  `Special:FilePath/<filename>` redirect (works without needing the
+  internal upload-hash path). `WebFetch` to commons.wikimedia.org is
+  blocked by this environment's egress proxy, so author/license on the
+  `credit` line could only be confirmed for entries where a `WebSearch`
+  result snippet happened to state the license outright (2 of 4 spots in
+  `kyoto.md`); the other spots were left without an image entirely rather
+  than fabricate a credit. **Always re-confirm the exact license/author
+  on the Commons file page before flipping an entry with images to
+  `draft: false`.**
+- `kyoto.md` was rewritten as the first full example of this format —
+  real (not placeholder) historical content and figures researched
+  in-session, but **kept at `draft: true`** pending the user's review
+  (fact-check the subjective bits especially — `prefecturalCharacter`,
+  `comparedTo` — and re-verify population/area against e-Stat), rather
+  than publishing unilaterally. Once approved and flipped to
+  `draft: false`, it becomes article 1 of the 10 needed for Amazon
+  Associates.
+- `JapanMap.astro` is a schematic, not-to-scale illustration (a handful of
+  thick rounded strokes standing in for Hokkaido/Honshu/Shikoku/Kyushu,
+  plus three dots for Okinawa), not a real coastline — hand-authoring an
+  accurate coastline path wasn't worth the risk of it looking subtly
+  wrong. The red marker position is a genuine linear projection of each
+  entry's `lat`/`lng` (a representative point — the capital city for a
+  prefecture), so different prefectures/municipalities do land in
+  visibly different, roughly-correct places relative to each other.
 
 ## Editorial/publishing gate
 
@@ -274,9 +335,14 @@ set foot in Japan can still buy (see "Monetization").
 
 - Custom domain and final hosting choice.
 - Which prefectures/municipalities/music topics/manga series to launch
-  with, and the actual research + fact-checking pass for each (`kyoto.md`,
-  `uji.md`, `city-pop.md`, and `one-piece.md` in the repo are structural
-  examples only, not verified publishable content).
+  with, and the actual research + fact-checking pass for each. `uji.md`,
+  `city-pop.md`, and `one-piece.md` are still structural examples only.
+  `kyoto.md` was rewritten 2026-08-28 as the first real draft in the new
+  prefecture format (see "Prefecture page format" above) — content, not
+  just structure — but still needs the user's fact-check pass before
+  `draft: false`. The other 46 prefectures haven't been started; decide
+  with the user whether to draft them in batches for review or one at a
+  time.
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend

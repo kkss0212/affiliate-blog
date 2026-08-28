@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
 import ProductCard from "../../components/ProductCard.astro";
 import ExperienceCard from "../../components/ExperienceCard.astro";
+import JapanMap from "../../components/JapanMap.astro";
 
 export async function getStaticPaths() {
   const prefectures = await getCollection("prefectures", ({ data }) => {
@@ -27,36 +28,205 @@ const municipalities = allMunicipalities.sort((a, b) => a.data.name.localeCompar
 
 const populationFormatted = new Intl.NumberFormat("en-US").format(data.population);
 const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
+const densityFormatted = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(
+  data.population / data.areaKm2,
+);
 const base = import.meta.env.BASE_URL;
+
+const trendLabel: Record<"increasing" | "decreasing" | "stable", string> = {
+  increasing: "↑ Increasing",
+  decreasing: "↓ Decreasing",
+  stable: "→ Stable",
+};
+
+const localSpecialties = data.products.filter((p) => (p.category ?? "local-specialty") === "local-specialty");
+const companyPicks = data.products.filter((p) => p.category === "company");
+const mangaPicks = data.products.filter((p) => p.category === "manga");
+const otherPicks = data.products.filter((p) => p.category === "other");
 ---
 
 <BaseLayout
   title={`${data.name} (${data.nameJa}) — history, data & travel guide | Japan Unpacked`}
-  description={`A history- and data-driven guide to ${data.name} Prefecture, Japan.`}
+  description={data.tagline ?? `A history- and data-driven guide to ${data.name} Prefecture, Japan.`}
 >
-  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">{data.region}</p>
-  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">
-    {data.name} <span class="text-ink-faint">{data.nameJa}</span>
-  </h1>
+  <div class="flex flex-wrap items-start justify-between gap-6">
+    <div class="max-w-xl">
+      <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">{data.region}</p>
+      <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">
+        {data.name} <span class="text-ink-faint">{data.nameJa}</span>
+      </h1>
+      {data.tagline && <p class="mt-2 text-ink-soft">{data.tagline}</p>}
+    </div>
+    <JapanMap lat={data.lat} lng={data.lng} label={data.name} class="shrink-0" />
+  </div>
 
-  <dl class="mt-6 grid grid-cols-2 gap-4 rounded-xl border border-line bg-white p-4 text-sm sm:grid-cols-4">
-    <div>
-      <dt class="text-ink-faint">Capital</dt>
-      <dd class="font-medium">{data.capital}</dd>
-    </div>
-    <div>
-      <dt class="text-ink-faint">Population</dt>
-      <dd class="font-medium">{populationFormatted} <span class="text-ink-faint">({data.populationSourceYear})</span></dd>
-    </div>
-    <div>
-      <dt class="text-ink-faint">Area</dt>
-      <dd class="font-medium">{areaFormatted} km²</dd>
-    </div>
-  </dl>
+  {data.heroImage && (
+    <figure class="mt-6">
+      <img
+        src={data.heroImage.url}
+        alt={data.heroImage.alt}
+        class="aspect-[16/9] w-full rounded-xl object-cover"
+        loading="eager"
+      />
+      {data.heroImage.credit && (
+        <figcaption class="mt-1 text-xs text-ink-faint">{data.heroImage.credit}</figcaption>
+      )}
+    </figure>
+  )}
 
-  <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
-    {data.highlights.map((highlight) => <li>{highlight}</li>)}
-  </ul>
+  <section class="mt-8">
+    <h2 class="font-display text-lg font-semibold">At a glance</h2>
+    <dl class="mt-3 grid grid-cols-2 gap-4 rounded-xl border border-line bg-white p-4 text-sm sm:grid-cols-4">
+      <div>
+        <dt class="text-ink-faint">Region</dt>
+        <dd class="font-medium">{data.region}</dd>
+      </div>
+      <div>
+        <dt class="text-ink-faint">Capital</dt>
+        <dd class="font-medium">{data.capital}</dd>
+      </div>
+      <div>
+        <dt class="text-ink-faint">Population</dt>
+        <dd class="font-medium">
+          {populationFormatted} <span class="text-ink-faint">({data.populationSourceYear})</span>
+        </dd>
+      </div>
+      {data.populationTrend && (
+        <div>
+          <dt class="text-ink-faint">Population trend</dt>
+          <dd class="font-medium">{trendLabel[data.populationTrend]}</dd>
+        </div>
+      )}
+      <div>
+        <dt class="text-ink-faint">Area</dt>
+        <dd class="font-medium">{areaFormatted} km²</dd>
+      </div>
+      <div>
+        <dt class="text-ink-faint">Population density</dt>
+        <dd class="font-medium">{densityFormatted} / km²</dd>
+      </div>
+      {data.prefecturalCharacter && (
+        <div class="col-span-2 sm:col-span-4">
+          <dt class="text-ink-faint">Often described as</dt>
+          <dd class="font-medium">{data.prefecturalCharacter}</dd>
+        </div>
+      )}
+      {data.comparedTo && (
+        <div class="col-span-2 sm:col-span-4">
+          <dt class="text-ink-faint">If it were in Europe or the US, think</dt>
+          <dd class="font-medium">
+            {data.comparedTo.place}, {data.comparedTo.country}
+            <span class="block font-normal text-ink-soft">{data.comparedTo.reason}</span>
+          </dd>
+        </div>
+      )}
+    </dl>
+
+    {data.populationTrendNote && (
+      <p class="mt-2 text-xs text-ink-faint">{data.populationTrendNote}</p>
+    )}
+
+    <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
+      {data.highlights.map((highlight) => <li>{highlight}</li>)}
+    </ul>
+  </section>
+
+  {(data.products.length > 0 || data.experiences.length > 0) && (
+    <div class="mt-6">
+      <AffiliateDisclosure />
+    </div>
+  )}
+
+  <article class="prose prose-stone mt-10 max-w-none">
+    <h2 class="font-display text-lg font-semibold">History</h2>
+    <Content />
+  </article>
+
+  {data.touristSpots.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Where to go</h2>
+      <div class="mt-3 grid gap-4 sm:grid-cols-2">
+        {data.touristSpots.map((spot) => (
+          <div class="overflow-hidden rounded-xl border border-line bg-white">
+            {spot.image && (
+              <img
+                src={spot.image.url}
+                alt={spot.image.alt}
+                class="aspect-[4/3] w-full object-cover"
+                loading="lazy"
+              />
+            )}
+            <div class="p-4">
+              <p class="font-medium">{spot.name}</p>
+              <p class="mt-1 text-sm text-ink-soft">{spot.description}</p>
+              {spot.image?.credit && (
+                <p class="mt-2 text-xs text-ink-faint">{spot.image.credit}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {data.experiences.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Book an experience</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+        {data.experiences.map((experience) => (
+          <ExperienceCard {...experience} />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {localSpecialties.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Local specialties</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+        {localSpecialties.map((product) => (
+          <ProductCard {...product} />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {(companyPicks.length > 0 || mangaPicks.length > 0) && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Made or set in {data.name}</h2>
+      {companyPicks.length > 0 && (
+        <div class="mt-3">
+          <h3 class="text-sm font-medium text-ink-soft">Companies from {data.name}</h3>
+          <div class="mt-2 grid gap-3 sm:grid-cols-2">
+            {companyPicks.map((product) => (
+              <ProductCard {...product} />
+            ))}
+          </div>
+        </div>
+      )}
+      {mangaPicks.length > 0 && (
+        <div class="mt-5">
+          <h3 class="text-sm font-medium text-ink-soft">Manga set here</h3>
+          <div class="mt-2 grid gap-3 sm:grid-cols-2">
+            {mangaPicks.map((product) => (
+              <ProductCard {...product} />
+            ))}
+          </div>
+        </div>
+      )}
+    </section>
+  )}
+
+  {otherPicks.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">More from {data.name}</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+        {otherPicks.map((product) => (
+          <ProductCard {...product} />
+        ))}
+      </div>
+    </section>
+  )}
 
   {municipalities.length > 0 && (
     <section class="mt-10">
@@ -73,38 +243,6 @@ const base = import.meta.env.BASE_URL;
           </li>
         ))}
       </ul>
-    </section>
-  )}
-
-  {(data.products.length > 0 || data.experiences.length > 0) && (
-    <div class="mt-6">
-      <AffiliateDisclosure />
-    </div>
-  )}
-
-  <article class="prose prose-stone mt-6 max-w-none">
-    <Content />
-  </article>
-
-  {data.experiences.length > 0 && (
-    <section class="mt-10">
-      <h2 class="font-display text-lg font-semibold">Book an experience</h2>
-      <div class="mt-3 grid gap-3 sm:grid-cols-2">
-        {data.experiences.map((experience) => (
-          <ExperienceCard {...experience} />
-        ))}
-      </div>
-    </section>
-  )}
-
-  {data.products.length > 0 && (
-    <section class="mt-10">
-      <h2 class="font-display text-lg font-semibold">Bring a piece of {data.name} home</h2>
-      <div class="mt-3 grid gap-3 sm:grid-cols-2">
-        {data.products.map((product) => (
-          <ProductCard {...product} />
-        ))}
-      </div>
     </section>
   )}
 </BaseLayout>
