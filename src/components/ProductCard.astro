@@ -18,6 +18,9 @@ const retailerLabel: Record<Props["retailer"], string> = {
   href={url}
   rel="sponsored noopener"
   target="_blank"
+  data-affiliate-kind="product"
+  data-affiliate-channel={retailer}
+  data-affiliate-name={name}
   class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
 >
   <p class="font-medium">{name}</p>

@@ -1,0 +1,104 @@
+---
+import { GA_MEASUREMENT_ID } from "../consts";
+---
+
+{
+  GA_MEASUREMENT_ID && (
+    <>
+      <div
+        id="cookie-consent"
+        class="fixed inset-x-0 bottom-0 z-50 hidden border-t border-line bg-white p-4 shadow-lg"
+      >
+        <div class="mx-auto flex max-w-3xl flex-col gap-3 text-sm sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-ink-soft">
+            We use Google Analytics to see how many people visit and which
+            affiliate links they follow. Nothing is collected until you
+            accept. See our{" "}
+            <a href={`${import.meta.env.BASE_URL}privacy/`} class="underline">
+              Privacy Policy
+            </a>
+            .
+          </p>
+          <div class="flex shrink-0 gap-2">
+            <button id="cookie-decline" class="rounded-lg border border-line px-3 py-1.5 text-ink-soft">
+              Decline
+            </button>
+            <button id="cookie-accept" class="rounded-lg bg-accent px-3 py-1.5 text-white">
+              Accept
+            </button>
+          </div>
+        </div>
+      </div>
+      <script define:vars={{ GA_MEASUREMENT_ID }}>
+        const CONSENT_KEY = "ju-analytics-consent";
+
+        function loadAnalytics() {
+          const script = document.createElement("script");
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            window.dataLayer.push(arguments);
+          }
+          window.gtag = gtag;
+          gtag("js", new Date());
+          // IP-anonymized: reduces the privacy footprint of an already
+          // opt-in-only setup.
+          gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
+
+          // Affiliate-link clicks are the closest proxy we have to a
+          // conversion signal: GA4 can't see the purchase itself (that
+          // happens on Amazon/Rakuten/Klook's own site), but this at
+          // least records intent-to-convert per channel.
+          document.addEventListener("click", (event) => {
+            const link = event.target.closest('a[rel~="sponsored"]');
+            if (!link) return;
+            gtag("event", "affiliate_click", {
+              affiliate_kind: link.dataset.affiliateKind,
+              affiliate_channel: link.dataset.affiliateChannel,
+              affiliate_name: link.dataset.affiliateName,
+              page_path: window.location.pathname,
+            });
+          });
+        }
+
+        function getConsent() {
+          try {
+            return localStorage.getItem(CONSENT_KEY);
+          } catch {
+            return null;
+          }
+        }
+
+        function setConsent(value) {
+          try {
+            localStorage.setItem(CONSENT_KEY, value);
+          } catch {
+            // Storage unavailable (private mode, blocked cookies, etc.) —
+            // consent choice just won't persist across visits.
+          }
+        }
+
+        const consent = getConsent();
+        if (consent === "granted") {
+          loadAnalytics();
+        } else if (consent !== "denied") {
+          document.getElementById("cookie-consent")?.classList.remove("hidden");
+        }
+
+        document.getElementById("cookie-accept")?.addEventListener("click", () => {
+          setConsent("granted");
+          document.getElementById("cookie-consent")?.classList.add("hidden");
+          loadAnalytics();
+        });
+
+        document.getElementById("cookie-decline")?.addEventListener("click", () => {
+          setConsent("denied");
+          document.getElementById("cookie-consent")?.classList.add("hidden");
+        });
+      </script>
+    </>
+  )
+}

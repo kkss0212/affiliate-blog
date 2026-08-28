@@ -136,6 +136,54 @@ set foot in Japan can still buy (see "Monetization").
   public URL felt too on-the-nose. Same reasoning would apply to any future
   repo/URL naming — avoid words that broadcast the monetization mechanism.
 
+## Analytics, CVR, and traffic security
+
+- **Google Analytics 4** (`src/components/Analytics.astro`, ID in
+  `src/consts.ts`), chosen because it's free, official, and gives both
+  traffic volume and the ability to track custom events. It only loads
+  after a visitor accepts a cookie-consent banner (`localStorage`-backed;
+  see `src/pages/privacy.astro`) — the site targets an international
+  English-reading audience that may include EU visitors, and GDPR applies
+  based on visitor location, not operator location, so opt-in-before-load
+  was the safer default. IP addresses are anonymized. `GA_MEASUREMENT_ID`
+  is blank until a GA4 property exists; the component renders nothing
+  (no script, no banner) while blank, same placeholder pattern as the
+  custom-domain TODOs elsewhere in this file.
+- **Setup TODO**: create a free GA4 property at analytics.google.com, copy
+  its Measurement ID (`G-XXXXXXXXXX`), paste it into `GA_MEASUREMENT_ID` in
+  `src/consts.ts`.
+- **Affiliate-click tracking**: every affiliate `<a>` already carries
+  `rel="sponsored"` plus `data-affiliate-kind` / `data-affiliate-channel` /
+  `data-affiliate-name` attributes (added to Product/Experience/
+  SubscriptionCard). The Analytics component listens for clicks on any
+  `a[rel~="sponsored"]` and fires a GA4 `affiliate_click` event with that
+  context — this is the closest free proxy to a conversion signal.
+- **What this can't measure — read before trying to compute "the" CVR**:
+  GA4 cannot see whether a clicked affiliate link actually turned into a
+  purchase or booking, because that transaction happens on Amazon's/
+  Rakuten's/Klook's own site, outside this site's control. A real
+  visit-to-purchase CVR has to be assembled by hand: GA4 gives the
+  denominator (sessions) and the affiliate-click numerator (intent), while
+  each ASP's own dashboard (Associates Central, Rakuten Affiliate reports,
+  Viator/Travelpayouts/Japan Trend Shop dashboards) gives the actual
+  conversion counts, per channel, that GA4 can't see. There is no single
+  free tool that unifies this across five different ASPs — expect to pull
+  numbers from each dashboard periodically and reconcile manually.
+- **Security / suspicious-traffic detection**: scoped to what's realistic
+  for a GitHub Pages site with no custom domain yet. GA4's free Realtime
+  view and automatic Insights/anomaly detection are the practical starting
+  point for spotting an unusual traffic spike. Real bot mitigation / a WAF
+  requires fronting the site with a CDN like Cloudflare, which in turn
+  requires owning a custom domain (Cloudflare can't proxy a `github.io`
+  subdomain) — revisit once the "custom domain" open item above is
+  decided. In the meantime, GitHub Pages itself sits behind GitHub's own
+  infrastructure, which already absorbs basic volumetric abuse; this is
+  not equivalent to an active WAF but isn't undefended either.
+- A privacy policy page (`/privacy/`) was added alongside this, describing
+  what's collected and why in plain language — it is a reasonable starting
+  point, not a substitute for an actual legal/compliance review once the
+  site has real traffic and revenue.
+
 ## Editorial/publishing gate
 
 - Content lives as Markdown files under `src/content/{prefectures,music,manga}/`,

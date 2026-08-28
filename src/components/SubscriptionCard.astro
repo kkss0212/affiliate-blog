@@ -18,6 +18,9 @@ const serviceLabel: Record<Props["service"], string> = {
   href={url}
   rel="sponsored noopener"
   target="_blank"
+  data-affiliate-kind="subscription"
+  data-affiliate-channel={service}
+  data-affiliate-name={name}
   class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
 >
   <p class="font-medium">{name}</p>

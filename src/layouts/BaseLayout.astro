@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Analytics from "../components/Analytics.astro";
 
 interface Props {
   title: string;
@@ -66,8 +67,12 @@ const navLinks = [
           this site earns from qualifying purchases and bookings made through
           links on this site, at no extra cost to you.
         </p>
-        <p class="mt-2">© {new Date().getFullYear()} Japan Unpacked</p>
+        <p class="mt-2">
+          © {new Date().getFullYear()} Japan Unpacked ·{" "}
+          <a href={`${base}privacy/`} class="underline">Privacy</a>
+        </p>
       </div>
     </footer>
+    <Analytics />
   </body>
 </html>
