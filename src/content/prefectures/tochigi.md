@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Nikko Toshogu Shrine"
     description: "The ornately carved, gilded mausoleum-shrine of Tokugawa Ieyasu, a UNESCO World Heritage Site set among old-growth cedar forest."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nikko%20toshogu%20shrine.jpg"
+      alt: "The ornately gilded and carved buildings of Nikko Toshogu Shrine"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Kegon Falls"
     description: "A 97-meter single-drop waterfall near Nikko, ranked among Japan's most celebrated, with an elevator down to a viewing platform at its base."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Japan,%20Tochigi,%20Nikko%20-%20Kegon%20falls,%20juni%20taki%202012.jpg"
+      alt: "Kegon Falls, a single-drop waterfall near Nikko"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Ashikaga Flower Park"
     description: "A garden famous for its wisteria tunnels and an 'Great Wisteria' vine over 150 years old, in bloom each late April-May; listed by CNN as one of the world's 'dreamlike' travel destinations."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Japanese%20wisteria,%20Ashikaga%20Flower%20Park%202.jpg"
+      alt: "A wisteria tunnel in bloom at Ashikaga Flower Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Mashiko Pottery Town"
     description: "A town of working potters' studios and shops built around the mingei (folk-craft) tradition, walkable in an afternoon."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mashiko%20Pottery%20Sales%20Center%2001.JPG"
+      alt: "The Mashiko Pottery Cooperative Selling Center, a hub of the town's pottery trade"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Mashiko-yaki Ceramic Mug"
     description: "Mashiko ware is a rustic stoneware tradition associated with the 20th-century mingei folk-craft movement and potter Shoji Hamada, a Living National Treasure. Confirm AmazonGlobal eligibility before publishing."

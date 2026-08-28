@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Great Buddha of Kamakura (Kotoku-in)"
     description: "A bronze seated Buddha statue roughly 11 meters tall, cast around 1252 and remarkably still outdoors — its housing hall was destroyed by a tsunami in the 15th century and never rebuilt."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Buddha%20of%20Kamakura%20(Daibutsu).jpg"
+      alt: "The bronze seated Great Buddha of Kamakura at Kotoku-in"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Yokohama Chinatown"
     description: "Japan's largest Chinatown, dating to Yokohama's 1859 opening as a treaty port, packed with restaurants and shops across a compact, gated district."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Chinatown%20entrance.jpg"
+      alt: "An ornate gate at the entrance to Yokohama Chinatown"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Minato Mirai, Yokohama"
     description: "Yokohama's modern waterfront district, with the Cosmo Clock 21 ferris wheel, Landmark Tower, and a preserved 1911 sailing ship, Nippon Maru, docked as a museum."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cosmo%20clock%2021%20ferris%20wheel%20yokohama.jpg"
+      alt: "The Cosmo Clock 21 ferris wheel in Yokohama's Minato Mirai district"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Hakone"
     description: "A mountain hot-spring resort area with views of Mount Fuji across Lake Ashi (weather permitting), reachable by a scenic combination of train, cable car, and boat."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Fuji%20@%20Lake%20Ashi%20@%20Hakone%20(13776927014).jpg"
+      alt: "A view of Mount Fuji across Lake Ashi in Hakone"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Hakone Yosegi-zaiku Puzzle Box"
     description: "A Hakone marquetry tradition using thin strips of naturally colored wood to create geometric patterns, often built into secret 'puzzle boxes' that require a specific sequence of moves to open. Confirm AmazonGlobal eligibility before publishing."

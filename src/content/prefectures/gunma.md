@@ -35,12 +35,28 @@ draft: false
 touristSpots:
   - name: "Tomioka Silk Mill"
     description: "Japan's first modern silk-reeling factory, built in 1872 with French engineering, machinery, and instructors — now a UNESCO World Heritage Site preserved close to its original state."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka%20Silk%20Mill%20Main%20Building.JPG"
+      alt: "The main building of the Tomioka Silk Mill"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kusatsu Onsen"
     description: "One of Japan's most celebrated hot spring towns, centered on a steaming public square (Yubatake) and known for the 'yumomi' tradition of paddling the hot water to cool it by hand, performed as a show for visitors."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kusatsu%20Yubatake%2003.JPG"
+      alt: "The steaming Yubatake hot water field at the center of Kusatsu Onsen"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Ikaho Onsen"
     description: "A hot spring town built around a steep, roughly 365-step stone stairway lined with shops, ryokan, and public bathhouses."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ikaho%20Ishidan%20Street.JPG"
+      alt: "The stone stairway street lined with shops in Ikaho Onsen"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Mount Haruna & Haruna Shrine"
     description: "A volcanic mountain with a crater lake, hiking trails, and a shrine built into a dramatic rock formation partway up its slope."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Haruna%20Shrine%20panorama%20April%202010.jpg"
+      alt: "Haruna Shrine built into a rock formation on the slope of Mount Haruna"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Takasaki Daruma Doll"
     description: "Takasaki, in Gunma, produces roughly 80% of Japan's daruma dolls — round, hollow papier-mache figures traditionally given blank eyes, one filled in when a goal is set and the other when it's achieved. Confirm AmazonGlobal eligibility before publishing."

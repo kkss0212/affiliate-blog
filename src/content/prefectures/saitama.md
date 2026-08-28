@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Kawagoe (Koedo / Little Edo)"
     description: "A preserved merchant district of Edo-period warehouse buildings ('kurazukuri'), centered on a wooden bell tower (Toki no Kane) that has marked time here since the 1600s."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/TokiNoKane%20Kawagoe%202013Feb.JPG"
+      alt: "The wooden Toki no Kane bell tower in Kawagoe's historic Koedo district"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Chichibu & Mount Buko"
     description: "A mountain region known for the Chichibu Night Festival (one of Japan's three great float festivals) each December, and for Hitsujiyama Park's pink shibazakura (moss phlox) fields each spring."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chichibu's%20shibazakura%20(53033283099).jpg"
+      alt: "Pink shibazakura (moss phlox) fields in bloom at Hitsujiyama Park, Chichibu"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "The Railway Museum, Omiya"
     description: "One of Japan's largest railway museums, in Omiya — historically a major railway hub — with dozens of preserved locomotives and train cars."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Front%20of%20Shinkansen%200%20at%20Railway%20Museum.jpg"
+      alt: "A preserved Shinkansen 0 series train on display at the Railway Museum in Omiya"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Saitama Stadium 2002"
     description: "A 63,700-seat stadium built for the 2002 FIFA World Cup, which hosted several matches including a semifinal; still used for major football matches today."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Saitama%20Stadium%2020130604.JPG"
+      alt: "Saitama Stadium 2002, built for the FIFA World Cup"
+      credit: "Wikimedia Commons, public domain (self-published) — re-confirm author/license on the file page before publishing"
 products:
   - name: "Sayama Tea"
     description: "Sayama, in Saitama, is one of Japan's three major tea-growing regions alongside Shizuoka and Uji (Kyoto) — a regional saying holds that 'the flavor comes from Sayama.' Confirm AmazonGlobal eligibility before publishing."

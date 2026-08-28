@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Kairakuen Garden"
     description: "One of Japan's 'three great gardens' (alongside Kanazawa's Kenrokuen and Okayama's Korakuen), famous for roughly 3,000 plum trees blooming each February-March."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/20060911_Mito_0777.jpg"
+      alt: "Plum trees in bloom at Kairakuen Garden in Mito"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Ushiku Daibutsu"
     description: "A bronze standing Buddha statue about 120 meters tall including its pedestal, among the tallest statues in the world; visitors can go up inside it."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ushiku%20Daibutsu%20-%20Great%20Buddha%20in%20Japan.jpg"
+      alt: "The towering bronze Ushiku Daibutsu statue"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Hitachi Seaside Park"
     description: "A coastal park famous for two seasonal blooms — pale blue nemophila flowers in spring and kochia bushes that turn bright red in autumn — that have made it a major Instagram destination."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nemophila%20and%20a%20Tree%20in%20Hitachi%20Seaside%20Park.jpg"
+      alt: "Pale blue nemophila flowers blanketing a hillside at Hitachi Seaside Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Fukuroda Falls"
     description: "A 120-meter, four-tiered waterfall ranked among Japan's three most celebrated waterfalls, especially popular for autumn foliage."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukuroda%20Falls%20-%20%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D(%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D).jpg"
+      alt: "The multi-tiered Fukuroda Falls waterfall"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kasama-yaki Ceramic Bowl"
     description: "Kasama ware, produced in Ibaraki since the late 1700s, is one of Japan's major pottery traditions, known for simple, functional glazed stoneware. Confirm AmazonGlobal eligibility before publishing."

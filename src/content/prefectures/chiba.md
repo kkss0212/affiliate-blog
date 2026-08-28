@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Tokyo Disney Resort"
     description: "Two adjacent theme parks, Tokyo Disneyland and Tokyo DisneySea, both in Urayasu — DisneySea is unique to Japan among the world's Disney parks."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Disney%20Sea%20Aerial%202019.png"
+      alt: "An aerial view of Tokyo DisneySea in Urayasu, Chiba"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Naritasan Shinshoji Temple"
     description: "A major Buddhist temple a short walk from Narita Airport, popular as a first or last stop for travelers, with a lively approach street of shops and eel restaurants."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Naritasan%20Shinshoji%20Temple%2001.jpg"
+      alt: "A building at Naritasan Shinshoji Temple near Narita Airport"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kujukuri Beach"
     description: "A roughly 60-km stretch of nearly uninterrupted sandy coastline on the Boso Peninsula, popular for surfing and one of Japan's longest beaches."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kujukuri%20Beach%20Sanmu%20City,%20Chiba%20prefecture%20Wikivoyage%20banner.jpg"
+      alt: "The long sandy coastline of Kujukuri Beach on the Boso Peninsula"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Inubosaki Lighthouse, Choshi"
     description: "A working lighthouse on Chiba's easternmost point, with a viewing gallery over the Pacific — one of the first places in Japan to see the sunrise."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Choshi%20Inubosaki%20Lighthouse%202013-09C.JPG"
+      alt: "The white cylindrical Inubosaki Lighthouse at Choshi"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Choshi Soy Sauce"
     description: "Choshi, on Chiba's coast, has been a center of Japanese soy sauce production for around 400 years, and remains home to two of the country's best-known brands. Confirm AmazonGlobal eligibility before publishing."
