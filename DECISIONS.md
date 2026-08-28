@@ -395,20 +395,32 @@ than text-on-white-cards:
   two tourist spots that were missing photos (Fushimi Inari, Gion) got
   Commons images added the same day, so all four of Kyoto's spots now
   have a sourced image.
-  Batch 1 of the remaining 46 — Tokyo, Osaka, Hokkaido, Okinawa, Fukuoka
-  — was drafted 2026-08-28 in the same format and researched with the
-  same moderate-to-high-confidence-but-unverified standard as `kyoto.md`
-  (see each file's top comment). Kept at `draft: true` pending the
-  user's review, unlike Kyoto — five prefectures' worth of new factual
-  claims in one pass is more risk surface than one, so this batch
-  deliberately waits for a look before going live. None of these five
-  have tourist-spot photos yet (sourcing one-by-one per spot, as done
-  for Kyoto, doesn't scale well to 46 prefectures × ~4 spots each — the
-  camera-icon fallback carries them for now); worth deciding with the
-  user whether photo-sourcing becomes its own batched pass later, or
-  gets skipped in favor of speed. The remaining 41 prefectures haven't
-  been started — ask the user whether to keep batching ~5 at a time or
-  change the pace/review cadence.
+  **All remaining 46 prefectures were then drafted and published on
+  2026-08-28**, region by region (batch 1: Tokyo/Osaka/Hokkaido/Okinawa/
+  Fukuoka; then one commit per region — Tohoku, Kanto, Chubu, Kansai,
+  Chugoku, Shikoku, Kyushu — 47/47 total), per the user's explicit
+  direction to keep publishing directly (`draft: false`) rather than
+  holding batches for review, since the site isn't promoted yet ("公開
+  してしまっていいよ...かなり良いから46都道府県も進行をお願い"). Each
+  file carries the same moderate-to-high-confidence-but-unverified
+  standard and frontmatter disclaimer as `kyoto.md` — this was written
+  at speed across one long session from general knowledge, not
+  researched prefecture-by-prefecture against primary sources, so a
+  fact-check pass on population/area figures and the more specific
+  historical claims is still open. None of the 46 have tourist-spot
+  photos yet (only Kyoto's 4 do) — the camera-icon fallback carries them
+  for now; photo-sourcing is a natural next batched pass, one prefecture
+  or a handful at a time, using the same Wikimedia Commons
+  `Special:FilePath` approach documented above. Two prefectures
+  (Hiroshima, Nagasaki) deliberately omit the `comparedTo` field given
+  the weight of the atomic bombing history each carries — see their own
+  frontmatter comments before changing that. A recurring narrative
+  thread ties several Kyushu/Shikoku/Chugoku prefectures together
+  (Kochi's Sakamoto Ryoma brokering the Satsuma-Choshu alliance between
+  Kagoshima and Yamaguchi, Kumamoto Castle's siege in the resulting 1877
+  Satsuma Rebellion) — worth keeping in mind if any of those five are
+  revised independently, since the cross-references would need updating
+  together.
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend
@@ -416,11 +428,14 @@ than text-on-white-cards:
   **Amazon Associates requires at least 10 published (`draft: false`)
   articles first**, counted across all four sections (prefectures +
   municipalities + music + manga) since they'll all be covered by the same
-  Associates account — as of 2026-08-28 there are 0 (all four example
-  files are still drafts). The user explicitly asked to be told once that
-  threshold is hit: whenever a session brings the published count to 10+,
-  prompt them to start the Amazon Associates application (which also
-  unlocks the Amazon Music Unlimited / Kindle Unlimited referral links).
+  Associates account. **As of 2026-08-28 this threshold is met**: all 47
+  prefectures are published (`draft: false`); municipalities/music/manga
+  are still draft placeholders. Per the user's standing request, they were
+  told to start the Amazon Associates application once this happened (see
+  `docs/asp-checklist.md`'s Amazon Associates section for next steps and
+  the caveat about unverified facts in the rushed 47-prefecture batch).
+  Approval also unlocks the Amazon Music Unlimited / Kindle Unlimited
+  referral links.
 - GA4 property created and `GA_MEASUREMENT_ID` (`G-ZF4DS1T7V5`) set in
   `src/consts.ts` as of 2026-08-28 — analytics + consent banner are live.
   Still open: bump data retention to 14 months in GA4 Admin → Data

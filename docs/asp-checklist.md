@@ -102,19 +102,25 @@ W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベ�
      商品ごとのURLを発行(最大7%のコミッション)
   4. 生成したリンクを記事の`products`(`retailer: "japan-trend-shop"`)に埋め込む
 
-## Amazon Associates(Amazon.co.jp)は保留中
+## Amazon Associates(Amazon.co.jp)— 申請条件を満たしました
 
 - **申請条件**: オリジナルコンテンツの記事が最低10件、公開済み(`draft: false`)
   であること。サインアップ後180日以内に3件の適格販売がないと本審査に進めない。
-- **現状(2026-08-28時点)**: 公開記事1件(`kyoto.md`、新フォーマットで公開済み)。
-  `uji.md`・`city-pop.md`・`one-piece.md`は`draft: true`の構造サンプルのまま。
-  残り9件に達するまで申請しない。
-- **カウント対象**: `src/content/prefectures/`・`src/content/municipalities/`・
-  `src/content/music/`・`src/content/manga/` の4ディレクトリ合計で10件
-  (すべて同じサイト・同じAssociatesアカウントで運用するため)。
-- **TODO**: 上記3ディレクトリ合計で `draft: false` の記事が10件に達したら、
-  次にこのプロジェクトを扱うセッションはAmazon Associatesの申請を案内すること。
-  (ユーザーからの明示的な依頼: 「10件記事作ったら案内して」)
+- **現状(2026-08-28時点)**: 公開記事47件(`src/content/prefectures/`配下の
+  47都道府県すべてが`draft: false`)。**条件(10件)を大幅に超えて達成済み。**
+  `uji.md`・`city-pop.md`・`one-piece.md`はまだ`draft: true`の構造サンプルの
+  ままだが、都道府県だけで条件を満たしている。
+- **注意点**: 47記事はすべて1セッション内で急ピッチで作成されたもので、
+  人口・面積などの数値やAmazonGlobal配送対象かどうかは未検証(各ファイルの
+  frontmatterコメントに記載)。Amazon Associates申請自体は記事内容の正確性を
+  厳密審査するものではないため申請は今すぐ可能だが、**申請前にファクトチェック
+  パスを済ませておくことを推奨**(DECISIONS.mdの「Open / not yet decided」参照)。
+- **次のアクション**: ユーザーへ、Amazon Associates
+  (affiliate.amazon.co.jp)への申請を案内すること。手順は本ドキュメント冒頭の
+  一般的な流れを参照しつつ、Amazon.co.jpのアソシエイト・プログラム申請フォームで
+  サイトURL(`https://kkss0212.github.io/japan-unpacked/`)を入力して進める。
+  承認後、Amazon Music Unlimited / Kindle Unlimitedのメンバー紹介プログラムも
+  Associates Central経由で有効化できる(下記セクション参照)。
 
 ## Amazon Associates承認後に追加でやること(新規ASP登録は不要)
 
@@ -150,5 +156,6 @@ W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベ�
 - [ ] GetYourGuide(Awin経由): 登録・申請
 - [x] Japan Trend Shop: PayPalビジネスアカウント作成
 - [ ] Japan Trend Shop: 申請ページ接続不可のため保留、時間を置いて再試行
-- [ ] Amazon Associates: 10記事公開後に申請(保留中、現在1/10 — kyoto.md公開済み)
+- [x] Amazon Associates: 10記事公開の条件を達成(47/47都道府県公開済み、2026-08-28)— 申請可能
+- [ ] Amazon Associates: 申請
 - [ ] Amazon Music Unlimited / Kindle Unlimitedメンバー紹介プログラム: Amazon Associates承認後
