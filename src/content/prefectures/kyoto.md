@@ -12,6 +12,11 @@ capital: "Kyoto City"
 population: 2501269
 populationSourceYear: 2020
 areaKm2: 4612
+# Ranking metrics below are illustrative placeholders (unverified) — see
+# DECISIONS.md's "Rankings" section for sourcing guidance before publishing.
+foreignVisitorsAnnual: 3000000
+natureScore: 6
+subcultureScore: 4
 highlights:
   - "Imperial capital of Japan for over a thousand years (794-1868), known as Heian-kyo"
   - "17 UNESCO World Heritage sites within the prefecture"

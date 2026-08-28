@@ -194,6 +194,41 @@ set foot in Japan can still buy (see "Monetization").
   point, not a substitute for an actual legal/compliance review once the
   site has real traffic and revenue.
 
+## Site structure: prefecture → municipality hierarchy, and Rankings
+
+- Municipality URLs are nested under their parent prefecture
+  (`/prefectures/<prefecture>/<municipality>/`, via
+  `src/pages/prefectures/[prefecture]/[municipality].astro`) rather than
+  living at a flat `/municipalities/<slug>/`. A flat list stops being
+  findable once there are meaningfully many municipalities (Japan has
+  ~1,700), so the hierarchy needed to be real, not just visual. Each
+  prefecture page lists its own municipalities (queried by matching the
+  municipality's `prefecture` reference); `/municipalities/` remains as a
+  browse-all page, grouped by prefecture.
+- **Rankings** (`src/pages/rankings.astro`): a Top-10 list over
+  prefectures and/or municipalities, with a scope dropdown (All/
+  Prefectures/Municipalities) and a metric dropdown (Population, Foreign
+  Visitors, Area, Population Density, Nature Score, Subculture Score).
+  Population density is computed at build time (`population / areaKm2`);
+  the other metrics are optional schema fields
+  (`foreignVisitorsAnnual`/`natureScore`/`subcultureScore` on
+  `placeFields`) that an entry can simply omit — the ranking skips it for
+  that metric rather than treating a missing value as zero. Implemented
+  as a single static page: all place data is serialized to JSON at build
+  time and a small client-side script re-sorts/re-renders on dropdown
+  change, so this needed no server and no new dependency.
+  - `natureScore` and `subcultureScore` are inherently subjective
+    (1–10 self-assigned scale) — there's no authoritative public dataset
+    for "how subculture is this city." Treat them as editorial judgment
+    calls, not sourced statistics, and say so if this ever gets audited.
+  - `foreignVisitorsAnnual` should be sourced per-place from JNTO
+    (Japan National Tourism Organization) or local prefecture/city tourism
+    statistics where available; the example values in `kyoto.md`/`uji.md`
+    are illustrative placeholders, not verified figures.
+  - Only two example entries exist right now, so the "Top 10" is
+    functionally a "Top 2" until more prefectures/municipalities are
+    published — the mechanism is what's being built ahead of the content.
+
 ## Editorial/publishing gate
 
 - Content lives as Markdown files under

@@ -1,0 +1,164 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+
+const prefectures = await getCollection("prefectures", ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+
+const municipalities = await getCollection("municipalities", ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+
+const prefectureEntries = prefectures.map((prefecture) => ({
+  name: prefecture.data.name,
+  url: `${base}prefectures/${prefecture.id}/`,
+  scope: "prefecture" as const,
+  parentName: null as string | null,
+  metrics: {
+    population: prefecture.data.population,
+    foreignVisitorsAnnual: prefecture.data.foreignVisitorsAnnual ?? null,
+    areaKm2: prefecture.data.areaKm2,
+    populationDensity: prefecture.data.population / prefecture.data.areaKm2,
+    natureScore: prefecture.data.natureScore ?? null,
+    subcultureScore: prefecture.data.subcultureScore ?? null,
+  },
+}));
+
+const municipalityEntries = await Promise.all(
+  municipalities.map(async (municipality) => {
+    const prefecture = await getEntry(municipality.data.prefecture);
+    return {
+      name: municipality.data.name,
+      url: `${base}prefectures/${prefecture.id}/${municipality.id}/`,
+      scope: "municipality" as const,
+      parentName: prefecture.data.name,
+      metrics: {
+        population: municipality.data.population,
+        foreignVisitorsAnnual: municipality.data.foreignVisitorsAnnual ?? null,
+        areaKm2: municipality.data.areaKm2,
+        populationDensity: municipality.data.population / municipality.data.areaKm2,
+        natureScore: municipality.data.natureScore ?? null,
+        subcultureScore: municipality.data.subcultureScore ?? null,
+      },
+    };
+  }),
+);
+
+const allEntries = [...prefectureEntries, ...municipalityEntries];
+
+const metrics = [
+  { key: "population", label: "Population", unit: "" },
+  { key: "foreignVisitorsAnnual", label: "Foreign Visitors (annual)", unit: "" },
+  { key: "areaKm2", label: "Area", unit: "km²" },
+  { key: "populationDensity", label: "Population Density", unit: "/km²" },
+  { key: "natureScore", label: "Nature Score", unit: "/10" },
+  { key: "subcultureScore", label: "Subculture Score", unit: "/10" },
+];
+---
+
+<BaseLayout
+  title="Rankings | Japan Unpacked"
+  description="Top 10 Japanese prefectures and municipalities by population, foreign visitors, area, density, nature, and subculture."
+>
+  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
+  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">Rankings</h1>
+  <p class="mt-4 max-w-xl text-ink-soft">
+    Top 10 prefectures and municipalities, ranked by whichever metric you
+    pick. Entries missing a given metric are left out of that ranking
+    rather than counted as zero.
+  </p>
+
+  <div class="mt-6 flex flex-wrap gap-3">
+    <select
+      id="rankings-scope"
+      class="rounded-lg border border-line bg-white px-3 py-2 text-sm"
+    >
+      <option value="all">All places</option>
+      <option value="prefecture">Prefectures only</option>
+      <option value="municipality">Municipalities only</option>
+    </select>
+    <select
+      id="rankings-metric"
+      class="rounded-lg border border-line bg-white px-3 py-2 text-sm"
+    >
+      {metrics.map((metric) => (
+        <option value={metric.key}>{metric.label}</option>
+      ))}
+    </select>
+  </div>
+
+  <ol id="rankings-list" class="mt-6 space-y-2"></ol>
+  <p id="rankings-empty" class="mt-4 hidden text-sm text-ink-faint">
+    No entries have this metric yet.
+  </p>
+
+  <script
+    type="application/json"
+    id="rankings-data"
+    set:html={JSON.stringify({ entries: allEntries, metrics })}
+  />
+  <script>
+    const payload = JSON.parse(document.getElementById("rankings-data")!.textContent!);
+    const { entries, metrics } = payload as {
+      entries: {
+        name: string;
+        url: string;
+        scope: "prefecture" | "municipality";
+        parentName: string | null;
+        metrics: Record<string, number | null>;
+      }[];
+      metrics: { key: string; label: string; unit: string }[];
+    };
+
+    const scopeSelect = document.getElementById("rankings-scope") as HTMLSelectElement;
+    const metricSelect = document.getElementById("rankings-metric") as HTMLSelectElement;
+    const list = document.getElementById("rankings-list")!;
+    const emptyNote = document.getElementById("rankings-empty")!;
+
+    function formatValue(value: number, unit: string) {
+      const formatted = Number.isInteger(value)
+        ? value.toLocaleString("en-US")
+        : value.toLocaleString("en-US", { maximumFractionDigits: 1 });
+      return unit ? `${formatted} ${unit}` : formatted;
+    }
+
+    function render() {
+      const scope = scopeSelect.value;
+      const metricKey = metricSelect.value;
+      const metric = metrics.find((m) => m.key === metricKey)!;
+
+      const ranked = entries
+        .filter((entry) => scope === "all" || entry.scope === scope)
+        .filter((entry) => entry.metrics[metricKey] !== null && entry.metrics[metricKey] !== undefined)
+        .sort((a, b) => (b.metrics[metricKey] as number) - (a.metrics[metricKey] as number))
+        .slice(0, 10);
+
+      list.innerHTML = "";
+      emptyNote.classList.toggle("hidden", ranked.length > 0);
+
+      ranked.forEach((entry, index) => {
+        const li = document.createElement("li");
+        li.className =
+          "flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md";
+        li.innerHTML = `
+          <a href="${entry.url}" class="flex items-center gap-3">
+            <span class="font-display w-6 text-ink-faint">${index + 1}</span>
+            <span>
+              <span class="font-medium">${entry.name}</span>
+              ${entry.parentName ? `<span class="ml-1 text-xs text-ink-faint">(${entry.parentName})</span>` : ""}
+            </span>
+          </a>
+          <span class="text-sm font-medium text-accent">${formatValue(entry.metrics[metricKey] as number, metric.unit)}</span>
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    scopeSelect.addEventListener("change", render);
+    metricSelect.addEventListener("change", render);
+    render();
+  </script>
+</BaseLayout>

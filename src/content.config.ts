@@ -50,6 +50,13 @@ const placeFields = {
   population: z.number(),
   populationSourceYear: z.number(),
   areaKm2: z.number(),
+  // Optional ranking metrics (src/pages/rankings.astro). All optional
+  // because they're harder to source than population/area and entries
+  // shouldn't be blocked on having them — an entry missing a metric is
+  // just skipped when ranking by that metric, not treated as zero.
+  foreignVisitorsAnnual: z.number().optional(),
+  natureScore: z.number().min(1).max(10).optional(),
+  subcultureScore: z.number().min(1).max(10).optional(),
   highlights: z.array(z.string()),
   products: z.array(product).default([]),
   experiences: z.array(experience).default([]),

@@ -11,10 +11,16 @@ kind: "city"
 population: 179630
 populationSourceYear: 2020
 areaKm2: 67.54
+# Ranking metrics below are illustrative placeholders (unverified) — see
+# DECISIONS.md's "Rankings" section for sourcing guidance before publishing.
+foreignVisitorsAnnual: 400000
+natureScore: 7
+subcultureScore: 5
 highlights:
   - "Second-largest city in Kyoto Prefecture by population"
   - "Historic center of Japanese matcha and sencha tea cultivation since the Kamakura period"
   - "Home to Byodo-in, a UNESCO World Heritage temple whose Phoenix Hall appears on the ¥10 coin"
+  - "Setting of the anime Sound! Euphonium (Hibike! Euphonium), a real-world anime pilgrimage (seichi junrei) destination"
 updatedDate: 2026-08-28
 draft: true
 products:
