@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Miho no Matsubara"
     description: "A roughly 7-km pine-tree-lined beach with a classic view of Mount Fuji across Suruga Bay, included as part of Mount Fuji's UNESCO World Heritage listing."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Fuji%20beyond%20Miho%20no%20Matsubara%20on%20Shimizu%20bay%20ship.jpg"
+      alt: "Mount Fuji seen beyond the pine grove of Miho no Matsubara"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Sunpu Castle Park"
     description: "The ruins and reconstructed gates of Sunpu Castle, where Tokugawa Ieyasu retired after founding the Edo shogunate and lived until his death in 1616."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sunpu%20castle%20park.JPG"
+      alt: "Reconstructed gates at Sunpu Castle Park in Shizuoka"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Kunozan Toshogu Shrine"
     description: "An elaborately decorated shrine where Tokugawa Ieyasu was first enshrined, on a hillside overlooking Suruga Bay, reached by a steep stone staircase or a scenic ropeway."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/231006%20Kunozan%20Tosho-gu%20Shizuoka%20Japan07s3.jpg"
+      alt: "The elaborately decorated buildings of Kunozan Toshogu Shrine"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Nihondaira & Mount Fuji Ropeway"
     description: "A hilltop viewpoint over Shizuoka City and Suruga Bay, connected by ropeway to Kunozan Toshogu, with clear-day views of Mount Fuji."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Fuji%20from%20Nihondaira.JPG"
+      alt: "A view of Mount Fuji from the Nihondaira hilltop viewpoint"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Shizuoka Sencha Green Tea"
     description: "Shizuoka produces roughly 40% of Japan's tea, and its sencha (steamed green tea) is considered a national benchmark. Confirm AmazonGlobal eligibility before publishing."

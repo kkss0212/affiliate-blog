@@ -36,12 +36,28 @@ draft: false
 touristSpots:
   - name: "Sado Island"
     description: "A large island off Niigata's coast, once a site of political exile (including the playwright Zeami, a founder of Noh theater) and later home to the Sado gold mine, now a UNESCO World Heritage industrial site."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ogi%20kaigan.JPG"
+      alt: "The Ogi coastline on Sado Island"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Echigo-Yuzawa"
     description: "A hot spring and ski town in Niigata's mountains, the real-world setting of Kawabata Yasunari's Nobel Prize-linked novel 'Snow Country,' reachable directly from Tokyo by shinkansen."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yuzawa,%20Niigata%20-%20DSC09357.JPG"
+      alt: "A snowy scene in Echigo-Yuzawa, Niigata"
+      credit: "Wikimedia Commons, CC0 public domain — re-confirm on the file page before publishing"
   - name: "Kiyotsu Gorge Tunnel"
     description: "A walking tunnel through a dramatic gorge, fitted with a striking mirrored art installation (part of the Echigo-Tsumari Art Triennale) that has made it an internationally recognized photo spot."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Find47%20Niigata-Kiyotsu%20Gorge%20Tunnel-m.jpg"
+      alt: "The dramatic rock walls of Kiyotsu Gorge, seen from the Kiyotsu Gorge Tunnel"
+      credit: "Wikimedia Commons (Japan Tourism Agency), licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Niigata City Furumachi & Bandai Bridge"
     description: "Niigata City's historic entertainment district and its landmark early-20th-century bridge over the Shinano River, Japan's longest."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bandai%20Bridge,%20Niigata,%20Japan%20001.JPG"
+      alt: "Bandai Bridge crossing the Shinano River in Niigata City"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Niigata Junmai Sake"
     description: "Niigata's heavy snowmelt and rice-growing conditions have made it one of Japan's most respected sake-producing regions, home to dozens of breweries. Confirm AmazonGlobal eligibility before publishing."

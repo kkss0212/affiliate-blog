@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Fukui Prefectural Dinosaur Museum"
     description: "One of the world's three largest dinosaur museums, with roughly 50 mounted skeletons and hands-on fossil-preparation displays, built near Japan's most productive dinosaur fossil site."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukui%20Prefectural%20Dinosaur%20Museum%2020231217.jpg"
+      alt: "The silver egg-shaped dome of the Fukui Prefectural Dinosaur Museum"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Eiheiji Temple"
     description: "A working Soto Zen training monastery founded in 1244, set among old-growth cedar forest — visitors can join short meditation and monastery-life experience programs."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Approach%20to%20the%20Eiheiji%2020190428.jpg"
+      alt: "The forested approach to Eiheiji, a Soto Zen training monastery"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Tojinbo Cliffs"
     description: "Dramatic basalt sea cliffs formed by volcanic activity, one of only a few such rock formations in the world; a coastal walking path runs along the top."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tojinbo%20cliffs,%20Fukui%20Prefecture;%20September%202019%20(01).jpg"
+      alt: "The basalt columns of the Tojinbo sea cliffs"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Maruoka Castle"
     description: "One of only twelve Japanese castles with a keep that survives in its original Edo-period (or earlier) form, rather than a modern reconstruction."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Keep%20of%20Maruoka%20Castle%203.jpg"
+      alt: "The original wooden keep of Maruoka Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Echizen Washi Paper Set"
     description: "Echizen, in Fukui, has produced handmade Japanese paper (washi) for over 1,500 years, historically used for official documents and fine art. Confirm AmazonGlobal eligibility before publishing."

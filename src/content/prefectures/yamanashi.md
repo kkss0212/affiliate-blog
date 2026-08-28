@@ -33,12 +33,24 @@ draft: false
 touristSpots:
   - name: "Chureito Pagoda & Lake Kawaguchiko"
     description: "A five-story pagoda framed against Mount Fuji, reached by a short uphill walk near Lake Kawaguchiko — one of the most-photographed views in Japan, especially with cherry blossoms or autumn leaves."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chureito%20Pagoda%20and%20Mount%20Fuji%2020241022.jpg"
+      alt: "The Chureito Pagoda framed against Mount Fuji"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Shosenkyo Gorge"
     description: "A roughly 4-km gorge of granite cliffs, waterfalls, and a rope-drawn cable car, often ranked among Japan's most scenic gorges."
   - name: "Yamanashi Wineries (Koshu Valley)"
     description: "A concentration of wineries around Kofu and Katsunuma offering tastings of Koshu, Japan's signature white wine grape."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Miyakoen%20main%20building%20ac%20(1).jpg"
+      alt: "A winery building in Yamanashi's Koshu Valley wine region"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Takeda Shrine"
     description: "A shrine in Kofu built on the former residence of Takeda Shingen, one of the Sengoku period's most celebrated warlords, and still central to local civic pride."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/KofuTakedaJinja3.jpg"
+      alt: "The main hall of Takeda Shrine in Kofu"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kofu Cut Crystal Jewelry"
     description: "Kofu has been a center of crystal and gemstone carving since the Edo period, and remains a major jewelry-manufacturing hub in Japan today. Confirm AmazonGlobal eligibility before publishing."

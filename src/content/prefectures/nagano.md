@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Zenko-ji Temple"
     description: "A major pilgrimage temple in Nagano City, founded over 1,400 years ago and historically welcoming worshippers regardless of sect or gender, unusual for its era."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zenkoji-Nagano.JPG"
+      alt: "The main hall of Zenko-ji Temple in Nagano"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Jigokudani Snow Monkey Park"
     description: "A hot spring where wild Japanese macaques bathe in winter, one of the most internationally recognized wildlife images to come out of Japan."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jigokudani%20Yaen-koen(monkey%20park)%206.jpg"
+      alt: "Wild Japanese macaques bathing in a hot spring at Jigokudani Snow Monkey Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Matsumoto Castle"
     description: "One of Japan's oldest surviving original castle keeps (not a modern reconstruction), nicknamed 'Crow Castle' for its black exterior."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Matsumoto%20Castle05s5s4592.jpg"
+      alt: "Matsumoto Castle's black-walled keep, nicknamed Crow Castle"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kamikochi"
     description: "A pristine alpine valley in the Japan Alps, sometimes compared to Yosemite, with car access restricted to preserve the landscape."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/150920%20Kappa-bashi%20Kamikochi%20Japan02n.jpg"
+      alt: "The Kappa-bashi bridge in the alpine valley of Kamikochi"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kiso Lacquerware Bowl"
     description: "Kiso lacquerware, from Nagano's Kiso Valley, is one of Japan's major regional lacquerware traditions, developed alongside the historic Nakasendo trade route. Confirm AmazonGlobal eligibility before publishing."

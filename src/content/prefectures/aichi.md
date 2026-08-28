@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Nagoya Castle"
     description: "A large reconstructed castle known for its golden shachihoko roof ornaments (mythical tiger-headed fish), built by Tokugawa Ieyasu as the seat of one of the three main Tokugawa branch families."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya%20Castle%20Golden%20Shachi-Hoko%20Statue01.jpg"
+      alt: "A golden shachihoko roof ornament from Nagoya Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Atsuta Shrine"
     description: "One of Japan's most important Shinto shrines, said to enshrine the sacred sword Kusanagi-no-Tsurugi, one of the three Imperial Regalia — the sword itself is never displayed publicly."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta%20Shrine.jpg"
+      alt: "The forested grounds of Atsuta Shrine in Nagoya"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Toyota Commemorative Museum of Industry and Technology"
     description: "A museum in Nagoya tracing the Toyota Group's origins from automatic textile looms to automobiles, with working historical machinery demonstrations."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Main%20Entrance%20of%20Toyota%20Commemorative%20Museum%20of%20Industry%20and%20Technology%20-%201.jpg"
+      alt: "The main entrance of the Toyota Commemorative Museum of Industry and Technology"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Inuyama Castle"
     description: "One of only twelve Japanese castles with an original (non-reconstructed) keep, on a hilltop overlooking the Kiso River, a short trip from Nagoya."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Inuyama%20Castle%20Keep%20Tower%20and%20Sakura.JPG"
+      alt: "Inuyama Castle's original keep tower with cherry blossoms"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Arimatsu Shibori Tie-Dye Textile"
     description: "Arimatsu, now part of Nagoya, has produced this distinctive hand-tied indigo textile since the early 1600s, historically sold to travelers on the Tokaido road. Confirm AmazonGlobal eligibility before publishing."

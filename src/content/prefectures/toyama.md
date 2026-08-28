@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Tateyama Kurobe Alpine Route"
     description: "A roughly 90-km mountain route through the Japan Alps combining cable cars, ropeways, and buses, including the famous Yuki-no-Otani snow-wall corridor each spring (usually mid-April through June)."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tateyama%20Toll%20Road%20and%20Yuki-no-otani.jpg"
+      alt: "The towering snow walls of Yuki-no-Otani along the Tateyama Kurobe Alpine Route"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Gokayama"
     description: "A cluster of remote mountain hamlets with steep thatched-roof 'gassho-zukuri' farmhouses, part of the same UNESCO World Heritage listing as Gifu's better-known Shirakawa-go."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gokayama%20Ainokura%20Gassho-zukuri%2019.jpg"
+      alt: "Steep thatched-roof gassho-zukuri farmhouses in Gokayama's Ainokura village"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Toyama Bay & Hotaru-ika Viewing"
     description: "Boat tours in spring (roughly March-May) to see hotaru-ika, small squid that emit natural blue bioluminescent light, a designated special natural monument."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tsurugigozen%20and%20Toyama%20Bay%20from%20Bessan.jpg"
+      alt: "A view of Toyama Bay backed by the Tateyama mountain range"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Toyama Castle Park"
     description: "A reconstructed castle keep and moat park in central Toyama City, with views toward the Tateyama mountain range on clear days."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Toyama%20Castle.jpg"
+      alt: "The reconstructed keep of Toyama Castle in its moat park"
+      credit: "Wikimedia Commons, public domain — re-confirm on the file page before publishing"
 products:
   - name: "Takaoka Copperware Vase"
     description: "Takaoka, in Toyama, produces roughly 90% of Japan's cast copper and bronze ware, a tradition dating to the early 1600s. Confirm AmazonGlobal eligibility before publishing."

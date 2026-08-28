@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Kenrokuen Garden"
     description: "One of Japan's 'three great gardens,' built over nearly two centuries by the Maeda clan as their private castle garden, now open to the public year-round."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/131109%20Kenrokuen%20Kanazawa%20Ishikawa%20pref%20Japan01s3.jpg"
+      alt: "Kenrokuen Garden in Kanazawa, one of Japan's three great gardens"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Higashi Chaya District"
     description: "A preserved geisha entertainment district of wooden lattice-fronted teahouses, some still operating, dating to the early 1800s."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Higashi%20Chaya%20district,%20Kanazawa%20(3810720612).jpg"
+      alt: "Wooden lattice-fronted teahouses in Kanazawa's Higashi Chaya District"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Omicho Market"
     description: "Kanazawa's main fresh-food market since the Edo period, known especially for seafood from the Sea of Japan, with several stalls serving fresh sushi and seafood bowls."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Omicho%20covered%20market%20western%20entrance,%20Kanazawa,%202016.jpg"
+      alt: "The covered entrance to Omicho Market in Kanazawa"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kanazawa Castle Park"
     description: "Partially reconstructed castle grounds adjacent to Kenrokuen, with striking white-lead-coated wooden gates and turrets."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/20131006%2034%20Kanazawa%20-%20Castle%20Park%20(10408890575).jpg"
+      alt: "Reconstructed white-walled gates and turrets at Kanazawa Castle Park"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kanazawa Gold Leaf Lacquerware"
     description: "Kanazawa produces roughly 99% of Japan's gold leaf, applied here to lacquerware, ceramics, and decorative objects. Confirm AmazonGlobal eligibility before publishing."

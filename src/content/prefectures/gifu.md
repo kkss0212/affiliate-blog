@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Shirakawa-go"
     description: "A UNESCO World Heritage village of steep thatched-roof farmhouses ('gassho-zukuri,' meaning 'praying hands,' for the roof shape), some still lived in and open to overnight stays."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ogi%20Shirakawa-g%C5%8D,%20Gifu,%20Japan.jpg"
+      alt: "Steep thatched-roof gassho-zukuri farmhouses in Shirakawa-go"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Gifu Castle"
     description: "A reconstructed hilltop castle on Mount Kinka, overlooking the city Oda Nobunaga renamed and ruled from starting in 1567, reachable by ropeway."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gifu%20Castle%20,%20%E5%B2%90%E9%98%9C%E5%9F%8E%20-%20panoramio%20(17).jpg"
+      alt: "Gifu Castle atop Mount Kinka"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Nagara River Cormorant Fishing (Ukai)"
     description: "Evening boat tours to watch fishermen use trained cormorants to catch ayu (sweetfish), a tradition performed on this river for over 1,300 years, historically for the imperial court."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagaragawa%20Ukai%20Museum%20ac%20(1).jpg"
+      alt: "The Nagaragawa Ukai Museum, dedicated to the Nagara River's cormorant fishing tradition"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Takayama Old Town"
     description: "A well-preserved Edo-period merchant district in the mountain town of Takayama, known for its morning markets and sake breweries."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Takayama%20Old%20Town%20(Sanmachi%20Suji)%20(35819349621).jpg"
+      alt: "The preserved Edo-period Sanmachi Suji street in Takayama's old town"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Mino Washi Paper"
     description: "Mino washi, from Gifu's Mino region, is one of three traditional Japanese papermaking techniques recognized on UNESCO's Intangible Cultural Heritage list. Confirm AmazonGlobal eligibility before publishing."
