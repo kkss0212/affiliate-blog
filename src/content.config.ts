@@ -71,8 +71,12 @@ const placeFields = {
   tagline: z.string().optional(),
   heroImage: image.optional(),
   // Approximate coordinates (representative point — a prefecture's capital
-  // city, or the municipality itself) used only to place a marker on the
-  // schematic JapanMap component. Not surveyed/precise.
+  // city, or the municipality itself). Currently unused: JapanMap.astro
+  // switched to highlighting the real prefecture shape from
+  // @svg-maps/japan (keyed by the same slug as `id`) instead of
+  // projecting a marker from lat/lng. Kept here as optional metadata in
+  // case a future feature (e.g. pinpointing a municipality within its
+  // prefecture) wants it.
   lat: z.number().optional(),
   lng: z.number().optional(),
   population: z.number(),

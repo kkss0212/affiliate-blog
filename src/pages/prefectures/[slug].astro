@@ -142,7 +142,7 @@ const otherPicks = data.products.filter((p) => p.category === "other");
     )}
 
     <div class="mt-4 grid gap-4 sm:grid-cols-[auto_1fr] sm:items-start">
-      <JapanMap lat={data.lat} lng={data.lng} label={data.name} class="mx-auto sm:mx-0" />
+      <JapanMap highlight={prefecture.id} label={data.name} class="mx-auto sm:mx-0" />
       <div class="grid gap-3">
         {data.prefecturalCharacter && (
           <div class="rounded-xl bg-accent-soft/60 p-3">

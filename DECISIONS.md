@@ -370,6 +370,75 @@ than text-on-white-cards:
   up to the new visual system yet — worth doing once the prefecture
   format itself is confirmed stable.
 
+## Real Japan map + prefectures index reorganization (2026-08-28)
+
+Per feedback that the hand-drawn schematic map looked like a doodle, and
+that `/prefectures/` needed to be grouped/scannable by region:
+
+- **`JapanMap.astro` now uses `@svg-maps/japan`** (npm, CC BY 4.0,
+  https://github.com/VictorCazanave/svg-maps) instead of the old
+  hand-drawn silhouette + lat/lng-projected dot. It's a real, accurate
+  SVG with all 47 prefecture shapes as separate paths — and its location
+  ids already match this project's content-collection slugs exactly
+  (`"kyoto"`, `"hokkaido"`, etc.), so no mapping table was needed. The
+  component now highlights the actual prefecture *shape* (`highlight`
+  prop = prefecture id) rather than an approximate marker — strictly
+  more accurate, and it looks like a real map. `lat`/`lng` on
+  `placeFields` are now unused (kept as optional metadata — see the
+  schema comment in `content.config.ts`).
+- The component also supports an `interactive` mode (no `highlight`
+  prop; every path gets a `data-prefecture` attribute) for the
+  prefectures index page's hover-to-locate feature (see below).
+- **`/prefectures/index.astro` is now grouped by region**, ordered
+  Hokkaido → Tohoku → Kanto → Chubu → Kansai → Chugoku → Shikoku →
+  Kyushu → Okinawa (`src/lib/prefectureOrder.ts`'s `REGION_ORDER`),
+  with prefectures inside each region sorted by the standard JIS X 0401
+  prefecture code order — which happens to already run north-to-south
+  within each region, so one ordering table serves both jobs. Each
+  region gets its own `<section>` with a jump-link nav at the top.
+- **Hover-to-locate** (asked for as a "nice to have"): the index page
+  renders one shared `<JapanMap interactive />` up top; a small inline
+  script matches each prefecture link's `data-prefecture-link` to the
+  map's `data-prefecture` path and toggles the highlight class on
+  hover/focus (and clears it on blur/mouseleave) — verified via a
+  Playwright DOM check, not just visually.
+
+## Remaining tasks (read this first in a new session)
+
+- **Fact-check pass**: all 47 prefecture pages were researched from
+  general knowledge at speed in one session (2026-08-28), not verified
+  against primary sources. Each file's frontmatter comment flags this.
+  Priority order: population/area figures (verify against e-Stat),
+  then the more specific historical claims (dates, casualty estimates,
+  named individuals). Two prefectures (Hiroshima, Nagasaki) also want a
+  tone re-read given the weight of what they cover.
+- **Tourist-spot photos**: only Kyoto's 4 spots have a sourced image;
+  the other 46 prefectures' `touristSpots` intentionally have no
+  `image` field yet, so they render the accent-gradient camera-icon
+  fallback (`src/pages/prefectures/[slug].astro`) — this is by design,
+  not a bug, pending a dedicated photo-sourcing pass. Same Wikimedia
+  Commons `Special:FilePath` approach as Kyoto (see "Prefecture page
+  format" above); WebFetch/curl to wikimedia.org is blocked by this
+  sandbox's egress proxy (confirmed via 403 on both
+  commons.wikimedia.org and upload.wikimedia.org), so filenames can
+  only be confirmed via `WebSearch`, and rendering can't be verified
+  in-session at all — always ask the user to spot-check on the live
+  site after adding new images.
+- **Municipality pages** (`[prefecture]/[municipality].astro`) still use
+  the old plain `dl`-table layout, not the current visual system
+  (StatCard/ScoreMeter/ShareBar/hero banner/JapanMap). Only one example
+  (`uji.md`) exists and it's still `draft: true`.
+- **Music/manga content**: `city-pop.md` and `one-piece.md` are still
+  structural placeholders, `draft: true`.
+- **ASP follow-ups** (see `docs/asp-checklist.md` for full detail):
+  Amazon Associates can be applied for now (threshold met, 47
+  published articles); GetYourGuide via Awin hasn't been started;
+  Japan Trend Shop's signup page was unreachable, retry later; Viator's
+  review was pending as of 2026-08-28; Rakuten's generated links are
+  ready to embed into real articles (now that real articles exist) but
+  haven't been.
+- **Custom domain** and final hosting choice — still open.
+
 ## Editorial/publishing gate
 
 - Content lives as Markdown files under

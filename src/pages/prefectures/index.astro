@@ -1,18 +1,26 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import JapanMap from "../../components/JapanMap.astro";
+import { REGION_ORDER, prefectureOrderIndex } from "../../lib/prefectureOrder";
 
 const base = import.meta.env.BASE_URL;
 
 const allPrefectures = await getCollection("prefectures", ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
 });
-const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const groups = REGION_ORDER.map((region) => ({
+  region,
+  prefectures: allPrefectures
+    .filter((p) => p.data.region === region)
+    .sort((a, b) => prefectureOrderIndex(a.id) - prefectureOrderIndex(b.id)),
+})).filter((group) => group.prefectures.length > 0);
 ---
 
 <BaseLayout
   title="Prefectures | Japan Unpacked"
-  description="History- and data-driven guides to Japan's 47 prefectures, each linking down to its cities, wards, towns, and villages."
+  description="History- and data-driven guides to Japan's 47 prefectures, grouped by region from Hokkaido to Okinawa, each linking down to its cities, wards, towns, and villages."
 >
   <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
   <div class="mt-2 flex items-baseline justify-between">
@@ -22,31 +30,74 @@ const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.da
     </a>
   </div>
   <p class="mt-4 max-w-xl text-ink-soft">
-    History- and data-driven guides to Japan's 47 prefectures. Each
-    prefecture's page also links down to its cities, wards, towns, and
-    villages.
+    Japan's 47 prefectures, grouped by region from Hokkaido in the north
+    to Okinawa in the south. Hover or tap a prefecture below to see where
+    it sits on the map.
   </p>
 
-  <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+  <div class="mt-6 flex justify-center rounded-xl border border-line bg-white p-4">
+    <JapanMap label="Japan" interactive />
+  </div>
+
+  <nav class="mt-8 flex flex-wrap gap-2 text-sm">
     {
-      prefectures.map((prefecture) => (
-        <li>
-          <a
-            href={`${base}prefectures/${prefecture.id}/`}
-            class="flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <span class="font-medium">{prefecture.data.name}</span>
-            <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">
-              {prefecture.data.region}
-            </span>
-          </a>
-        </li>
+      groups.map((group) => (
+        <a
+          href={`#${group.region.toLowerCase()}`}
+          class="rounded-full border border-line bg-white px-3 py-1 text-ink-soft transition hover:border-accent hover:text-accent"
+        >
+          {group.region}
+        </a>
       ))
     }
-  </ul>
+  </nav>
+
   {
-    prefectures.length === 0 && (
+    groups.map((group) => (
+      <section id={group.region.toLowerCase()} class="mt-10 scroll-mt-20">
+        <h2 class="font-display text-lg font-semibold">{group.region}</h2>
+        <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+          {group.prefectures.map((prefecture) => (
+            <li>
+              <a
+                href={`${base}prefectures/${prefecture.id}/`}
+                data-prefecture-link={prefecture.id}
+                class="jp-pref-link flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:border-accent hover:shadow-md"
+              >
+                <span class="font-medium">{prefecture.data.name}</span>
+                <span class="text-xs text-ink-faint">{prefecture.data.nameJa}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+  {
+    groups.length === 0 && (
       <p class="mt-4 text-sm text-ink-faint">More guides are on the way.</p>
     )
   }
+
+  <script>
+    const map = document.querySelector(".jp-map");
+    const links = document.querySelectorAll<HTMLAnchorElement>("[data-prefecture-link]");
+
+    links.forEach((link) => {
+      const id = link.dataset.prefectureLink;
+      const path = map?.querySelector(`[data-prefecture="${id}"]`);
+      if (!path) return;
+
+      const activate = () => {
+        map?.querySelectorAll(".jp-pref-active").forEach((el) => el.classList.remove("jp-pref-active"));
+        path.classList.add("jp-pref-active");
+      };
+      const deactivate = () => path.classList.remove("jp-pref-active");
+
+      link.addEventListener("mouseenter", activate);
+      link.addEventListener("mouseleave", deactivate);
+      link.addEventListener("focus", activate);
+      link.addEventListener("blur", deactivate);
+    });
+  </script>
 </BaseLayout>
