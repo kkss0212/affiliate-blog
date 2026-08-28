@@ -36,12 +36,28 @@ draft: false
 touristSpots:
   - name: "Shuri Castle"
     description: "The former royal palace of the Ryukyu Kingdom, a UNESCO World Heritage site. Its main hall burned down in a 2019 fire and is under reconstruction — check current status before visiting."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Naha%20Okinawa%20Japan%20Shuri-Castle-01.jpg"
+      alt: "A palace building at Shuri Castle, the former royal palace of the Ryukyu Kingdom"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Churaumi Aquarium"
     description: "One of the largest aquariums in the world, on the Motobu Peninsula, known for its huge whale shark tank."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Okinawa%20Churaumi%20Aquarium.jpg"
+      alt: "The large Kuroshio Sea tank at Okinawa Churaumi Aquarium"
+      credit: "Wikimedia Commons, licensed CC BY-SA 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kokusai-dori"
     description: "Naha's main shopping and dining street, about a mile of shops selling Okinawan crafts, snacks, and awamori (Okinawan distilled liquor)."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kokusai-dori01ss4272.jpg"
+      alt: "Shops and pedestrians along Kokusai-dori, Naha's main shopping street"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kerama Islands"
     description: "A short ferry from Naha, known for some of the clearest snorkeling and diving water in Japan."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kerama%20Island%20-%206081229008.jpg"
+      alt: "Clear turquoise water off one of the Kerama Islands"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Ryukyu Bingata Dyed Coasters"
     description: "Bingata is a centuries-old Okinawan stencil-dyeing technique, historically reserved for Ryukyu royalty, using bright subtropical colors and motifs. Confirm AmazonGlobal eligibility before publishing."

@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Sapporo Snow Festival (Yuki Matsuri)"
     description: "A week-long February festival in Odori Park featuring massive snow and ice sculptures, one of Japan's largest winter events."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/SAPPORO%20SNOW%20FESTIVAL%202011%20%E8%A6%B3%E5%85%89%E5%A4%A7%E5%9B%BD%E5%AE%A3%E8%A8%80%EF%BC%81%E5%8C%97%E6%B5%B7%E9%81%93%20-%20panoramio.jpg"
+      alt: "A large snow sculpture at the Sapporo Snow Festival in Odori Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Shirogane Blue Pond"
     description: "A small, startlingly blue pond near Biei, formed accidentally by a volcanic disaster-prevention project — no dye involved, just dissolved minerals scattering light."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Biei%20Blue-pond.jpg"
+      alt: "The striking blue water of Shirogane Blue Pond near Biei, with dead tree trunks rising from it"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Otaru Canal"
     description: "A gas-lit former warehouse canal in the port town of Otaru, an easy day trip from Sapporo."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Otaru%20Canal%20Night.jpg"
+      alt: "The gas-lit Otaru Canal at night, lined with former warehouses"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Furano Lavender Fields"
     description: "Rolling lavender farms in central Hokkaido, in full bloom from roughly mid-July."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lavender%20fields,%20Furano%20(48254611081).jpg"
+      alt: "Rows of blooming lavender fields near Furano, Hokkaido"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Otaru Glass Craft Tumbler"
     description: "Hand-blown glassware from Otaru's glassworking tradition, which began with fishing-float production in the early 1900s. Confirm AmazonGlobal eligibility before publishing."

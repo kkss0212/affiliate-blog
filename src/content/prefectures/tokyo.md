@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Senso-ji"
     description: "Tokyo's oldest temple (founded 645 AD), in Asakusa — approached through the Kaminarimon ('Thunder Gate') and a street of souvenir stalls, Nakamise-dori."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Senso-ji,%20Asakusa,%20Tokyo.jpg"
+      alt: "Senso-ji Temple in Asakusa, Tokyo's oldest temple"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Shibuya Crossing"
     description: "The famously chaotic scramble crossing outside Shibuya Station — up to 3,000 people cross at once when the lights change, best viewed from the Shibuya Sky observation deck or a window seat at the Starbucks overlooking it."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya%20crossing.jpg"
+      alt: "Pedestrians crossing the Shibuya Crossing scramble intersection"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Meiji Jingu"
     description: "A forested Shinto shrine dedicated to Emperor Meiji and Empress Shoken, a genuinely quiet walk minutes from Harajuku's crowds."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Torii%20Gate%20at%20Meiji%20Jingu%20Shrine,%20Tokyo%20(50125273602).jpg"
+      alt: "The large wooden torii gate at the entrance to Meiji Jingu shrine"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "teamLab Borderless / Planets"
     description: "Tokyo's digital-art museums (locations have moved between Odaiba and Azabudai Hills) — immersive projection rooms that reliably sell out; book ahead."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Photos%20at%20teamlab%20planets%20tokyo.jpg"
+      alt: "An immersive projection room inside teamLab Planets Tokyo"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Edo Kiriko Cut Glass Tumbler"
     description: "Faceted cut glassware in a technique developed in Edo-period Tokyo, still hand-cut by small workshops today. Confirm AmazonGlobal eligibility before publishing."

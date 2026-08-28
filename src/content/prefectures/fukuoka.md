@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Dazaifu Tenmangu"
     description: "A major Shinto shrine dedicated to Sugawara no Michizane, a 9th-century scholar deified as the god of learning — popular with students before exams."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/20100719%20Dazaifu%20Tenmangu%20Shrine%203328.jpg"
+      alt: "The main hall of Dazaifu Tenmangu shrine"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Canal City Hakata"
     description: "A large shopping and entertainment complex built around an artificial canal in central Fukuoka."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Canal%20City%20Hakata%202011.jpg"
+      alt: "The artificial canal running through the Canal City Hakata shopping complex"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Ohori Park"
     description: "A moat-turned-lake park next to the ruins of Fukuoka Castle, with a walking loop and a Japanese garden."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20in%20Ohori%20Park.JPG"
+      alt: "Sunset over the lake at Ohori Park in Fukuoka"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Nakasu Yatai"
     description: "A concentration of open-air food stalls along the Naka River, Fukuoka's best-known yatai district for tonkotsu ramen and grilled skewers after dark."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nakasu-yatai.JPG"
+      alt: "Open-air yatai food stalls along the Naka River in Fukuoka's Nakasu district"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Hakata Ori Woven Obi Belt"
     description: "Hakata-ori is a centuries-old woven textile tradition from Fukuoka, historically used for kimono obi sashes. Confirm AmazonGlobal eligibility before publishing."

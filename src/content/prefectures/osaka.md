@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Osaka Castle"
     description: "Rebuilt in the 1930s (the original, built by Toyotomi Hideyoshi in 1583, burned down centuries ago), now a museum with an observation floor over the surrounding park."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka%20Castle%2001bs3200.jpg"
+      alt: "Osaka Castle's main keep tower rising above its stone walls"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Dotonbori"
     description: "Osaka's neon-lit canal-side eating and entertainment strip, dominated by the running Glico Man sign — the city's food culture concentrated into a few blocks."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/D%C5%8Dtonbori%20at%20night,%20Osaka%20(19551420339).jpg"
+      alt: "The neon signs of Dotonbori canal-side district in Osaka at night"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Shitenno-ji"
     description: "Founded in 593 AD by Prince Shotoku, among the oldest Buddhist temples in Japan with continuous administrative records."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shitenn%C5%8D-ji,%20Osaka.JPG"
+      alt: "A hall at Shitenno-ji Temple in Osaka"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Universal Studios Japan"
     description: "Osaka's major theme park, including a dedicated Super Nintendo World area."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hollywood%20at%20Universal%20Studios%20Japan.jpg"
+      alt: "The Hollywood-themed area of Universal Studios Japan in Osaka"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Osaka Naniwa Cotton Towel Set"
     description: "Senshu towels, a textile specialty of the Osaka region known for absorbency, produced in the Senshu area since the Meiji era. Confirm AmazonGlobal eligibility before publishing."
