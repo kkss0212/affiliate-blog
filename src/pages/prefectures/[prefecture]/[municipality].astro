@@ -1,16 +1,16 @@
 ---
 import { getCollection, getEntry, render } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
-import ProductCard from "../../components/ProductCard.astro";
-import ExperienceCard from "../../components/ExperienceCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AffiliateDisclosure from "../../../components/AffiliateDisclosure.astro";
+import ProductCard from "../../../components/ProductCard.astro";
+import ExperienceCard from "../../../components/ExperienceCard.astro";
 
 export async function getStaticPaths() {
   const municipalities = await getCollection("municipalities", ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true;
   });
   return municipalities.map((municipality) => ({
-    params: { slug: municipality.id },
+    params: { prefecture: municipality.data.prefecture.id, municipality: municipality.id },
     props: { municipality },
   }));
 }

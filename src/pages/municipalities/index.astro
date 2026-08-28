@@ -8,46 +8,69 @@ const allMunicipalities = await getCollection("municipalities", ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
 });
 
-const municipalities = await Promise.all(
-  allMunicipalities
-    .sort((a, b) => a.data.name.localeCompare(b.data.name))
-    .map(async (municipality) => ({
-      municipality,
-      prefecture: await getEntry(municipality.data.prefecture),
-    })),
+const withPrefecture = await Promise.all(
+  allMunicipalities.map(async (municipality) => ({
+    municipality,
+    prefecture: await getEntry(municipality.data.prefecture),
+  })),
 );
+
+// Grouped by prefecture (findability: this is a browse-all page, but the
+// canonical URL and the primary navigation path is prefecture → municipality).
+const groups = new Map<string, { prefectureName: string; prefectureId: string; entries: typeof withPrefecture }>();
+for (const entry of withPrefecture) {
+  const key = entry.prefecture.id;
+  if (!groups.has(key)) {
+    groups.set(key, { prefectureName: entry.prefecture.data.name, prefectureId: key, entries: [] });
+  }
+  groups.get(key)!.entries.push(entry);
+}
+const groupedList = [...groups.values()]
+  .map((group) => ({
+    ...group,
+    entries: group.entries.sort((a, b) => a.municipality.data.name.localeCompare(b.municipality.data.name)),
+  }))
+  .sort((a, b) => a.prefectureName.localeCompare(b.prefectureName));
 ---
 
 <BaseLayout
   title="Municipalities | Japan Unpacked"
-  description="History- and data-driven guides to Japan's cities, wards, towns, and villages."
+  description="History- and data-driven guides to Japan's cities, wards, towns, and villages, grouped by prefecture."
 >
   <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
   <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">Municipalities</h1>
   <p class="mt-4 max-w-xl text-ink-soft">
     Cities, special wards, towns, and villages — a closer look than a
-    prefecture profile can give.
+    prefecture profile can give. Grouped by prefecture; each municipality
+    also links from its parent{" "}
+    <a href={`${base}`} class="underline">prefecture page</a>.
   </p>
 
-  <ul class="mt-8 grid gap-3 sm:grid-cols-2">
-    {
-      municipalities.map(({ municipality, prefecture }) => (
-        <li>
-          <a
-            href={`${base}municipalities/${municipality.id}/`}
-            class="flex items-center justify-between rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <span class="font-medium">{municipality.data.name}</span>
-            <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs text-accent">
-              {prefecture.data.name}
-            </span>
-          </a>
-        </li>
-      ))
-    }
-  </ul>
   {
-    municipalities.length === 0 && (
+    groupedList.map((group) => (
+      <section class="mt-10">
+        <h2 class="font-display text-lg font-semibold">
+          <a href={`${base}prefectures/${group.prefectureId}/`} class="hover:text-accent">
+            {group.prefectureName}
+          </a>
+        </h2>
+        <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+          {group.entries.map(({ municipality }) => (
+            <li>
+              <a
+                href={`${base}prefectures/${group.prefectureId}/${municipality.id}/`}
+                class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <span class="font-medium">{municipality.data.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+  {
+    groupedList.length === 0 && (
       <p class="mt-4 text-sm text-ink-faint">More guides are on the way.</p>
     )
   }

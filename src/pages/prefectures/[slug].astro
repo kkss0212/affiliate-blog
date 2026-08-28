@@ -19,8 +19,15 @@ const { prefecture } = Astro.props;
 const { data } = prefecture;
 const { Content } = await render(prefecture);
 
+const allMunicipalities = await getCollection("municipalities", ({ data: municipalityData }) => {
+  const draftOk = import.meta.env.PROD ? municipalityData.draft !== true : true;
+  return draftOk && municipalityData.prefecture.id === prefecture.id;
+});
+const municipalities = allMunicipalities.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
 const populationFormatted = new Intl.NumberFormat("en-US").format(data.population);
 const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -50,6 +57,24 @@ const areaFormatted = new Intl.NumberFormat("en-US").format(data.areaKm2);
   <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
     {data.highlights.map((highlight) => <li>{highlight}</li>)}
   </ul>
+
+  {municipalities.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-display text-lg font-semibold">Municipalities in {data.name}</h2>
+      <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+        {municipalities.map((municipality) => (
+          <li>
+            <a
+              href={`${base}prefectures/${prefecture.id}/${municipality.id}/`}
+              class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              <span class="font-medium">{municipality.data.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   {(data.products.length > 0 || data.experiences.length > 0) && (
     <div class="mt-6">
