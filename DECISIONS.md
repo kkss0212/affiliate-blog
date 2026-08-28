@@ -247,6 +247,16 @@ set foot in Japan can still buy (see "Monetization").
   - Only two example entries exist right now, so the "Top 10" is
     functionally a "Top 2" until more prefectures/municipalities are
     published — the mechanism is what's being built ahead of the content.
+  - The homepage also embeds a live two-column preview (Prefectures /
+    Municipalities, one shared metric dropdown, Top 10 each) — see
+    `src/lib/rankings.ts`, which both `rankings.astro` and `index.astro`
+    pull from so the entry/metric logic isn't duplicated.
+- **Latest Updates** (homepage, `src/lib/recent.ts`): a "recent releases"
+  -style feed — up to 5 most-recently-`updatedDate` entries across all
+  four collections (prefectures, municipalities, music, manga), each shown
+  as a category pill + title + date, linking to the entry. Same
+  draft-filtering as everywhere else, so nothing unpublished shows up
+  here either.
 
 ## Editorial/publishing gate
 
