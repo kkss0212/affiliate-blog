@@ -391,10 +391,24 @@ than text-on-white-cards:
   `kyoto.md` was rewritten and published 2026-08-28 as the first real
   article in the new prefecture format (see "Prefecture page format"
   above) — content, not just structure. Facts still want a fact-check
-  pass against primary sources when convenient (see that section). The
-  other 46 prefectures haven't been started — per the user, confirm the
-  page's visual format first (in progress 2026-08-28), then draft them
-  in batches for review.
+  pass against primary sources when convenient (see that section). Its
+  two tourist spots that were missing photos (Fushimi Inari, Gion) got
+  Commons images added the same day, so all four of Kyoto's spots now
+  have a sourced image.
+  Batch 1 of the remaining 46 — Tokyo, Osaka, Hokkaido, Okinawa, Fukuoka
+  — was drafted 2026-08-28 in the same format and researched with the
+  same moderate-to-high-confidence-but-unverified standard as `kyoto.md`
+  (see each file's top comment). Kept at `draft: true` pending the
+  user's review, unlike Kyoto — five prefectures' worth of new factual
+  claims in one pass is more risk surface than one, so this batch
+  deliberately waits for a look before going live. None of these five
+  have tourist-spot photos yet (sourcing one-by-one per spot, as done
+  for Kyoto, doesn't scale well to 46 prefectures × ~4 spots each — the
+  camera-icon fallback carries them for now); worth deciding with the
+  user whether photo-sourcing becomes its own batched pass later, or
+  gets skipped in favor of speed. The remaining 41 prefectures haven't
+  been started — ask the user whether to keep batching ~5 at a time or
+  change the pace/review cadence.
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend

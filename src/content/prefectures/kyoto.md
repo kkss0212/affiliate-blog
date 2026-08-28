@@ -36,6 +36,10 @@ draft: false
 touristSpots:
   - name: "Fushimi Inari Taisha"
     description: "The head shrine for Inari, dedicated to over 10,000 vermilion torii gates that climb the wooded slopes of Mount Inari. Open 24 hours, free to enter, and best walked early morning before the crowds."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Torii,%20Fushimi%20Inari-Taisha.jpg"
+      alt: "A tunnel of vermilion torii gates at Fushimi Inari Taisha"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Kinkaku-ji (the Golden Pavilion)"
     description: "A gilded Zen temple built to reflect off its own pond — reconstructed in 1955 after a 1950 arson (fictionalized in Yukio Mishima's novel 'The Temple of the Golden Pavilion')."
     image:
@@ -50,6 +54,10 @@ touristSpots:
       credit: "Wikimedia Commons (Unsplash), CC0 — re-confirm on the file page before publishing"
   - name: "Gion"
     description: "Kyoto's best-known geisha (geiko) district — narrow lanes of wooden machiya townhouses, teahouses, and, around dusk, a real chance of spotting a maiko on her way to an appointment."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/JP-Kyoto-Gion-Area-Street-Night-View.jpg"
+      alt: "A lantern-lit street of wooden machiya townhouses in Gion, Kyoto, at night"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kiyomizu-yaki Ceramic Cup"
     description: "Traditional hand-painted pottery from the Kiyomizu district's kilns, one of Kyoto's signature crafts. Confirm AmazonGlobal eligibility for the exact listing before publishing."
