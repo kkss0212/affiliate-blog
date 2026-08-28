@@ -32,7 +32,7 @@ highlights:
   - "Site of the Battle of Okinawa (1945), one of the bloodiest campaigns of the Pacific War, followed by 27 years of US administration until reversion to Japan in 1972"
   - "Frequently cited as one of the world's 'Blue Zones' for exceptional longevity"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Shuri Castle"
     description: "The former royal palace of the Ryukyu Kingdom, a UNESCO World Heritage site. Its main hall burned down in a 2019 fire and is under reconstruction — check current status before visiting."

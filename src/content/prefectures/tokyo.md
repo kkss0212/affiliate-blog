@@ -29,7 +29,7 @@ highlights:
   - "The world's most populous metropolitan area, at roughly 37-38 million people across Greater Tokyo"
   - "Hosted the Summer Olympics twice (1964 and 2020/2021) — the first Asian city to do so"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Senso-ji"
     description: "Tokyo's oldest temple (founded 645 AD), in Asakusa — approached through the Kaminarimon ('Thunder Gate') and a street of souvenir stalls, Nakamise-dori."

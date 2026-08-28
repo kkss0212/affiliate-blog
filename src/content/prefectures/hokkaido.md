@@ -29,7 +29,7 @@ highlights:
   - "Formally incorporated into Japan only in 1869, previously home to the indigenous Ainu people for centuries"
   - "Produces roughly a quarter of Japan's food supply by calories, despite the short growing season"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Sapporo Snow Festival (Yuki Matsuri)"
     description: "A week-long February festival in Odori Park featuring massive snow and ice sculptures, one of Japan's largest winter events."

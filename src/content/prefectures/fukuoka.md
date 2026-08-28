@@ -29,7 +29,7 @@ highlights:
   - "Closer to Busan, South Korea (about an hour by ferry) than to Tokyo"
   - "Home to Dazaifu Tenmangu, one of Japan's most important shrines for students, dedicated to the deified scholar Sugawara no Michizane"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Dazaifu Tenmangu"
     description: "A major Shinto shrine dedicated to Sugawara no Michizane, a 9th-century scholar deified as the god of learning — popular with students before exams."

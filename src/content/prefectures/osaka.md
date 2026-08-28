@@ -29,7 +29,7 @@ highlights:
   - "Home to Shitenno-ji, founded in 593 AD and among the oldest officially administered Buddhist temples in Japan"
   - "Hosted Expo 2025 on the artificial island of Yumeshima, its second World's Fair after 1970"
 updatedDate: 2026-08-28
-draft: true
+draft: false
 touristSpots:
   - name: "Osaka Castle"
     description: "Rebuilt in the 1930s (the original, built by Toyotomi Hideyoshi in 1583, burned down centuries ago), now a museum with an observation floor over the surrounding park."
