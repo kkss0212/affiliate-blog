@@ -1,9 +1,10 @@
 # Japan Unpacked
 
-English-language guides to Japan's prefectures and municipalities, told
-through data and history, funneling readers toward tour/activity bookings
-(Klook, Viator, GetYourGuide, Rakuten Travel) and shippable products
-(Amazon Associates, Japan Trend Shop).
+English-language guides across three sections — Prefectures, Music, and
+Manga — funneling readers toward tour/activity bookings (Klook, Viator,
+GetYourGuide, Rakuten Travel), shippable products (Amazon Associates, Japan
+Trend Shop), and subscription referrals (Amazon Music Unlimited, Kindle
+Unlimited).
 
 Live at <https://kkss0212.github.io/japan-unpacked/>.
 
@@ -15,8 +16,8 @@ application procedures.
 ## Stack
 
 - [Astro](https://astro.build) + TypeScript, static output
-- Content Collections for structured per-prefecture data
-  (`src/content.config.ts`, entries in `src/content/prefectures/*.md`)
+- Content Collections for structured content (`src/content.config.ts`):
+  `prefectures`, `music`, `manga` — entries under `src/content/<collection>/*.md`
 - Tailwind CSS v4
 - Deploys to GitHub Pages on push to `main` (`.github/workflows/deploy.yml`)
 
@@ -30,10 +31,11 @@ npm run build     # type-checks, then builds a production bundle to dist/
 npm run preview   # serve the production build locally
 ```
 
-## Adding a prefecture
+## Adding content
 
-Add a Markdown file under `src/content/prefectures/`. See `kyoto.md` for the
-full schema (population/area stats, highlights, products, experiences) —
-that file is a structural example only, not fact-checked publishable
-content. Keep `draft: true` until the content and affiliate links have been
-reviewed; only flip it to `false` when it's ready to go live.
+Add a Markdown file under `src/content/prefectures/`, `src/content/music/`,
+or `src/content/manga/`. See `kyoto.md`, `city-pop.md`, and `one-piece.md`
+for the schemas — those files are structural examples only, not
+fact-checked publishable content. Keep `draft: true` until the content and
+affiliate links have been reviewed; only flip it to `false` when it's ready
+to go live.

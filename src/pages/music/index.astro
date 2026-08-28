@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const allEntries = await getCollection("music", ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout
+  title="Japanese Music Guides | Japan Unpacked"
+  description="Guides to Japanese music, artists, and genres, with ways to listen."
+>
+  <h1 class="text-2xl font-semibold">Music</h1>
+  <p class="mt-2 text-slate-600">
+    Guides to Japanese music, artists, and genres for people who want to
+    listen deeper.
+  </p>
+
+  <ul class="mt-6 space-y-3">
+    {
+      entries.map((entry) => (
+        <li>
+          <a
+            href={`${import.meta.env.BASE_URL}music/${entry.id}/`}
+            class="block rounded-lg border border-slate-200 p-4 hover:border-slate-400"
+          >
+            <span class="font-medium">{entry.data.title}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

@@ -6,13 +6,21 @@ rather than rewriting history; update the "current state" sections in place.
 
 ## Concept
 
-**Site name: Japan Unpacked.** An English-language blog that profiles Japan's prefectures and municipalities
-through data and history, aimed at readers planning a visit to Japan (or
-already there) as well as readers abroad who want Japanese regional goods
-shipped to them directly. The content format (data + history deep-dives)
-suits two affiliate tracks: tour/activity bookings (no shipping involved at
-all) and shippable products, split across two retailers so international
-readers who never set foot in Japan can still buy (see "Monetization").
+**Site name: Japan Unpacked.** An English-language blog with three sections:
+**Prefectures** (profiles of Japan's prefectures and municipalities through
+data and history, aimed at readers planning a visit to Japan or already
+there, as well as readers abroad who want Japanese regional goods shipped
+to them directly), **Music**, and **Manga** (guides to Japanese music and
+manga, added specifically because they open Amazon Music Unlimited and
+Kindle Unlimited as monetization — see "Monetization"). All three sections
+live on one site/domain rather than separate projects, since that means one
+Amazon Associates application covers all of them and articles from any
+section count toward the 10-published-article threshold (see "Open / not
+yet decided"). The content format (data + history deep-dives, artist/series
+guides) suits affiliate tracks with no shipping friction: tour/activity
+bookings and subscription referrals carry zero delivery risk; shippable
+products are split across two retailers so international readers who never
+set foot in Japan can still buy (see "Monetization").
 
 ## Monetization
 
@@ -47,6 +55,24 @@ readers who never set foot in Japan can still buy (see "Monetization").
   book online with no cross-border shipping at all, so they carry zero
   delivery-eligibility risk. This is the primary monetization track;
   products are secondary and support it.
+- **Subscriptions (Music/Manga sections): Amazon Music Unlimited and Kindle
+  Unlimited "member referral" programs.** Both are built directly into
+  Amazon Associates Central under the same Amazon Associates account
+  already planned — no separate signup, no new tax question. Flat referral
+  fee per new/eligible sign-up (Amazon Music Unlimited ≈¥1,000, Kindle
+  Unlimited ≈¥500 as of the 2026-08-28 check; reconfirm current rates in
+  Associates Central before publishing, since Amazon changes these).
+  Individual Kindle volumes/CDs can also be linked as ordinary Amazon
+  products (`retailer: "amazon"`) alongside the subscription referral.
+  Considered and excluded: **Spotify and LINE MUSIC** — both were
+  previously available via A8.net's app-only ASP but that's discontinued,
+  and neither has a public listing on A8.net or Moshimo Affiliate as of
+  this check. No legitimate Japan-domestic route to monetize them exists
+  right now; revisit if that changes. (Apple Music/Spotify/Amazon Music's
+  *global* affiliate programs run through US-based networks like
+  Partnerize/FlexOffers — using those would reopen the W-8BEN question,
+  same reasoning as the Bokksu/TokyoTreat decision above, so they're not
+  used even though Amazon Music's global program exists.)
 - Accounts for all of the above are not yet created. Amazon Associates in
   particular typically requires the site to already have real content before
   approval, and can close the account if it doesn't generate qualifying
@@ -87,11 +113,13 @@ readers who never set foot in Japan can still buy (see "Monetization").
 ## Tech stack
 
 - **Astro** (static site generation) + **TypeScript** + **Content
-  Collections** for structured per-prefecture data (schema in
-  `src/content.config.ts`). Chosen for SEO performance (minimal JS,
-  fast builds) and because the prefecture data model (population, area,
-  history, products, experiences) maps cleanly onto a typed collection
-  schema instead of a general-purpose CMS.
+  Collections** for structured content (schema in `src/content.config.ts`).
+  Three collections: `prefectures` (population, area, history, products,
+  experiences), and `music`/`manga` (shared `cultureGuide` schema: title,
+  highlights, `products` + `subscriptions`). Chosen for SEO performance
+  (minimal JS, fast builds) and because this data maps cleanly onto typed
+  collection schemas instead of a general-purpose CMS. Pages live under
+  `src/pages/{prefectures,music,manga}/`.
 - **Tailwind CSS v4** (`@tailwindcss/vite`) for styling.
 - **Hosting: GitHub Pages** via `.github/workflows/deploy.yml`, deploying on
   push to `main`. Chosen as the default because it requires no new external
@@ -110,8 +138,8 @@ readers who never set foot in Japan can still buy (see "Monetization").
 
 ## Editorial/publishing gate
 
-- Content lives as Markdown files under `src/content/prefectures/`, each
-  with a `draft: true/false` flag. Production builds (`import.meta.env.PROD`)
+- Content lives as Markdown files under `src/content/{prefectures,music,manga}/`,
+  each with a `draft: true/false` flag. Production builds (`import.meta.env.PROD`)
   filter out drafts, so a page only goes live once someone flips `draft` to
   `false` — this is the manual confirmation gate (same principle as
   life-story-bot's "a human confirms before anything publishes").
@@ -122,19 +150,22 @@ readers who never set foot in Japan can still buy (see "Monetization").
 ## Open / not yet decided
 
 - Custom domain and final hosting choice.
-- Which prefectures/municipalities to launch with, and the actual
-  historical/statistical research + fact-checking pass for each (the
-  `kyoto.md` file in the repo is a structural example only, not verified
-  publishable content).
+- Which prefectures/municipalities/music topics/manga series to launch
+  with, and the actual research + fact-checking pass for each (`kyoto.md`,
+  `city-pop.md`, and `one-piece.md` in the repo are structural examples
+  only, not verified publishable content).
 - ASP account applications: see `docs/asp-checklist.md` for step-by-step
   procedures. Rakuten Affiliate/Travel, Viator, Klook/GetYourGuide (via
   Travelpayouts, to avoid Awin's small refundable deposit), and Japan Trend
   Shop have no content-count requirement and can be applied for any time.
   **Amazon Associates requires at least 10 published (`draft: false`)
-  articles first** — as of 2026-08-28 there are 0 (kyoto.md is still a
-  draft structural example). The user explicitly asked to be told once
-  that threshold is hit: whenever a session brings the published count to
-  10+, prompt them to start the Amazon Associates application.
+  articles first**, counted across all three sections (prefectures + music
+  + manga) since they'll all be covered by the same Associates account —
+  as of 2026-08-28 there are 0 (all three example files are still drafts).
+  The user explicitly asked to be told once that threshold is hit: whenever
+  a session brings the published count to 10+, prompt them to start the
+  Amazon Associates application (which also unlocks the Amazon Music
+  Unlimited / Kindle Unlimited referral links).
 - Whether to add TokyoTreat/Sakuraco once their affiliate payout tax
   treatment (W-9 vs. W-8BEN at signup) is confirmed.
 - Instagram/X account setup and posting cadence.

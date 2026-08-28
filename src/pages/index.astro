@@ -9,16 +9,17 @@ const prefectures = allPrefectures.sort((a, b) => a.data.name.localeCompare(b.da
 ---
 
 <BaseLayout
-  title="Japan Unpacked — history, data, and travel guides to Japan's prefectures"
-  description="Deep-dive guides to Japan's prefectures and municipalities, grounded in history and data."
+  title="Japan Unpacked — Japan's prefectures, music, and manga, unpacked"
+  description="History- and data-driven guides to Japan's prefectures, plus guides to Japanese music and manga."
 >
   <h1 class="text-2xl font-semibold">Japan Unpacked</h1>
   <p class="mt-2 text-slate-600">
-    History- and data-driven guides to Japan's 47 prefectures, written for
-    people planning a visit.
+    Japan's prefectures, music, and manga — unpacked with history and data,
+    written for people planning a visit or just exploring from afar.
   </p>
 
-  <ul class="mt-6 space-y-3">
+  <h2 class="mt-8 text-lg font-semibold">Prefectures</h2>
+  <ul class="mt-3 space-y-3">
     {
       prefectures.map((prefecture) => (
         <li>

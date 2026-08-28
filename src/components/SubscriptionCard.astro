@@ -1,0 +1,26 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  url: string;
+  service: "amazon-music-unlimited" | "kindle-unlimited";
+}
+
+const { name, description, url, service } = Astro.props;
+
+const serviceLabel: Record<Props["service"], string> = {
+  "amazon-music-unlimited": "Try Amazon Music Unlimited",
+  "kindle-unlimited": "Try Kindle Unlimited",
+};
+---
+
+<a
+  href={url}
+  rel="sponsored noopener"
+  target="_blank"
+  class="block rounded-lg border border-slate-200 p-4 transition hover:border-slate-400"
+>
+  <p class="font-medium">{name}</p>
+  <p class="mt-1 text-sm text-slate-600">{description}</p>
+  <p class="mt-2 text-sm text-amber-700">{serviceLabel[service]} →</p>
+</a>

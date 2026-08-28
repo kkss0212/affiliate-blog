@@ -59,8 +59,34 @@
 
 - **申請条件**: オリジナルコンテンツの記事が最低10件、公開済み(`draft: false`)
   であること。サインアップ後180日以内に3件の適格販売がないと本審査に進めない。
-- **現状(2026-08-28時点)**: 公開記事0件(`kyoto.md`も`draft: true`の構造サンプル
-  のみ)。この条件を満たすまで申請しない。
-- **TODO**: `src/content/prefectures/` 配下で `draft: false` の記事が10件に達したら、
+- **現状(2026-08-28時点)**: 公開記事0件(`kyoto.md`・`city-pop.md`・`one-piece.md`
+  すべて`draft: true`の構造サンプルのみ)。この条件を満たすまで申請しない。
+- **カウント対象**: `src/content/prefectures/`・`src/content/music/`・
+  `src/content/manga/` の3ディレクトリ合計で10件(すべて同じサイト・同じ
+  Associatesアカウントで運用するため)。
+- **TODO**: 上記3ディレクトリ合計で `draft: false` の記事が10件に達したら、
   次にこのプロジェクトを扱うセッションはAmazon Associatesの申請を案内すること。
   (ユーザーからの明示的な依頼: 「10件記事作ったら案内して」)
+
+## Amazon Associates承認後に追加でやること(新規ASP登録は不要)
+
+音楽(Music)・漫画(Manga)セクションの収益化は、**Amazon Associatesのアカウントの中に
+標準機能として用意されている「メンバー紹介プログラム」を使うだけ**なので、別途ASP登録は
+不要です。Amazon Associates承認後、以下を行うこと。
+
+- **Amazon Music Unlimitedメンバー紹介プログラム**: アソシエイト・セントラル
+  (affiliate.amazon.co.jp)にログイン後、プログラム一覧から「Amazon Music Unlimited
+  メンバー紹介プログラム」を探し、参加登録してリンクを生成(新規登録1件につき
+  2026-08-28時点で¥1,000。金額はAmazon側で変わるので都度確認)
+- **Kindle Unlimitedメンバー紹介プログラム**: 同様にアソシエイト・セントラルから
+  「Kindle Unlimitedメンバー紹介プログラム」に参加登録してリンクを生成(新規登録1件
+  につき2026-08-28時点で¥500)
+- 生成したリンクを`src/content/music/*.md`・`src/content/manga/*.md`の
+  `subscriptions`フィールドに埋め込む
+- 個別のCD・Kindle単行本などは通常のAmazon商品リンク(`retailer: "amazon"`)として
+  `products`に埋め込めばよい(標準の紹介料率が適用される)
+
+**Spotify・LINE MUSICは現時点(2026-08-28)で正規ルートでの収益化手段が無い**
+(以前はA8.netのアプリ専用ASP「A8app」経由で扱いがあったが終了しており、A8.net・
+もしもアフィリエイトの通常プログラムにも公開されていない)。将来的に取り扱いが
+復活していないか確認する価値はあるが、現状は保留。
