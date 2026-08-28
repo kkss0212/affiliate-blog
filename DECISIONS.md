@@ -412,18 +412,27 @@ that `/prefectures/` needed to be grouped/scannable by region:
   then the more specific historical claims (dates, casualty estimates,
   named individuals). Two prefectures (Hiroshima, Nagasaki) also want a
   tone re-read given the weight of what they cover.
-- **Tourist-spot photos**: only Kyoto's 4 spots have a sourced image;
-  the other 46 prefectures' `touristSpots` intentionally have no
-  `image` field yet, so they render the accent-gradient camera-icon
-  fallback (`src/pages/prefectures/[slug].astro`) — this is by design,
-  not a bug, pending a dedicated photo-sourcing pass. Same Wikimedia
-  Commons `Special:FilePath` approach as Kyoto (see "Prefecture page
-  format" above); WebFetch/curl to wikimedia.org is blocked by this
-  sandbox's egress proxy (confirmed via 403 on both
-  commons.wikimedia.org and upload.wikimedia.org), so filenames can
-  only be confirmed via `WebSearch`, and rendering can't be verified
-  in-session at all — always ask the user to spot-check on the live
-  site after adding new images.
+- **Tourist-spot photos (2026-08-28 update)**: 33 of 47 prefectures now
+  have sourced `touristSpots` images — all of Tohoku, Kanto, Chubu,
+  Kansai, plus Tokyo/Osaka/Hokkaido/Okinawa/Fukuoka, plus Tottori,
+  Shimane, and most of Okayama/Hiroshima. Same Wikimedia Commons
+  `Special:FilePath` approach as Kyoto (see "Prefecture page format"
+  above); WebFetch/curl to wikimedia.org is blocked by this sandbox's
+  egress proxy (confirmed via 403 on both commons.wikimedia.org and
+  upload.wikimedia.org), so filenames can only be confirmed via
+  `WebSearch`, and rendering can't be verified in-session at all —
+  always ask the user to spot-check on the live site after adding new
+  images. **Still missing images** (render the accent-gradient
+  camera-icon fallback, `src/pages/prefectures/[slug].astro`): all of
+  Yamaguchi (Chugoku); Kurashiki Bikan Historical Quarter (Okayama),
+  Onomichi and Hiroshima Castle (Hiroshima) — this session's
+  `WebSearch` budget (200 calls) was exhausted before these could be
+  sourced; Shosenkyo Gorge (Yamanashi) — no suitable Commons photo was
+  found even before the budget ran out; and all of Shikoku (Tokushima,
+  Kagawa, Ehime, Kochi) and Kyushu (Saga, Nagasaki, Kumamoto, Oita,
+  Miyazaki, Kagoshima) haven't been started. Continue with Yamaguchi,
+  then Shikoku, then Kyushu, then circle back to the handful of gaps
+  above.
 - **Municipality pages** (`[prefecture]/[municipality].astro`) still use
   the old plain `dl`-table layout, not the current visual system
   (StatCard/ScoreMeter/ShareBar/hero banner/JapanMap). Only one example
