@@ -58,10 +58,29 @@ set foot in Japan can still buy (see "Monetization").
     occasionally offer their own international shipping, but that would
     need per-shop verification and isn't worth the operational overhead
     at this stage.
-- **Experiences/tours: Klook, Viator, GetYourGuide, Rakuten Travel.** These
-  book online with no cross-border shipping at all, so they carry zero
+- **Experiences/tours: Viator, GetYourGuide, Rakuten Travel.** These book
+  online with no cross-border shipping at all, so they carry zero
   delivery-eligibility risk. This is the primary monetization track;
   products are secondary and support it.
+  - **Klook and the original Travelpayouts plan were dropped 2026-08-28.**
+    Travelpayouts' new-publisher onboarding now forces installation of
+    "Travelpayouts Drive" (a script that auto-scans page content and
+    inserts affiliate links/offers) before granting access to the normal
+    Programs list / Link Generator — confirmed stuck on this even after
+    logout/login. Auto-inserted links bypass this project's core
+    "nothing publishes without human review" gate, so it was rejected
+    rather than worked around. GetYourGuide moved to **Awin** instead:
+    Awin's ~$1-5 signup deposit (refunded on first payout) was the
+    original reason Travelpayouts was preferred, but Awin is a UK/German
+    company (not US), so it doesn't reopen the W-8BEN question — the
+    deposit turned out to be a non-issue. Klook itself has no
+    Travelpayouts-free direct signup investigated yet; non-US
+    alternatives exist (Involve Asia, vCommission) but weren't pursued to
+    keep scope down — Viator + GetYourGuide(Awin) + Rakuten Travel is
+    treated as sufficient experience-booking coverage for now. Revisit
+    Klook later if desired; avoid FlexOffers/DCMnetwork for it without
+    first confirming they're not US-incorporated (same W-8BEN check as
+    everything else in this list).
 - **Subscriptions (Music/Manga sections): Amazon Music Unlimited and Kindle
   Unlimited "member referral" programs.** Both are built directly into
   Amazon Associates Central under the same Amazon Associates account

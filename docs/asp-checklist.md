@@ -55,35 +55,48 @@
      ダッシュボードにログイン
   5. ダッシュボード内のリンクジェネレーターでツアー・アクティビティを検索し、
      アフィリエイトリンクを生成
-  5. 支払い方法(銀行振込等)を設定してから、生成したリンクを記事の`experiences`
+  6. 支払い方法(銀行振込等)を設定してから、生成したリンクを記事の`experiences`
      (`provider: "viator"`)に埋め込む
 
-### 3. Klook / GetYourGuide(Travelpayouts経由)
+### 3. GetYourGuide(Awin経由)
 
-- 費用: 無料(Travelpayoutsは登録費・維持費ともに無料)
-- Awin経由だと$1〜5の返金前提デポジットが発生するため、完全無料にしたい場合は
-  **Travelpayouts経由**で申請すること(Klook・GetYourGuideどちらも同じ
-  Travelpayoutsアカウント1つで申請できる)
+**方針転換(2026-08-28): Travelpayoutsは、新規パブリッシャーに「Travelpayouts
+Drive」(サイトにスクリプトを設置して自動でリンクを挿入する仕組み)のインストール
+を必須とするオンボーディングになっており、ログアウト→再ログインしても同じ画面に
+戻ってしまい、通常のProgram一覧・Link Generatorに到達できないことを確認した。
+Driveの自動挿入は本サイトの「公開前に人が確認する」方針と相容れないため断念し、
+Awin経由に切り替える。**
+
+- 費用: 実質無料。Awinは新規パブリッシャー登録時に$1〜5程度の返金前提デポジットが
+  発生するが、初回成果発生時に全額返金される
+- Awinはイギリス/ドイツ拠点の企業(米国法人ではない)のため、Amazon Associates等で
+  避けている米国源泉徴収・W-8BENの問題は発生しない
 - 手順:
-  1. [travelpayouts.com](https://www.travelpayouts.com/) でパブリッシャー登録
-     (メールアドレス・サイトURLを入力するだけの無料登録)
-  2. ログイン後のダッシュボードで「Programs」や「Marketplace」といった一覧から
-     Klook・GetYourGuideをそれぞれ検索し、参加申請(Join/Apply)ボタンを押す
-  3. 各プログラムの承認状況はダッシュボードで確認できる(即時承認されるものも
-     多いが、プログラムによっては審査が入る)
-  4. 承認後、各プログラムのページにあるリンクジェネレーターで実際のツアー・
-     アクティビティを検索してアフィリエイトURLを発行
-  5. 支払い方法(PayPalまたは銀行振込)をアカウント設定から登録
-  6. 生成したリンクを記事の`experiences`(`provider: "klook"`または
-     `"getyourguide"`)に埋め込む
+  1. [ui.awin.com](https://ui.awin.com/) でパブリッシャーアカウントを作成
+  2. 加盟店(Advertiser)検索で「GetYourGuide」を検索し、参加申請
+  3. 承認後、GetYourGuideの加盟店ページ内のリンクジェネレーターでアフィリエイト
+     リンクを発行
+  4. 生成したリンクを記事の`experiences`(`provider: "getyourguide"`)に埋め込む
+
+**Klookは今回見送り。** Travelpayouts以外の代替ネットワーク(Involve Asia・
+vCommission等、いずれも米国外の会社)もあるが、都度の会社所在地確認の手間を考えると
+優先度は低いと判断。FlexOffers・DCMnetworkは米国法人の可能性が高く、使う場合は
+W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベルの3つで体験予約は
+十分カバーできるため、Klookは将来余裕があれば追加検討する。
 
 ### 4. Japan Trend Shop
 
-- 費用: 無料。ただし報酬受け取りに**PayPalアカウントが必要**
+**進捗(2026-08-28): PayPalビジネスアカウント作成済み。ただし
+`affiliates.japantrendshop.com`(申請ページ)に接続できない状態を確認
+(本体サイト`www.japantrendshop.com`は正常に開く)。一時的な障害の可能性があるため
+保留中。**
+
+- 費用: 無料。ただし報酬受け取りに**PayPalアカウントが必要**(作成済み)
 - 手順:
-  1. PayPalアカウントが無ければ https://www.paypal.com/ で無料作成
+  1. PayPalアカウントが無ければ https://www.paypal.com/ で無料作成 — 完了
   2. [affiliates.japantrendshop.com](https://affiliates.japantrendshop.com/affiliate/affiliates/)
-     から申請フォームに入力(サイトURL、PayPalメールアドレスなど)
+     から申請フォームに入力(サイトURL、PayPalメールアドレスなど) — **現在接続不可、
+     時間を置いて再試行すること**
   3. 承認後、管理画面にログインし、商品ページのアフィリエイトリンク生成機能で
      商品ごとのURLを発行(最大7%のコミッション)
   4. 生成したリンクを記事の`products`(`retailer: "japan-trend-shop"`)に埋め込む
@@ -132,7 +145,9 @@
 - [ ] 楽天アフィリエイト: 生成したリンクを実記事に埋め込み(下記「実記事が無いと進められない」を参照)
 - [x] Viator: 申請フォーム送信+本人確認提出 → **審査中(最長72時間、2026-08-28提出)**
 - [ ] Viator: 審査結果待ち → 承認後リンク生成
-- [ ] Travelpayouts(Klook・GetYourGuide): 登録・両プログラム参加申請
-- [ ] Japan Trend Shop: PayPal作成 + 申請
+- [x] ~~Travelpayouts(Klook・GetYourGuide)~~ → Drive強制のため断念、Awinに切り替え(2026-08-28)
+- [ ] GetYourGuide(Awin経由): 登録・申請
+- [x] Japan Trend Shop: PayPalビジネスアカウント作成
+- [ ] Japan Trend Shop: 申請ページ接続不可のため保留、時間を置いて再試行
 - [ ] Amazon Associates: 10記事公開後に申請(保留中)
 - [ ] Amazon Music Unlimited / Kindle Unlimitedメンバー紹介プログラム: Amazon Associates承認後
