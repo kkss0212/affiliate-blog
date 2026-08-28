@@ -16,7 +16,7 @@
   1. 楽天会員登録が済んでいなければ [rakuten.co.jp](https://www.rakuten.co.jp/) で無料登録
   2. 「楽天アフィリエイト」の公式ポータルに楽天IDでログイン(審査不要、即利用可)
   3. 「メディア登録」で運営サイトのURLを登録(現状は
-     `https://kkss0212.github.io/affiliate-blog` — カスタムドメイン決定後は
+     `https://kkss0212.github.io/japan-unpacked` — カスタムドメイン決定後は
      忘れず更新すること)
   4. 楽天トラベルの商品リンク作成ツールで宿泊施設・ツアーのアフィリエイトリンクを生成
   5. `src/content/prefectures/*.md` の `experiences` に `provider: "rakuten-travel"`

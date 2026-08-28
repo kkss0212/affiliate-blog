@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 // Until then this defaults to the GitHub Pages project URL, which requires
 // `base` to be set to the repo name (see .github/workflows/deploy.yml).
 const SITE_URL = "https://kkss0212.github.io";
-const BASE_PATH = "/affiliate-blog";
+const BASE_PATH = "/japan-unpacked";
 
 export default defineConfig({
   site: SITE_URL,

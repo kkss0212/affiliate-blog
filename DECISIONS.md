@@ -100,9 +100,13 @@ readers who never set foot in Japan can still buy (see "Monetization").
   Vercel/Netlify later is a config change, not a rewrite, if a custom
   domain or ISR/edge features are needed.
 - Domain: not yet decided. `astro.config.mjs` currently points at the
-  GitHub Pages project URL (`https://kkss0212.github.io/affiliate-blog`)
-  with `base: "/affiliate-blog"` — update `SITE_URL`/`BASE_PATH` there (and
+  GitHub Pages project URL (`https://kkss0212.github.io/japan-unpacked`)
+  with `base: "/japan-unpacked"` — update `SITE_URL`/`BASE_PATH` there (and
   `public/robots.txt`'s sitemap line) once a custom domain is chosen.
+- The GitHub repo itself was renamed from `affiliate-blog` to
+  `japan-unpacked` because the word "affiliate" showing up directly in the
+  public URL felt too on-the-nose. Same reasoning would apply to any future
+  repo/URL naming — avoid words that broadcast the monetization mechanism.
 
 ## Editorial/publishing gate
 

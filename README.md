@@ -5,7 +5,7 @@ through data and history, funneling readers toward tour/activity bookings
 (Klook, Viator, GetYourGuide, Rakuten Travel) and shippable products
 (Amazon Associates, Japan Trend Shop).
 
-Live at <https://kkss0212.github.io/affiliate-blog/>.
+Live at <https://kkss0212.github.io/japan-unpacked/>.
 
 See [`DECISIONS.md`](./DECISIONS.md) for the business/architecture decisions
 behind this project and what's still open, and

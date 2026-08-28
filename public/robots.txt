@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kkss0212.github.io/affiliate-blog/sitemap-index.xml
+Sitemap: https://kkss0212.github.io/japan-unpacked/sitemap-index.xml
