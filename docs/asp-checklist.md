@@ -7,53 +7,78 @@
 リンク切れの場合は各社公式サイトの「Affiliate / Partner Program」ページを検索して
 確認すること。
 
+サイトURL(全ASP共通で使うもの): `https://kkss0212.github.io/japan-unpacked`
+(カスタムドメイン決定後は各ASPの登録情報も忘れず更新すること)
+
 ## 今すぐ着手できるもの(コンテンツ件数の要件なし)
 
 ### 1. 楽天アフィリエイト・楽天トラベル
 
-- 費用: 無料、審査なし
-- 手順:
-  1. 楽天会員登録が済んでいなければ [rakuten.co.jp](https://www.rakuten.co.jp/) で無料登録
-  2. 「楽天アフィリエイト」の公式ポータルに楽天IDでログイン(審査不要、即利用可)
-  3. 「メディア登録」で運営サイトのURLを登録(現状は
-     `https://kkss0212.github.io/japan-unpacked` — カスタムドメイン決定後は
-     忘れず更新すること)
-  4. 楽天トラベルの商品リンク作成ツールで宿泊施設・ツアーのアフィリエイトリンクを生成
-  5. `src/content/prefectures/*.md` の `experiences` に `provider: "rakuten-travel"`
-     として埋め込む
-  6. 報酬は楽天キャッシュで受領(1円から)
+**進捗: 「メディア登録」まで完了。**以降の手順は以下の通り。
+
+- 費用: 無料、審査なし(メディア登録が終われば即利用可能)
+- 報酬: 楽天市場の商品は紹介料率が商品ジャンルごとに設定(数%程度)、楽天トラベルは
+  **利用金額の1%**(レンタカーを除く)。楽天キャッシュで受領、1円から換金可能
+- メディア登録後の手順:
+  1. 楽天アフィリエイトのポータル(https://affiliate.rakuten.co.jp/ )にログイン
+  2. **物販(名産品)用**: 「商品リンク」作成ツールで楽天市場の商品を検索し、
+     紹介したい商品のリンク(テキストリンクまたはバナー)を生成する
+  3. **楽天トラベル用**: ポータル内の「楽天トラベル」カテゴリ、または無料の外部
+     ツール「トマレバ」(https://tomareba.tsuku2.jp/ )でホテル・旅館・エリアを
+     検索してアフィリエイトリンクを生成する(楽天トラベル用に別途登録し直す必要は
+     なく、同じ楽天アフィリエイトのアカウントで完結する)
+  4. 生成されたURLを、対応する記事の`experiences`(`provider: "rakuten-travel"`)
+     または`products`に埋め込む
+  5. 成果は楽天アフィリエイトの管理画面(レポート)で確認できる。即時ではなく、
+     数日〜1ヶ月程度のラグがあるのが一般的なので、埋め込んだ直後に成果が0でも
+     焦らなくてよい
 
 ### 2. Viator
 
 - 費用: 無料。トラフィック/フォロワー要件の明記はないが、サイト内容の審査はある
+- 必要な情報(申請フォームで聞かれる想定): サイトURL、サイトの想定読者層・
+  コンテンツ内容の説明、月間訪問者数(現状ほぼ0でも申請自体は可能。正直に記入)
 - 手順:
   1. [partners.viator.com/signup](https://partners.viator.com/signup?program=affiliate)
-     から申請フォームへ(サイトURL・想定読者層などを入力)
-  2. 審査結果はメールで通知
+     から申請フォームへ
+  2. 審査結果はメール通知(審査期間の目安は公式に明記されていないため、
+     1〜2週間程度を見込んでおくとよい)
   3. 承認後 [partners.viator.com/login](https://partners.viator.com/login) から
-     ダッシュボードにログインしリンクを生成
-  4. 支払い方法(銀行振込等)を設定
+     ダッシュボードにログイン
+  4. ダッシュボード内のリンクジェネレーターでツアー・アクティビティを検索し、
+     アフィリエイトリンクを生成
+  5. 支払い方法(銀行振込等)を設定してから、生成したリンクを記事の`experiences`
+     (`provider: "viator"`)に埋め込む
 
 ### 3. Klook / GetYourGuide(Travelpayouts経由)
 
 - 費用: 無料(Travelpayoutsは登録費・維持費ともに無料)
 - Awin経由だと$1〜5の返金前提デポジットが発生するため、完全無料にしたい場合は
-  **Travelpayouts経由**で申請すること
+  **Travelpayouts経由**で申請すること(Klook・GetYourGuideどちらも同じ
+  Travelpayoutsアカウント1つで申請できる)
 - 手順:
-  1. [travelpayouts.com](https://www.travelpayouts.com/) でパブリッシャー登録(無料)
-  2. ダッシュボード内でKlook・GetYourGuideそれぞれのプログラムページから参加申請
-     (1つのダッシュボードで両方申請できる)
-  3. 承認後、各プログラムのリンクジェネレーターでアフィリエイトURLを発行
-  4. 支払い方法(PayPalまたは銀行振込)を設定
+  1. [travelpayouts.com](https://www.travelpayouts.com/) でパブリッシャー登録
+     (メールアドレス・サイトURLを入力するだけの無料登録)
+  2. ログイン後のダッシュボードで「Programs」や「Marketplace」といった一覧から
+     Klook・GetYourGuideをそれぞれ検索し、参加申請(Join/Apply)ボタンを押す
+  3. 各プログラムの承認状況はダッシュボードで確認できる(即時承認されるものも
+     多いが、プログラムによっては審査が入る)
+  4. 承認後、各プログラムのページにあるリンクジェネレーターで実際のツアー・
+     アクティビティを検索してアフィリエイトURLを発行
+  5. 支払い方法(PayPalまたは銀行振込)をアカウント設定から登録
+  6. 生成したリンクを記事の`experiences`(`provider: "klook"`または
+     `"getyourguide"`)に埋め込む
 
 ### 4. Japan Trend Shop
 
 - 費用: 無料。ただし報酬受け取りに**PayPalアカウントが必要**
 - 手順:
-  1. PayPalアカウントが無ければ無料で作成
+  1. PayPalアカウントが無ければ https://www.paypal.com/ で無料作成
   2. [affiliates.japantrendshop.com](https://affiliates.japantrendshop.com/affiliate/affiliates/)
      から申請フォームに入力(サイトURL、PayPalメールアドレスなど)
-  3. 承認後、商品ページのアフィリエイトリンク生成機能でURLを発行
+  3. 承認後、管理画面にログインし、商品ページのアフィリエイトリンク生成機能で
+     商品ごとのURLを発行(最大7%のコミッション)
+  4. 生成したリンクを記事の`products`(`retailer: "japan-trend-shop"`)に埋め込む
 
 ## Amazon Associates(Amazon.co.jp)は保留中
 
@@ -90,3 +115,13 @@
 (以前はA8.netのアプリ専用ASP「A8app」経由で扱いがあったが終了しており、A8.net・
 もしもアフィリエイトの通常プログラムにも公開されていない)。将来的に取り扱いが
 復活していないか確認する価値はあるが、現状は保留。
+
+## 全体の進捗チェックリスト
+
+- [x] 楽天アフィリエイト: メディア登録
+- [ ] 楽天アフィリエイト: 商品リンク・楽天トラベルリンクの生成
+- [ ] Viator: 申請
+- [ ] Travelpayouts(Klook・GetYourGuide): 登録・両プログラム参加申請
+- [ ] Japan Trend Shop: PayPal作成 + 申請
+- [ ] Amazon Associates: 10記事公開後に申請(保留中)
+- [ ] Amazon Music Unlimited / Kindle Unlimitedメンバー紹介プログラム: Amazon Associates承認後
