@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Izumo Taisha"
     description: "One of Japan's oldest and most significant Shinto shrines, dedicated to Okuninushi, the god of relationships and nation-building — visitors clap twice, bow once, clap twice, bow once, a distinct ritual from most other shrines."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Izumo-taisha%20Shrine,%20Izumo%20City,%20Shimane%20Prefecture,%20September%202014.jpg"
+      alt: "The main hall of Izumo Taisha shrine"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Iwami Ginzan"
     description: "A former silver mine, now a UNESCO World Heritage Site, with preserved mining tunnels, a former magistrate's office, and the merchant town that grew up around it."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/180504%20Omori%20of%20Iwami%20Ginzan%20Silver%20Mine%20Oda%20Shimane%20pref%20Japan01bs4.jpg"
+      alt: "The preserved merchant town of Omori at the Iwami Ginzan Silver Mine"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Matsue Castle"
     description: "One of only twelve Japanese castles with an original, unreconstructed keep, overlooking Lake Shinji — also near Lafcadio Hearn's former residence, now a small museum."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Matsue%20Castle%20Keep%20Tower%20in%202013-12-28%20No,1.JPG"
+      alt: "The original keep tower of Matsue Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Adachi Museum of Art"
     description: "An art museum whose Japanese garden has been ranked the best in Japan by a respected garden-ranking publication for over two decades running, viewed partly through the museum's windows like a living painting."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Adachi%20Museum%20of%20Art%20Garden.jpg"
+      alt: "The landscaped garden of the Adachi Museum of Art"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Yasugi Steel Kitchen Knife"
     description: "Shimane's Yasugi region has produced prized 'tamahagane' steel for traditional Japanese sword- and blade-making for centuries, using the traditional tatara smelting method. Confirm AmazonGlobal eligibility before publishing."

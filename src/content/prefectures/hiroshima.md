@@ -36,8 +36,16 @@ draft: false
 touristSpots:
   - name: "Peace Memorial Park & Museum"
     description: "A park built around the hypocenter area, including the Atomic Bomb Dome, the Children's Peace Monument, and a museum documenting the bombing and its aftermath through survivor testimony and artifacts."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atomic%20Bomb%20Dome,%20Hiroshima,%20South%20view%2020190417%201.jpg"
+      alt: "The preserved Atomic Bomb Dome in Hiroshima Peace Memorial Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing. A plain daytime documentary photo was chosen deliberately for this sensitive site."
   - name: "Itsukushima Shrine, Miyajima"
     description: "A shrine built over water on the island of Miyajima, its vermilion torii gate appearing to float at high tide — reachable by a short ferry from Hiroshima."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20of%20the%20floating%20torii%20gate%20at%20Itsukushima%20Shrine.jpg"
+      alt: "The vermilion floating torii gate of Itsukushima Shrine at high tide"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Onomichi"
     description: "A hillside port town of narrow lanes, temples, and cat-filled backstreets, and the western starting point of the Shimanami Kaido cycling route to Shikoku."
   - name: "Hiroshima Castle"

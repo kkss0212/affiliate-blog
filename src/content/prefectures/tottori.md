@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Tottori Sand Dunes"
     description: "Japan's largest sand dune system, formed by sediment carried down the Sendai River — visitors can walk the dunes, sandboard, or take a camel ride."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tottori-Sakyu%20Tottori%20Japan.JPG"
+      alt: "The rolling sand dunes of the Tottori Sand Dunes"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Mizuki Shigeru Road"
     description: "A themed street in Sakaiminato lined with over 100 bronze statues of yokai (folklore spirits) from Shigeru Mizuki's 'GeGeGe no Kitaro,' plus a dedicated museum."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mizuki%20Shigeru%20Road%202010-08B.JPG"
+      alt: "Bronze yokai statues lining Mizuki Shigeru Road in Sakaiminato"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Uradome Coast"
     description: "A rugged coastline of small coves, white sand beaches, and sea caves, popular for boat tours in summer."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Uradome%20kaigan01%202816.jpg"
+      alt: "The rugged coves and sea caves of the Uradome Coast"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kurayoshi Utsubuki-Nagaya"
     description: "A preserved Edo-period merchant district of white-walled storehouses along a canal in Kurayoshi."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kurayoshi%20Utsubuki-Tamagawa19n4592.jpg"
+      alt: "White-walled Edo-period storehouses along the canal in Kurayoshi"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Inshu Washi Paper"
     description: "Inshu washi, from Tottori's Inshu region, is a traditional handmade paper known for its strength, historically used for painting and calligraphy. Confirm AmazonGlobal eligibility before publishing."

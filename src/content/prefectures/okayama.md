@@ -33,12 +33,24 @@ draft: false
 touristSpots:
   - name: "Korakuen Garden"
     description: "One of Japan's 'three great gardens,' built in the late 1600s next to Okayama Castle, with open lawns unusual for a traditional Japanese garden."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/160319%20Korakuen%20Okayama%20Japan04s3.jpg"
+      alt: "The open lawns of Korakuen Garden in Okayama"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Kurashiki Bikan Historical Quarter"
     description: "A preserved Edo-period merchant district of white-walled warehouses along a willow-lined canal, home to the Ohara Museum of Art."
   - name: "Okayama Castle"
     description: "A reconstructed castle nicknamed 'Crow Castle' for its black exterior, standing across the river from Korakuen Garden."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Okayama%20castle02s3872.jpg"
+      alt: "Okayama Castle's black-walled keep, nicknamed Crow Castle"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kibitsu Shrine"
     description: "An ancient shrine linked to the legend believed to have inspired the Momotaro folk tale, with a distinctive long covered corridor."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kibitsu%20Jinja%2010.JPG"
+      alt: "The long covered corridor of Kibitsu Shrine"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Bizen-yaki Unglazed Ceramic Cup"
     description: "Bizen ware is one of Japan's 'Six Ancient Kilns,' known for unglazed, wood-fired stoneware whose color and texture come entirely from the firing process itself. Confirm AmazonGlobal eligibility before publishing."
