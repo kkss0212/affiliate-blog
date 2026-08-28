@@ -1,9 +1,11 @@
-# affiliate-blog
+# Japan Unpacked
 
 English-language guides to Japan's prefectures and municipalities, told
 through data and history, funneling readers toward tour/activity bookings
-(Klook, Viator, GetYourGuide, Rakuten Travel) and Amazon.co.jp products via
-Amazon Associates.
+(Klook, Viator, GetYourGuide, Rakuten Travel) and shippable products
+(Amazon Associates, Japan Trend Shop).
+
+Live at <https://kkss0212.github.io/affiliate-blog/>.
 
 See [`DECISIONS.md`](./DECISIONS.md) for the business/architecture decisions
 behind this project and what's still open, and

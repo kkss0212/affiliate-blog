@@ -6,7 +6,7 @@ rather than rewriting history; update the "current state" sections in place.
 
 ## Concept
 
-An English-language blog that profiles Japan's prefectures and municipalities
+**Site name: Japan Unpacked.** An English-language blog that profiles Japan's prefectures and municipalities
 through data and history, aimed at readers planning a visit to Japan (or
 already there) as well as readers abroad who want Japanese regional goods
 shipped to them directly. The content format (data + history deep-dives)
