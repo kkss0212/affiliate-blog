@@ -1,0 +1,102 @@
+---
+# Researched in-session with moderate-to-high confidence; not checked
+# against primary sources (e-Stat, Mie Prefecture statistics) —
+# re-verify population/area when convenient. All affiliate URLs are
+# placeholders (no ASP is approved yet). No tourist-spot photos yet —
+# deferred as a separate sourcing pass, see DECISIONS.md.
+name: "Mie"
+nameJa: "三重県"
+tagline: "Home to Shinto's holiest shrine, the birthplace of the cultured pearl, and one of only two pilgrimage routes on Earth officially twinned with Spain's Camino de Santiago."
+region: "Kansai"
+capital: "Tsu"
+lat: 34.7185
+lng: 136.5056
+population: 1770254
+populationSourceYear: 2020
+populationTrend: "decreasing"
+populationTrendNote: "A gradual decline typical of Kansai's less-urbanized prefectures — verify the latest figure against e-Stat before publishing."
+areaKm2: 5774
+foreignVisitorsAnnual: 700000
+natureScore: 7
+subcultureScore: 2
+prefecturalCharacter: "Mie carries an unusually reverent identity for a Japanese prefecture — home to the spiritual center of Shinto itself, with a well-known saying that every Japanese person should make a pilgrimage to Ise at least once in their life."
+comparedTo:
+  place: "Champagne"
+  country: "France"
+  reason: "A region whose name became synonymous worldwide with a luxury product perfected there — Mie's Toba is where Kokichi Mikimoto invented the modern cultured pearl in the 1890s, doing for pearls roughly what Champagne's producers did for sparkling wine."
+highlights:
+  - "Ise Jingu, dedicated to the sun goddess Amaterasu, is Shinto's most sacred shrine and has been ritually rebuilt from scratch every 20 years for over 1,300 years"
+  - "Kokichi Mikimoto invented the cultured pearl in Toba in 1893, founding the global Mikimoto pearl brand and transforming the world pearl market"
+  - "The Kumano Kodo pilgrimage trails, partly in Mie, are one of only two pilgrimage routes in the world with UNESCO World Heritage status — officially twinned with Spain's Camino de Santiago since 1998"
+updatedDate: 2026-08-28
+draft: false
+touristSpots:
+  - name: "Ise Jingu"
+    description: "Shinto's most sacred shrine complex, split between the Inner Shrine (Naiku, dedicated to Amaterasu) and Outer Shrine (Geku), rebuilt in an identical new form every 20 years in a ritual called Shikinen Sengu."
+  - name: "Mikimoto Pearl Island, Toba"
+    description: "A museum and demonstration site on Kokichi Mikimoto's original pearl farm, including displays on how cultured pearls are grown and traditional female pearl divers (ama)."
+  - name: "Kumano Kodo"
+    description: "A network of ancient pilgrimage trails through the Kii Peninsula's mountains, connecting sacred sites across Mie, Nara, and Wakayama — twinned with Spain's Camino de Santiago."
+  - name: "Suzuka Circuit"
+    description: "A major motorsport circuit built by Honda in 1962, which has hosted the Formula 1 Japanese Grand Prix since 1987."
+products:
+  - name: "Ise-katagami Stencil Print"
+    description: "Ise-katagami are intricately hand-cut paper stencils historically used to dye kimono fabric, produced in Mie for centuries and once supplied to textile dyers across Japan. Confirm AmazonGlobal eligibility before publishing."
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    retailer: "amazon"
+    category: "local-specialty"
+  - name: "Mikimoto Pearl Jewelry"
+    description: "Kokichi Mikimoto founded his pearl company in Toba, Mie in the 1890s after inventing the modern cultured pearl, and it remains one of the world's best-known luxury pearl brands."
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    retailer: "amazon"
+    category: "company"
+experiences:
+  - name: "Ise Jingu Full-Day Pilgrimage Tour"
+    description: "Guided day tour of Ise Jingu's Inner and Outer Shrines."
+    bookingUrl: "https://partners.viator.com/EXAMPLE-ise-tour?aid=YOUR-AFFILIATE-ID"
+    provider: "viator"
+  - name: "Mikimoto Pearl Island & Toba Tour"
+    description: "Guided tour of Mikimoto Pearl Island, including a pearl-diving demonstration."
+    bookingUrl: "https://www.getyourguide.com/mie-l6159/EXAMPLE-toba-tour/?partner_id=YOUR-AFFILIATE-ID"
+    provider: "getyourguide"
+  - name: "Ise-Shima Ryokan (Rakuten Travel)"
+    description: "A traditional inn in the Ise-Shima area, generated via Rakuten Travel."
+    bookingUrl: "https://travel.rakuten.co.jp/EXAMPLE-ise-ryokan?f_no=YOUR-AFFILIATE-ID"
+    provider: "rakuten-travel"
+---
+
+Mie occupies an unusual place in Japan's cultural geography: it holds the
+country's single most sacred religious site, and — in an entirely
+different register — the birthplace of one of its most successful luxury
+export industries.
+
+### Mie and the wider world
+
+Ise Jingu's connection to the wider world is mostly conceptual — it's
+rarely visited by international tourists relative to its domestic
+importance, but the Kumano Kodo pilgrimage trails nearby have built a
+genuine direct link: in 1998, the Kumano Kodo became officially twinned
+with Spain's Camino de Santiago, and the two are the only pilgrimage
+routes anywhere in the world with UNESCO World Heritage status, with
+pilgrims who complete both eligible for a joint "dual pilgrim"
+certificate.
+
+Mie's more commercially significant global export came from a single
+entrepreneur: in 1893, Kokichi Mikimoto succeeded in cultivating the
+world's first cultured pearl in Toba, after years of failed experiments —
+an innovation that eventually collapsed the market for wild natural
+pearls worldwide and built an entirely new global luxury industry around
+the technique he pioneered, still carried on by the Mikimoto brand today.
+
+### Neighbors: Mie between Kansai and Tokai
+
+Mie sits at the edge of the Kansai region but leans partly toward the
+Tokai/Chubu area economically, with northern Mie closely tied to nearby
+Nagoya — a border position that gives it a slightly different regional
+identity than Kansai's more central prefectures like Kyoto and Osaka.
+
+## Getting there and getting around
+
+Ise-shi Station is reached from Osaka or Nagoya by direct limited express
+train in about 1.5-2 hours; there's no shinkansen stop within Mie itself.
+A car or local bus is useful for reaching Kumano Kodo trailheads.
