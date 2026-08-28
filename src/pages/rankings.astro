@@ -1,62 +1,9 @@
 ---
-import { getCollection, getEntry } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getRankingEntries, RANKING_METRICS } from "../lib/rankings";
 
 const base = import.meta.env.BASE_URL;
-
-const prefectures = await getCollection("prefectures", ({ data }) => {
-  return import.meta.env.PROD ? data.draft !== true : true;
-});
-
-const municipalities = await getCollection("municipalities", ({ data }) => {
-  return import.meta.env.PROD ? data.draft !== true : true;
-});
-
-const prefectureEntries = prefectures.map((prefecture) => ({
-  name: prefecture.data.name,
-  url: `${base}prefectures/${prefecture.id}/`,
-  scope: "prefecture" as const,
-  parentName: null as string | null,
-  metrics: {
-    population: prefecture.data.population,
-    foreignVisitorsAnnual: prefecture.data.foreignVisitorsAnnual ?? null,
-    areaKm2: prefecture.data.areaKm2,
-    populationDensity: prefecture.data.population / prefecture.data.areaKm2,
-    natureScore: prefecture.data.natureScore ?? null,
-    subcultureScore: prefecture.data.subcultureScore ?? null,
-  },
-}));
-
-const municipalityEntries = await Promise.all(
-  municipalities.map(async (municipality) => {
-    const prefecture = await getEntry(municipality.data.prefecture);
-    return {
-      name: municipality.data.name,
-      url: `${base}prefectures/${prefecture.id}/${municipality.id}/`,
-      scope: "municipality" as const,
-      parentName: prefecture.data.name,
-      metrics: {
-        population: municipality.data.population,
-        foreignVisitorsAnnual: municipality.data.foreignVisitorsAnnual ?? null,
-        areaKm2: municipality.data.areaKm2,
-        populationDensity: municipality.data.population / municipality.data.areaKm2,
-        natureScore: municipality.data.natureScore ?? null,
-        subcultureScore: municipality.data.subcultureScore ?? null,
-      },
-    };
-  }),
-);
-
-const allEntries = [...prefectureEntries, ...municipalityEntries];
-
-const metrics = [
-  { key: "population", label: "Population", unit: "" },
-  { key: "foreignVisitorsAnnual", label: "Foreign Visitors (annual)", unit: "" },
-  { key: "areaKm2", label: "Area", unit: "km²" },
-  { key: "populationDensity", label: "Population Density", unit: "/km²" },
-  { key: "natureScore", label: "Nature Score", unit: "/10" },
-  { key: "subcultureScore", label: "Subculture Score", unit: "/10" },
-];
+const allEntries = await getRankingEntries(base);
 ---
 
 <BaseLayout
@@ -84,7 +31,7 @@ const metrics = [
       id="rankings-metric"
       class="rounded-lg border border-line bg-white px-3 py-2 text-sm"
     >
-      {metrics.map((metric) => (
+      {RANKING_METRICS.map((metric) => (
         <option value={metric.key}>{metric.label}</option>
       ))}
     </select>
@@ -98,7 +45,7 @@ const metrics = [
   <script
     type="application/json"
     id="rankings-data"
-    set:html={JSON.stringify({ entries: allEntries, metrics })}
+    set:html={JSON.stringify({ entries: allEntries, metrics: RANKING_METRICS })}
   />
   <script>
     const payload = JSON.parse(document.getElementById("rankings-data")!.textContent!);

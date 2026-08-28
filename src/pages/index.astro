@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getRankingEntries, RANKING_METRICS } from "../lib/rankings";
 
 const base = import.meta.env.BASE_URL;
 
@@ -8,6 +9,8 @@ const sections = [
   { href: `${base}music/`, label: "Music", desc: "Artists and genres worth hearing" },
   { href: `${base}manga/`, label: "Manga", desc: "Series worth starting" },
 ];
+
+const allEntries = await getRankingEntries(base);
 ---
 
 <BaseLayout
@@ -38,14 +41,107 @@ const sections = [
     }
   </div>
 
-  <a
-    href={`${base}rankings/`}
-    class="mt-4 block rounded-xl border border-line bg-accent-soft p-4 transition hover:-translate-y-0.5 hover:shadow-md sm:p-6"
-  >
-    <p class="font-display font-semibold">Rankings</p>
-    <p class="mt-1 text-sm text-ink-soft">
-      Top 10 prefectures and cities by population, foreign visitors, area,
-      density, nature, and subculture — pick a metric and compare.
-    </p>
-  </a>
+  <section class="mt-10 rounded-xl border border-line bg-accent-soft p-4 sm:p-6">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <h2 class="font-display text-lg font-semibold">Rankings</h2>
+      <a href={`${base}rankings/`} class="text-sm text-ink-soft hover:text-accent">
+        Full rankings →
+      </a>
+    </div>
+
+    <select
+      id="home-rankings-metric"
+      class="mt-4 rounded-lg border border-line bg-white px-3 py-2 text-sm"
+    >
+      {RANKING_METRICS.map((metric) => (
+        <option value={metric.key}>{metric.label}</option>
+      ))}
+    </select>
+
+    <div class="mt-4 grid gap-4 sm:grid-cols-2">
+      <div>
+        <h3 class="text-sm font-medium text-ink-soft">Prefectures</h3>
+        <ol id="home-rankings-prefecture" class="mt-2 space-y-2"></ol>
+        <p id="home-rankings-prefecture-empty" class="mt-2 hidden text-sm text-ink-faint">
+          No entries have this metric yet.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-sm font-medium text-ink-soft">Municipalities</h3>
+        <ol id="home-rankings-municipality" class="mt-2 space-y-2"></ol>
+        <p id="home-rankings-municipality-empty" class="mt-2 hidden text-sm text-ink-faint">
+          No entries have this metric yet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script
+    type="application/json"
+    id="home-rankings-data"
+    set:html={JSON.stringify({ entries: allEntries, metrics: RANKING_METRICS })}
+  />
+  <script>
+    const payload = JSON.parse(document.getElementById("home-rankings-data")!.textContent!);
+    const { entries, metrics } = payload as {
+      entries: {
+        name: string;
+        url: string;
+        scope: "prefecture" | "municipality";
+        parentName: string | null;
+        metrics: Record<string, number | null>;
+      }[];
+      metrics: { key: string; label: string; unit: string }[];
+    };
+
+    const metricSelect = document.getElementById("home-rankings-metric") as HTMLSelectElement;
+
+    function formatValue(value: number, unit: string) {
+      const formatted = Number.isInteger(value)
+        ? value.toLocaleString("en-US")
+        : value.toLocaleString("en-US", { maximumFractionDigits: 1 });
+      return unit ? `${formatted} ${unit}` : formatted;
+    }
+
+    function renderColumn(scope: "prefecture" | "municipality") {
+      const list = document.getElementById(`home-rankings-${scope}`)!;
+      const emptyNote = document.getElementById(`home-rankings-${scope}-empty`)!;
+      const metricKey = metricSelect.value;
+      const metric = metrics.find((m) => m.key === metricKey)!;
+
+      const ranked = entries
+        .filter((entry) => entry.scope === scope)
+        .filter((entry) => entry.metrics[metricKey] !== null && entry.metrics[metricKey] !== undefined)
+        .sort((a, b) => (b.metrics[metricKey] as number) - (a.metrics[metricKey] as number))
+        .slice(0, 10);
+
+      list.innerHTML = "";
+      emptyNote.classList.toggle("hidden", ranked.length > 0);
+
+      ranked.forEach((entry, index) => {
+        const li = document.createElement("li");
+        li.className =
+          "flex items-center justify-between rounded-lg border border-line bg-white p-3 transition hover:-translate-y-0.5 hover:shadow-md";
+        li.innerHTML = `
+          <a href="${entry.url}" class="flex items-center gap-2">
+            <span class="font-display w-5 text-ink-faint">${index + 1}</span>
+            <span>
+              <span class="font-medium">${entry.name}</span>
+              ${entry.parentName ? `<span class="ml-1 text-xs text-ink-faint">(${entry.parentName})</span>` : ""}
+            </span>
+          </a>
+          <span class="text-sm font-medium text-accent">${formatValue(entry.metrics[metricKey] as number, metric.unit)}</span>
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    function render() {
+      renderColumn("prefecture");
+      renderColumn("municipality");
+    }
+
+    metricSelect.addEventListener("change", render);
+    render();
+  </script>
 </BaseLayout>
