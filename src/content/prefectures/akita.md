@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Kakunodate Samurai District"
     description: "A well-preserved former samurai quarter with black wooden fences and weeping cherry trees, often called 'Little Kyoto of Tohoku.'"
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kakunodate%20Bukeyashiki.JPG"
+      alt: "A preserved samurai residence with black wooden fences in Kakunodate"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Lake Tazawa"
     description: "Japan's deepest lake at 423 meters, known for its striking cobalt-blue water and a lakeside gold statue of the legendary maiden Tatsuko."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sendatsuzawa%20Kokuy%C5%ABrin%20Tazawako%20Tazawa,%20Senboku-shi,%20Akita-ken%20014-1204,%20Japan%20-%20panoramio.jpg"
+      alt: "The cobalt-blue water of Lake Tazawa"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Oga Peninsula & Namahage Sedo Festival"
     description: "Home of the Namahage tradition — a February festival re-enacts the New Year's Eve house visits for visitors, alongside a dedicated Namahage museum."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Straw%20namahage.2.jpg"
+      alt: "A traditional straw Namahage costume from the Oga Peninsula"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Akita Kanto Festival"
     description: "An August festival where performers balance long bamboo poles hung with dozens of lit paper lanterns on their palms, shoulders, and foreheads — one of Tohoku's three major summer festivals."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akita%20Kanto%20Festival%202023b.jpg"
+      alt: "Performers balancing bamboo poles hung with lit paper lanterns at the Akita Kanto Festival"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Odate Magewappa Bentwood Container"
     description: "A traditional Akita craft bending thin sheets of natural cedar or cypress into round boxes and containers, prized for the wood's grain and mild scent. Confirm AmazonGlobal eligibility before publishing."

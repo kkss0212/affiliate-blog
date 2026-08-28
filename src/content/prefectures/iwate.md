@@ -34,12 +34,28 @@ draft: false
 touristSpots:
   - name: "Chuson-ji Temple, Hiraizumi"
     description: "A UNESCO World Heritage temple complex, including the Konjikido ('Golden Hall'), gilded almost entirely in gold leaf — built by the Northern Fujiwara clan, whose wealth came from Tohoku's gold mines and horse trade."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chuson-ji%20Konjiki-do%20201806.jpg"
+      alt: "The Konjikido golden hall building at Chuson-ji Temple in Hiraizumi"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Geibikei Gorge"
     description: "A limestone gorge navigated by flat-bottomed boats poled by boatmen who traditionally sing folk songs along the way."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Geibi-kei%20(%E7%8C%8A%E9%BC%BB%E6%B8%93)%20-%20panoramio%20-%20Ocavis%20Leechroot.jpg"
+      alt: "The limestone cliffs of Geibikei Gorge along the Satetsu River"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Morioka Castle Ruins Park"
     description: "The stone foundations of a former castle, now a public park in central Morioka, known for cherry blossoms in spring."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Morioka%20Park%201.JPG"
+      alt: "The stone walls of Morioka Castle Ruins Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Jodogahama Beach"
     description: "A white-rock coastal beach near Miyako, part of Sanriku Fukko National Park, established in part to support the region's recovery after 2011."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jodogahama%202017-03-07%20(33326979896).jpg"
+      alt: "The white rock formations of Jodogahama Beach in Miyako"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Nanbu Tekki Cast Iron Teapot"
     description: "Nanbu ironware, produced in the Morioka area for roughly 400 years, is one of Japan's best-known traditional crafts internationally. Confirm AmazonGlobal eligibility before publishing."

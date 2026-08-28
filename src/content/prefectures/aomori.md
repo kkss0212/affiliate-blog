@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Nebuta Matsuri"
     description: "A week-long August festival in Aomori City built around giant illuminated paper floats depicting warriors and mythical figures, paraded through the streets each night."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aomori,%20Nebuta-matsuri%2012.jpg"
+      alt: "An illuminated Nebuta float depicting a warrior figure, paraded at night during Aomori's Nebuta Matsuri"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Hirosaki Castle & Cherry Blossoms"
     description: "One of Japan's most-photographed cherry blossom spots each spring, with roughly 2,600 trees around a preserved Edo-period castle."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cherry%20blossoms%20in%20Hirosaki%20castle%20park%20-%20panoramio.jpg"
+      alt: "Cherry blossoms in bloom around Hirosaki Castle park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Oirase Gorge"
     description: "A well-marked walking trail along a mountain stream near Lake Towada, especially known for autumn foliage."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Oirase%20Stream,%20Towada-Hachimantai%20National%20Park,%20Japan.jpg"
+      alt: "The Oirase Stream flowing through forest in Towada-Hachimantai National Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Sannai-Maruyama Site"
     description: "A large excavated Jomon-period settlement (roughly 5,900-4,200 years old), part of the UNESCO-listed Jomon Prehistoric Sites of Northern Japan."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/140913%20Sannai-Maruyama%20site%20Aomori%20Japan01bs6bs6.jpg"
+      alt: "Reconstructed large wooden structures at the Sannai-Maruyama Jomon-period archaeological site"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Aomori Nambu Diamond Cut-Glass"
     description: "A regional glasswork tradition; alternatively, Tsugaru-nuri lacquerware is Aomori's best-known handicraft export. Confirm AmazonGlobal eligibility before publishing."

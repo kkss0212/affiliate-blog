@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Tsuruga Castle, Aizuwakamatsu"
     description: "A rebuilt castle (the original fell after a month-long siege in the 1868 Boshin War) at the center of Aizu's samurai history, with a museum inside."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aizuwakamatsu%2014-Nov-2020.jpg"
+      alt: "Tsuruga Castle (Aizuwakamatsu Castle), a rebuilt Japanese castle in Fukushima"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Iimoriyama & the Byakkotai Memorial"
     description: "The hillside where the Byakkotai, a unit of teenage samurai cadets, took their own lives in 1868 after mistakenly believing Tsuruga Castle had fallen — visible from the hill, it hadn't."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Byakko-tai%20statues.JPG"
+      alt: "Memorial statues to the Byakkotai on Iimoriyama hill"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Goshikinuma (Five-Colored Ponds)"
     description: "A cluster of volcanic ponds near Mount Bandai, each tinted a different shade of blue, green, or turquoise by mineral content, connected by an easy walking trail."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Autumn%20colours%20at%20Goshikinuma%20(37146434734).jpg"
+      alt: "One of the mineral-tinted Goshikinuma ponds near Mount Bandai in autumn"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Ouchi-juku"
     description: "A preserved Edo-period post town of thatched-roof buildings along a former trade route, now selling local crafts and food."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ouchi-juku,%20Fukushima%2001.jpg"
+      alt: "Thatched-roof buildings lining the main street of Ouchi-juku"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Aizu-nuri Lacquerware Bowl"
     description: "Aizu lacquerware is a roughly 400-year-old regional craft tradition, among the most recognized lacquerware styles in Japan. Confirm AmazonGlobal eligibility before publishing."

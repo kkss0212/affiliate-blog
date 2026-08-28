@@ -36,12 +36,28 @@ draft: false
 touristSpots:
   - name: "Yamadera (Risshaku-ji)"
     description: "A temple complex built into a mountainside, reached by roughly 1,000 stone steps — the setting for Basho's haiku 'Ah, this silence / Sinking into the rocks / Voice of cicada.'"
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yamadera%20Panorama%202011.jpg"
+      alt: "The Yamadera (Risshaku-ji) temple complex built into a mountainside"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Ginzan Onsen"
     description: "A small hot spring town of wooden ryokan lining a narrow river, lit by gas lamps at night — especially striking under snow, and popularly (if unofficially) linked to the look of Studio Ghibli's 'Spirited Away.'"
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ginzan%20Onsen%20in%20autumn%202018.jpg"
+      alt: "Wooden ryokan buildings lining the river in Ginzan Onsen"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Zao Onsen & the Snow Monsters"
     description: "A ski resort famous in winter for 'juhyo' — conifer trees encased in wind-driven snow and ice into eerie, rounded shapes, illuminated at night in season."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Zao%20snow%20monsters%20(51843219946).jpg"
+      alt: "Snow- and ice-encased conifer trees ('snow monsters') on Mount Zao"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Yamagata Castle Ruins (Kajo Park)"
     description: "The remains of a former castle, now a public park in central Yamagata City, with reconstructed gates and moats."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/220430%20Yamagata%20Castle%20Yamagata%20Yamagata%20pref%20Japan01s3.jpg"
+      alt: "A reconstructed gate at the Yamagata Castle ruins in Kajo Park"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Yamagata Cherry (Sakuranbo) Preserves"
     description: "Yamagata's cherry harvest (late June-July) is a major regional event; preserved or dried cherries travel well outside the short fresh season. Confirm AmazonGlobal eligibility before publishing."

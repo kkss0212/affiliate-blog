@@ -35,12 +35,28 @@ draft: false
 touristSpots:
   - name: "Matsushima Bay"
     description: "A bay dotted with roughly 260 small pine-covered islands, considered one of Japan's three most scenic views since the Edo period; best seen by short sightseeing boat."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/211030%20Saigyo%20Modoshi%20no%20Matsu%20Park%20Matsushima%20Miyagi%20pref%20Japan01n.jpg"
+      alt: "Pine-covered small islands scattered across Matsushima Bay"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Zuihoden"
     description: "Date Masamune's ornately decorated mausoleum in Sendai, rebuilt after wartime destruction based on the original's surviving blueprints."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zuiho-den17s3872.jpg"
+      alt: "The ornately decorated Zuihoden mausoleum of Date Masamune in Sendai"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Sendai Castle Ruins (Aoba Castle)"
     description: "Little remains of the original castle beyond stone walls, but the hilltop site has sweeping views over Sendai and a statue of Date Masamune on horseback."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20statue%20Date%20Masamune.jpg"
+      alt: "The equestrian statue of Date Masamune at the Sendai Castle ruins"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Rinno-ji Temple Garden"
     description: "A Zen garden and temple in central Sendai built by Date Masamune's family, with a landscaped pond garden that changes character through the seasons."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Treasure%20house%20of%20Rinnoji%20Temple.JPG"
+      alt: "A building at Rinno-ji Temple in Sendai"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kokeshi Wooden Doll"
     description: "Simple, hand-painted wooden dolls originating in the Tohoku region's hot-spring towns during the Edo period, now a widely recognized Japanese folk-craft souvenir. Confirm AmazonGlobal eligibility before publishing."
