@@ -405,13 +405,35 @@ that `/prefectures/` needed to be grouped/scannable by region:
 
 ## Remaining tasks (read this first in a new session)
 
-- **Fact-check pass**: all 47 prefecture pages were researched from
-  general knowledge at speed in one session (2026-08-28), not verified
-  against primary sources. Each file's frontmatter comment flags this.
-  Priority order: population/area figures (verify against e-Stat),
-  then the more specific historical claims (dates, casualty estimates,
-  named individuals). Two prefectures (Hiroshima, Nagasaki) also want a
-  tone re-read given the weight of what they cover.
+- **Fact-check pass — population/area (2026-08-29 update — done)**: every
+  `population`/`areaKm2` figure across all 47 prefectures and all 20
+  designated-city municipalities was individually cross-checked via
+  WebSearch (query pattern: "<place> population 2020 census <figure>
+  area km2 <figure>", asking the search to confirm or refute the site's
+  own number rather than supply a fresh one — more reliable than an
+  open query, which the very first check (Aomori) showed can return a
+  hallucinated/summarized figure that doesn't match any real source).
+  **Result: zero incorrect figures found** across all 67 articles. Every
+  apparent mismatch traced back to search results citing a different
+  reference date (a 2019, 2023, or 2025 estimate, or a source's own
+  rounding) rather than an actual error in the site's 2020-census
+  figures; two cases (Sapporo city population, Okinawa prefecture
+  population) that looked like real discrepancies were confirmed
+  correct as originally written once cross-checked against a second,
+  more authoritative source (an official-domain PDF found via a
+  Japanese-language query). Caveat: this environment's `WebFetch` tool
+  is fully egress-blocked (confirmed blocked even for example.com, not
+  just wikimedia.org/e-stat.go.jp specifically), so every check here
+  relied on WebSearch's AI-summarized snippets rather than a raw fetch
+  of e-Stat's actual tables — high confidence, but not a substitute for
+  someone with real e-Stat access spot-checking a handful of pages
+  directly if fully primary-source certainty matters.
+  **Historical claims (dates, casualty estimates, named individuals,
+  "firsts") remain largely unverified** — the population/area pass
+  above did not touch this; still to do, prioritized by risk (Hiroshima/
+  Nagasaki casualty figures and dates highest priority, "firsts"/
+  named-individual claims next). Two prefectures (Hiroshima, Nagasaki)
+  also want a tone re-read given the weight of what they cover.
 - **Tourist-spot photos (2026-08-29 update — done)**: all 47 prefectures
   now have sourced `touristSpots` images, via WebSearch-verified
   Wikimedia Commons `Special:FilePath` URLs (same method as Kyoto; see
