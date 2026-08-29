@@ -14,3 +14,7 @@ npm-debug.log*
 
 # macOS
 .DS_Store
+
+# generated social-card images/captions (scripts/social-cards) — regenerate
+# any time with `npm run social-card`, not meant to be version-controlled
+social-cards-output/

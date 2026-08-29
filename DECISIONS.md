@@ -189,6 +189,71 @@ track that doesn't depend on a reader clicking through to book/buy.
   used on life-story-bot ("don't automate what isn't officially supported"),
   revisit this only if/when using each platform's official API.
 
+### Social card pipeline (2026-08-29)
+
+Built in response to the user's idea: a 4-image "info essence card"
+carousel per post (cover / stats / highlight / CTA), one place featured
+per post ("Today: Kyoto"), for Instagram and X.
+
+- **What's built**: `scripts/social-cards/` — a standalone Node script
+  (`npm run social-card`), no Astro build needed first. Reads frontmatter
+  straight from `src/content/{prefectures,municipalities}`, renders 4 HTML
+  card templates (`templates.mjs`) with Playwright at 1080×1080, and
+  writes PNGs + a draft caption to `social-cards-output/<slug>/`
+  (gitignored — regenerate any time). Visual design mirrors the site's own
+  color tokens (`src/styles/global.css`) so cards read as the same brand.
+  Auto-rotates through all 67 published places (`state.json` tracks what's
+  already been featured this cycle) so running it daily naturally works
+  through the whole catalog before repeating; `--slug=`/`--type=` picks a
+  specific place instead (`--type` only needed when a slug exists in both
+  collections, e.g. Kyoto). Full usage in `scripts/social-cards/README.md`.
+- **Known gap, verify before relying on it**: card 1's hero-image
+  background comes from the place's Wikimedia Commons URL. This sandbox's
+  network policy blocks wikimedia.org, so every test render in-session
+  fell back to the plain gradient (gracefully, via `onerror` — nothing
+  breaks) rather than actually showing the photo. Confirm hero images load
+  on a real machine/CI runner before treating the cover card as done.
+- **Posting is manual for now, by design**: the script only produces
+  files — it does not post anywhere. Posting to social media is a
+  visible-to-others action; automating it needs the account owner to set
+  up official API access first (X API v2 developer app + OAuth tokens;
+  Instagram Graph API needs a Business/Creator account linked to a
+  Facebook Page, plus Meta app review for some permissions) — same
+  "don't automate what isn't officially supported" principle as above.
+  Until that exists, the realistic flow is: run `npm run social-card`,
+  review the 4 images + caption, upload manually (natively or via a
+  scheduler like Buffer/Later, which only need normal account login, not
+  API access). Revisit official-API automation once those accounts exist.
+
+### Other acquisition channels considered
+
+- **Pinterest — recommended as a second image channel, low extra effort.**
+  Pins have a much longer discovery lifespan than an X/IG post (weeks to
+  months vs. hours) and Pinterest's own audience skews heavily toward
+  travel planning, which matches this site's content almost exactly. The
+  same 4 card images work as Pins with no new generation work — start by
+  pinning the CTA/highlight cards (they read well as standalone images)
+  linking straight to the article. No API needed to start; manual pinning
+  or Pinterest's native scheduler both just need account login.
+- **Reddit — organic only, not a posting-pipeline target.** Relevant
+  communities exist (r/JapanTravel, r/newsokur, city/prefecture-specific
+  subs) and can send real referral traffic, but only via genuine
+  participation (answering questions, linking your own guide when it's
+  actually the best answer) — treating it as a content-dump channel reads
+  as spam fast and risks a site-wide domain ban from Reddit's spam
+  filters. Not something to automate or batch; worth doing by hand
+  occasionally if there's time, not a pipeline deliverable.
+- **Google Discover / SEO** — already the primary channel via the site's
+  own content (see top of "Traffic"); large hero images and clear,
+  well-structured articles (both already true of every published page)
+  are exactly what makes a site Discover-eligible. Nothing new needed
+  here beyond what's already built — flagged only so it's not overlooked
+  as "no channel besides social."
+- **Newsletter/RSS** — considered, deprioritized. Real compounding value
+  for a content site eventually, but needs an ESP account and ongoing
+  writing effort disproportionate to the site's current size; revisit
+  once there's enough traffic for signups to be worth collecting.
+
 ## Tax & regulatory (Japan resident, English content, Japan-domestic ASPs)
 
 - Japan taxes residents on worldwide income; the audience's language/country
