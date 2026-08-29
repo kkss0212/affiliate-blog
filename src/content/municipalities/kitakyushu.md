@@ -4,8 +4,10 @@
 # NOT checked against primary sources (e-Stat, Kitakyushu City statistics) —
 # re-verify population/area before relying on this for anything official.
 # All affiliate URLs are placeholders (no ASP is approved yet). Tourist-spot
-# photos deferred to a separate sourcing pass, same as the 47 prefecture
-# pages (see DECISIONS.md).
+# photos sourced for 3 of 4 spots below; no confirmed Wikimedia Commons
+# filename was found specifically for the Space World site / Eco-Town
+# facilities — still needs a photo before that touristSpot entry is
+# considered fully sourced (see DECISIONS.md).
 name: "Kitakyushu"
 nameJa: "北九州市"
 prefecture: "fukuoka"
@@ -33,12 +35,24 @@ draft: false
 touristSpots:
   - name: "Mojiko Retro"
     description: "A preserved early-20th-century port district in the Moji area, with Western-influenced brick and stone buildings from Kitakyushu's era as a major international trading port, now a dining and sightseeing district."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/140721%20Mojiko%20Retro%20Kitakyushu%20Japan01s3.jpg"
+      alt: "The preserved early-20th-century buildings of Mojiko Retro in Kitakyushu"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Kokura Castle"
     description: "A reconstructed castle keep in central Kitakyushu, historically the seat of the Kokura domain and, briefly in 1945, on the original target list for the second atomic bomb before weather diverted the mission to Nagasaki."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kokura%20castle.JPG"
+      alt: "The reconstructed keep of Kokura Castle in Kitakyushu"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Space World Site & Kitakyushu Eco-Town"
     description: "Kitakyushu's former steel-mill areas now host an internationally studied 'Eco-Town' cluster of recycling and environmental-technology facilities, part of the city's rebrand from heavy pollution source to environmental case study."
   - name: "Kanmon Straits Waterfront & Kanmon Bridge"
     description: "The narrow strait separating Kyushu from Honshu, spanned by the Kanmon Bridge and crossed by an underwater pedestrian tunnel connecting Kitakyushu to Shimonoseki, Yamaguchi."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Central%20Shimonoseki%20and%20Kanmon%20Strait.JPG"
+      alt: "The Kanmon Straits separating Kitakyushu from Shimonoseki, Yamaguchi"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "TOTO Bathroom Fixture"
     description: "TOTO, one of the world's largest manufacturers of toilets and bathroom fixtures (including the Washlet), was founded in Kitakyushu in 1917."

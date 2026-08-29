@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Fukuoka Castle Ruins (Maizuru Park)"
     description: "The stone-wall ruins of the former Fukuoka Castle, now a park popular for cherry blossoms, with views over the modern city center."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tamon-yagura%20Turret%20of%20Fukuoka%20Castle%20Ruins%20J%C5%8Dnai%20Ch%C5%ABo-ku%20Fukuoka%20City%2020221018.jpg"
+      alt: "The Tamon-yagura turret at the Fukuoka Castle ruins in Maizuru Park"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Kushida Shrine"
     description: "A historic Shinto shrine in the Hakata district, home base of the Hakata Gion Yamakasa festival each July, where teams race enormous decorated floats through the streets."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kushidajinjafukuoka01.jpg"
+      alt: "Kushida Shrine in the Hakata district of Fukuoka"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Fukuoka Tower"
     description: "A seaside observation tower near Momochi Beach, one of Japan's tallest seaside towers, with views over Hakata Bay."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukuoka%20Tower%20October%202011%2001.jpg"
+      alt: "Fukuoka Tower near Momochi Beach"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Genko Historical Museum & Mongol Invasion Sites"
     description: "Coastal defensive stone walls (Genko Boruji) built after the first Mongol invasion attempt, still visible in places along Fukuoka's shoreline, alongside a museum on the invasions."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Genko%20Borui%20at%20Hakata01.jpg"
+      alt: "A surviving section of the Genko Borui defensive stone wall along Hakata Bay"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
 products:
   - name: "Hakata Ramen"
     description: "Fukuoka's Hakata district is the birthplace of tonkotsu (pork bone broth) ramen, one of Japan's most globally recognized ramen styles."

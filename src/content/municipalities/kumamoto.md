@@ -4,8 +4,10 @@
 # NOT checked against primary sources (e-Stat, Kumamoto City statistics) —
 # re-verify population/area before relying on this for anything official.
 # All affiliate URLs are placeholders (no ASP is approved yet). Tourist-spot
-# photos deferred to a separate sourcing pass, same as the 47 prefecture
-# pages (see DECISIONS.md). Note this is Kumamoto CITY specifically — the
+# photos sourced for 3 of 4 spots below; no confirmed Wikimedia Commons
+# filename was found specifically for Sakura no Baba Josaien — still needs
+# a photo before that touristSpot entry is considered fully sourced (see
+# DECISIONS.md). Note this is Kumamoto CITY specifically — the
 # Kumamoto prefecture page already covers Mount Aso, Kumamoto Castle,
 # Suizenji Jojuen, and Kurokawa Onsen, so this page's own touristSpots focus
 # on different, city-specific material (Kumamon, Kato Shrine) to avoid
@@ -33,12 +35,24 @@ draft: false
 touristSpots:
   - name: "Kumamoto Castle"
     description: "One of Japan's three premier castles, still undergoing restoration after significant damage in the 2016 Kumamoto earthquakes — see also the Kumamoto prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kumamoto%20Castle%2020170416-1.jpg"
+      alt: "Kumamoto Castle's main keep towers"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kato Shrine"
     description: "A shrine within the Kumamoto Castle grounds dedicated to Kato Kiyomasa, the castle's original builder, who is venerated locally as a near-legendary figure for his engineering skill and local flood-control projects."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Torii%20of%20Kato%20Shrine.JPG"
+      alt: "The torii gate of Kato Shrine within Kumamoto Castle's grounds"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Sakura no Baba Josaien"
     description: "A dining and shopping complex at the entrance to Kumamoto Castle, styled after a Edo-period castle town, and a common starting point for meeting Kumamon at scheduled public appearances."
   - name: "Suizenji Jojuen Garden"
     description: "A landscaped garden designed in the 1600s to recreate, in miniature, scenes from the 53 stations of the Tokaido road, including a small hill shaped like Mount Fuji — see also the Kumamoto prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Suizenji%20jojuen%20garden.jpg"
+      alt: "The miniature Mount Fuji hill at Suizenji Jojuen Garden"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kumamon Merchandise"
     description: "Kumamon, the black bear mascot created in 2011 for Kumamoto Prefecture's Kyushu Shinkansen marketing campaign, has become one of Japan's best-known and most commercially successful regional mascots."

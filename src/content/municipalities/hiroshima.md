@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Peace Memorial Park & Museum"
     description: "A park built around the hypocenter area, including the Atomic Bomb Dome, the Children's Peace Monument, and a museum documenting the bombing and its aftermath — see also the Hiroshima prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atomic%20Bomb%20Dome,%20Hiroshima,%20South%20view%2020190417%201.jpg"
+      alt: "The preserved Atomic Bomb Dome in Hiroshima Peace Memorial Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing. A plain daytime documentary photo was chosen deliberately for this sensitive site."
   - name: "Hiroshima Castle"
     description: "A reconstructed castle keep (the original was destroyed in the 1945 bombing), with a museum on Hiroshima's samurai-era history — see also the Hiroshima prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima-castle-japan.jpg"
+      alt: "The reconstructed keep of Hiroshima Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Shukkeien Garden"
     description: "A landscaped Edo-period garden near the city center, modeled after West Lake in Hangzhou, China — badly damaged in 1945 and, like much of the city, carefully restored in the postwar decades."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima%20Shukkei-en%20Pond.jpg"
+      alt: "The pond at Shukkeien Garden in Hiroshima"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Hiroshima's Hibaku (Bombed) Streetcars"
     description: "A small number of streetcars that survived the 1945 bombing remain in regular passenger service on the city's tram network today, quietly running alongside newer cars as part of daily city life."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima%20A-Bomb%20Tram%20651.jpg"
+      alt: "One of Hiroshima's surviving hibaku (A-bombed) streetcars still in passenger service"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
 products:
   - name: "Mazda Model Car"
     description: "Mazda, headquartered in Hiroshima, is one of Japan's major automakers, historically known for pioneering rotary engine technology."
