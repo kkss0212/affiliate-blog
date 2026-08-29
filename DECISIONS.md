@@ -224,6 +224,31 @@ per post ("Today: Kyoto"), for Instagram and X.
   review the 4 images + caption, upload manually (natively or via a
   scheduler like Buffer/Later, which only need normal account login, not
   API access). Revisit official-API automation once those accounts exist.
+- **Daily notification via ntfy (2026-08-29 update)**: `--notify` (see
+  `scripts/social-cards/ntfy.mjs`) pushes the run's output to
+  [ntfy](https://ntfy.sh) as a set of notifications — one summary with a
+  button to open the article, one plain-text message carrying the full
+  caption (readable/copy-pasteable straight from the notification), and
+  one attachment per card image (downloadable from the notification). Not
+  end-to-end verified in-session — this sandbox's egress policy blocks
+  ntfy.sh outright (confirmed via a plain `curl`), so this was built
+  strictly against ntfy's documented HTTP publish API
+  (https://docs.ntfy.sh/publish/) and needs a real first run to confirm
+  formatting in an actual client; the code's error handling surfaced
+  correctly when tested against the block (`403 Host not in allowlist`),
+  which at least confirms the failure path isn't silent.
+  `.github/workflows/social-card-daily.yml` runs this daily (23:00 UTC =
+  08:00 JST) via GitHub Actions so it doesn't depend on a local machine or
+  Claude Code session being alive — commits the rotation-state update back
+  to the repo after each run. Needs one-time setup only the account owner
+  can do: add repo secret `NTFY_TOPIC` (treat it like a password — anyone
+  who knows it can read the notifications on the public ntfy.sh server;
+  use a long random string, not something guessable), and set
+  **Settings → Actions → General → Workflow permissions** to "Read and
+  write permissions" so the workflow can push the state-file commit.
+  X/Instagram captions are shared as one draft rather than written
+  separately per platform, per explicit direction — differentiate later
+  only if it turns out to matter.
 
 ### Other acquisition channels considered
 

@@ -1,0 +1,51 @@
+name: Daily social card
+
+# Generates the next place's 4-image card carousel + caption and pushes it
+# to ntfy (https://ntfy.sh by default) so it shows up as a phone/desktop
+# notification with downloadable images and a copy-pasteable caption.
+# Posting to X/Instagram itself stays manual — see scripts/social-cards/README.md.
+#
+# Requires one repo secret: NTFY_TOPIC (the ntfy topic to publish to —
+# treat it like a password, since anyone who knows it can read your
+# notifications). Optional secret: NTFY_SERVER, if self-hosting ntfy
+# instead of using the public ntfy.sh. Set both under
+# Settings → Secrets and variables → Actions → New repository secret.
+on:
+  schedule:
+    # 23:00 UTC = 08:00 JST the next day.
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  social-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need to push the state.json rotation update back afterward.
+          persist-credentials: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Generate and notify
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+        run: npm run social-card -- --notify
+
+      - name: Commit rotation state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/social-cards/state.json
+          git diff --cached --quiet || git commit -m "Update social-card rotation state [skip ci]"
+          git push

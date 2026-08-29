@@ -20,12 +20,21 @@
 //                                                             candidate
 //                                                             without
 //                                                             generating
+//   node scripts/social-cards/generate.mjs --notify        → also push the
+//                                                             result to ntfy
+//                                                             (needs
+//                                                             NTFY_TOPIC env
+//                                                             var set, and
+//                                                             optionally
+//                                                             NTFY_SERVER —
+//                                                             see README.md)
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { chromium } from "playwright";
 import { loadFeaturablePlaces, buildPlaceUrl, KIND_LABEL } from "./content.mjs";
 import { buildCoverHtml, buildStatsHtml, buildHighlightHtml, buildCtaHtml, CARD_DIMENSIONS } from "./templates.mjs";
 import { buildCaption } from "./caption.mjs";
+import { notifyNtfy } from "./ntfy.mjs";
 
 const SITE_URL = "https://kkss0212.github.io";
 const BASE_PATH = "/japan-unpacked/";
@@ -35,9 +44,10 @@ const STATE_PATH = path.resolve(import.meta.dirname, "state.json");
 const OUTPUT_ROOT = path.resolve(import.meta.dirname, "../../social-cards-output");
 
 function parseArgs(argv) {
-  const args = { list: false, slug: null, type: null };
+  const args = { list: false, slug: null, type: null, notify: false };
   for (const arg of argv) {
     if (arg === "--list") args.list = true;
+    else if (arg === "--notify") args.notify = true;
     else if (arg.startsWith("--slug=")) args.slug = arg.slice("--slug=".length);
     else if (arg.startsWith("--type=")) args.type = arg.slice("--type=".length);
   }
@@ -113,7 +123,15 @@ async function main() {
   mkdirSync(outDir, { recursive: true });
 
   console.log(`Generating cards for ${entry.data.name} (${kindLabel})...`);
-  const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium" });
+  // PLAYWRIGHT_CHROMIUM_EXECUTABLE is only needed for this project's own
+  // Claude Code sandbox, where Chromium lives at a fixed, non-default path
+  // (see the environment notes at the top of this session). A normal
+  // `npx playwright install chromium` (e.g. in CI) puts it somewhere
+  // Playwright finds on its own, so leave launch() options empty there.
+  const launchOptions = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE
+    ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE }
+    : {};
+  const browser = await chromium.launch(launchOptions);
   try {
     await renderCard(browser, buildCoverHtml(entry.data, SERIES_LABEL), path.join(outDir, "01-cover.png"));
     await renderCard(browser, buildStatsHtml(entry.data), path.join(outDir, "02-stats.png"));
@@ -133,6 +151,14 @@ async function main() {
 
   console.log(`Done: ${outDir}`);
   console.log(`  01-cover.png, 02-stats.png, 03-highlight.png, 04-cta.png, caption.txt`);
+
+  if (args.notify) {
+    const server = process.env.NTFY_SERVER || "https://ntfy.sh";
+    const topic = process.env.NTFY_TOPIC;
+    console.log(`Pushing to ntfy (${server}/${topic})...`);
+    await notifyNtfy({ server, topic, place: entry.data, kindLabel, url, outDir, caption });
+    console.log("ntfy: sent summary + caption + 4 card attachments.");
+  }
 }
 
 main().catch((err) => {
