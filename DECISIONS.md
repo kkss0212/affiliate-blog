@@ -428,12 +428,46 @@ that `/prefectures/` needed to be grouped/scannable by region:
   of e-Stat's actual tables — high confidence, but not a substitute for
   someone with real e-Stat access spot-checking a handful of pages
   directly if fully primary-source certainty matters.
-  **Historical claims (dates, casualty estimates, named individuals,
-  "firsts") remain largely unverified** — the population/area pass
-  above did not touch this; still to do, prioritized by risk (Hiroshima/
-  Nagasaki casualty figures and dates highest priority, "firsts"/
-  named-individual claims next). Two prefectures (Hiroshima, Nagasaki)
-  also want a tone re-read given the weight of what they cover.
+- **Fact-check pass — historical claims, risk-prioritized spot-check
+  (2026-08-29 update — done, not exhaustive)**: given the size of the
+  corpus (67 articles) and the WebSearch-only constraint above, this
+  was a targeted spot-check of the highest-risk claims rather than a
+  line-by-line audit of every date/name/superlative in every article.
+  Checked and confirmed accurate: Hiroshima's Aug 6, 1945 date and
+  "~140,000 deaths by end of 1945" (matches the standard widely-cited
+  estimate, including Hiroshima City's own official FAQ); Nagasaki's
+  Aug 9, 1945 date and "~70,000 deaths by end of 1945" (same); the
+  1995 Great Hanshin earthquake's Jan 17 date and "magnitude 6.9"
+  (correct on the moment-magnitude scale commonly used internationally,
+  vs. 7.3 on the JMA scale the Japanese press usually quotes — both are
+  legitimate, no fix needed); the 1877 siege of Kumamoto Castle's
+  50–54 day range (prefecture page's "53-day" and municipality page's
+  "seven-week" both fall inside the range actual sources give); Sapporo
+  hosting the first Winter Olympics held in Asia (1972, confirmed
+  exactly); Yokohama's 1859 treaty-port opening; Kyoto's 17-component
+  UNESCO "Historic Monuments of Ancient Kyoto" listing (confirmed
+  exactly, including that Nijo Castle and the Kyoto Imperial Palace's
+  neighborhood sites are among the 17); Sakai's "~90% of Japan's
+  professional kitchen-knife market" (confirmed, one source even cites
+  98%, so 90% is if anything conservative); Nagasaki/Dejima's "200+
+  years" as Japan's sole Western trading window (1641–1854 or 1641–1859
+  depending on the source — both exceed 200 years). **One inconsistency
+  found and fixed**: `municipalities/kobe.md` said the 1995 earthquake
+  "killed over 6,000 people" in two places (a highlight bullet and the
+  body prose) while `prefectures/hyogo.md` and the confirmed official
+  final toll (6,434, per Japan's National Police Agency as reported by
+  multiple sources) both say "over 6,400" — tightened both places in
+  kobe.md to match. **Not checked**: the great majority of the corpus's
+  smaller factual claims (individual "founded in [year]," population-
+  rank superlatives, named-individual biographical details) — this was
+  a risk-weighted sample of the claims most likely to be wrong or most
+  reputationally sensitive if wrong, not full coverage. If a completely
+  clean bill of health is needed, budget for a genuine line-by-line pass
+  or, better, access to a working WebFetch/browsing tool so sources can
+  be read directly instead of through WebSearch's summaries. A tone
+  re-read of Hiroshima/Nagasaki (checking for anything that reads as
+  flippant given the subject, independent of factual accuracy) has not
+  been done separately from this fact pass — still open if wanted.
 - **Tourist-spot photos (2026-08-29 update — done)**: all 47 prefectures
   now have sourced `touristSpots` images, via WebSearch-verified
   Wikimedia Commons `Special:FilePath` URLs (same method as Kyoto; see

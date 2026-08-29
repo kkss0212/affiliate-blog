@@ -28,7 +28,7 @@ comparedTo:
   reason: "Both are mountain-backed port cities with a strong international, maritime identity, and both carry a serious earthquake in living memory (Kobe's 1995 Great Hanshin earthquake, Seattle's 2001 Nisqually quake) that reshaped how the city thinks about building and rebuilding."
 highlights:
   - "Opened in 1868 as one of Japan's original treaty ports, building a lasting cosmopolitan, international identity"
-  - "Devastated by the 1995 Great Hanshin earthquake, which killed over 6,000 people — and rebuilt over the following decade into a modern, resilient port city"
+  - "Devastated by the 1995 Great Hanshin earthquake, which killed over 6,400 people — and rebuilt over the following decade into a modern, resilient port city"
   - "Kobe beef, a wagyu brand raised under strict local standards, is one of Japan's most internationally famous food exports"
   - "A narrow city squeezed between the Rokko mountain range and Osaka Bay, giving it an unusually compressed, walkable urban geography"
 updatedDate: 2026-08-29
@@ -92,7 +92,7 @@ Japanese neighbor, Osaka, less than an hour away.
 
 Kobe's modern history is inescapably defined by the Great Hanshin
 earthquake, a magnitude 6.9 quake that struck before dawn on January 17,
-1995, killing more than 6,000 people and destroying or badly damaging tens
+1995, killing more than 6,400 people and destroying or badly damaging tens
 of thousands of buildings across the city — at the time, Japan's deadliest
 earthquake since 1923. The disaster exposed serious gaps in Japan's
 building codes and disaster-response coordination, and the lessons drawn
