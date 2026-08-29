@@ -39,12 +39,28 @@ draft: false
 touristSpots:
   - name: "Sakurajima"
     description: "An active volcano across the bay from Kagoshima City, reachable by a short ferry, with lava-flow trails, foot baths, and observation points for viewing eruptions from a safe distance."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kagoshima%20city%20and%20Sakurajima.jpg"
+      alt: "The active Sakurajima volcano across the bay from Kagoshima City"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Sengan-en"
     description: "A historic garden estate of the Shimazu clan, Satsuma's ruling family, designed to incorporate Sakurajima itself into the view as 'borrowed scenery.'"
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bamboo%20forest%20and%20Senjingan%20at%20Sengan-en.jpg"
+      alt: "The bamboo forest grounds of Sengan-en garden"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Chiran Samurai Residence District"
     description: "A preserved street of Edo-period samurai houses and gardens; the town was also the site of a WWII kamikaze pilot training base, documented today at a nearby peace museum."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chiran%20Samurai%20Residence%20Garden%20(4278149091).jpg"
+      alt: "A preserved samurai residence garden in Chiran"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Tanegashima Space Center"
     description: "JAXA's main rocket launch facility, on the same island where Portuguese firearms first reached Japan in 1543 — occasional public viewing is possible for scheduled launches."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Osaki%20Range.jpg"
+      alt: "The Osaki Range launch facility at the Tanegashima Space Center"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Satsuma-yaki Ceramic Vase"
     description: "Satsuma ware developed from techniques brought by Korean potters relocated to the region in the late 1500s, producing both an elegant crackle-glazed white style and a darker everyday black style. Confirm AmazonGlobal eligibility before publishing."

@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Arita"
     description: "A porcelain town of kilns, shops, and the Kyushu Ceramic Museum, tracing the roughly 400-year history of Japan's first porcelain tradition."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Arita%20ware%20Arita%20Saga%20prefecture%20Wikivoyage%20banner.jpg"
+      alt: "Arita ware porcelain from the town of Arita"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Yoshinogari Historical Park"
     description: "A reconstructed Yayoi-period moated settlement, based on one of Japan's largest and most significant archaeological excavations of the era."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yoshinogari%20Ancient%20Ruins%2020170222.jpg"
+      alt: "Reconstructed Yayoi-period structures at Yoshinogari Historical Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Karatsu"
     description: "A castle town with its own distinct ceramic tradition, Karatsu-yaki, ranked third behind Raku and Hagi ware in a well-known traditional ranking of tea bowls."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tenshu%20and%20Jonaibashi%20Bridge%20of%20Karatsu%20Castle.JPG"
+      alt: "Karatsu Castle's keep and the Jonaibashi Bridge"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Saga International Balloon Fiesta"
     description: "One of Asia's largest hot air balloon festivals, held each November over the Kase River, drawing competitors and visitors from around the world."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Various%20shapes%20of%20balloons%20Saga%20balloon%20fiesta%202015%2002.JPG"
+      alt: "Colorful hot air balloons at the Saga International Balloon Fiesta"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Arita-yaki (Imari) Porcelain Plate"
     description: "Arita ware was Japan's first porcelain and one of its earliest major exports to Europe, shipped from the nearby port of Imari starting in the 1650s. Confirm AmazonGlobal eligibility before publishing."

@@ -35,12 +35,28 @@ draft: false
 touristSpots:
   - name: "Dejima"
     description: "The restored former Dutch trading post, rebuilt to reflect different periods of its roughly 200-year history as Japan's only legal point of contact with the West during national isolation."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dejima%20Museum.jpg"
+      alt: "Reconstructed buildings at the Dejima trading post museum"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Glover Garden"
     description: "A hillside collection of preserved Western-style merchant houses overlooking the harbor, including the residence of Thomas Glover, a Scottish trader whose ventures helped found what became Mitsubishi's shipbuilding operations."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Old%20Glover%20House%20Glover%20Garden%20Nagasaki%20Right.JPG"
+      alt: "The Old Glover House in Glover Garden, overlooking Nagasaki harbor"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Oura Church"
     description: "Japan's oldest surviving church, built in 1864 for Nagasaki's small foreign community — the site where, the following year, a group of local villagers secretly revealed themselves to the resident priest as descendants of Hidden Christians."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Oura%20Church%20Nagasaki.JPG"
+      alt: "Oura Church, Japan's oldest surviving church"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Nagasaki Peace Park & Atomic Bomb Museum"
     description: "A park and museum near the atomic bomb hypocenter, documenting the 1945 bombing and Nagasaki's postwar reconstruction and peace advocacy."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/20190202%20Nagasaki%20Peace%20Park%20Peace%20Statue-1.jpg"
+      alt: "The Peace Statue in Nagasaki Peace Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing. A plain documentary photo of the memorial statue was chosen deliberately for this sensitive site."
 products:
   - name: "Nagasaki Bidoro Glassware"
     description: "Nagasaki glasswork ('bidoro,' from the Portuguese 'vidro') developed from glassmaking techniques introduced through Dutch and Portuguese trade at Dejima, one of Japan's earliest points of contact with Western craft techniques. Confirm AmazonGlobal eligibility before publishing."

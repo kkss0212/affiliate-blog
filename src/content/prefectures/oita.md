@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Beppu Jigoku Meguri (Hells Tour)"
     description: "A circuit of striking, brightly mineral-colored hot spring pools around Beppu — including a cobalt-blue 'Sea Hell' and a deep red 'Blood Pond Hell' — meant for viewing rather than bathing."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Umi%20Jigoku%20(Sea%20Hell)%20in%20Beppu.jpg"
+      alt: "The cobalt-blue water of Umi Jigoku (Sea Hell) in Beppu"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Yufuin"
     description: "A more refined, boutique hot spring town at the foot of Mount Yufu, known for craft shops, cafes, and quieter ryokan than Beppu's larger-scale bathing culture."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Mount%20Yufudake%20and%20Yufuin%20Onsen%20Street%20in%20front%20of%20Yufuin%20Station.JPG"
+      alt: "Mount Yufu rising above the streets of Yufuin"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Usuki Stone Buddhas"
     description: "A collection of Buddhist statues carved directly into cliff faces, some dating back roughly 1,000 years, among Japan's most significant stone Buddhist sculpture sites."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Usuki%20Stone%20Buddhas.jpg"
+      alt: "Buddhist statues carved into the cliff face at Usuki"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Takasakiyama Monkey Park"
     description: "A mountain park near Beppu home to a large troop of wild Japanese macaques, free to roam while visitors observe from designated areas."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/%22Wild%22%20monkey%20at%20Takasakiyama%20Monkey%20Park,%20Beppu%20(6155630777).jpg"
+      alt: "A Japanese macaque at Takasakiyama Monkey Park"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Beppu Take-zaiku Bamboo Basket"
     description: "Beppu bamboo craft is a nationally designated traditional Japanese craft, known for intricate hand-woven patterns using locally grown madake bamboo. Confirm AmazonGlobal eligibility before publishing."

@@ -35,12 +35,28 @@ draft: false
 touristSpots:
   - name: "Mount Aso"
     description: "One of the world's largest volcanic calderas, with a still-active crater that can be approached (conditions permitting) via ropeway or road, surrounded by vast grasslands used for cattle grazing."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Aso,%20Japan.jpg"
+      alt: "The vast grasslands and crater of Mount Aso"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kumamoto Castle"
     description: "One of Japan's three premier castles, still undergoing restoration after significant damage in the 2016 Kumamoto earthquakes — check current visitor access before planning a visit."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kumamoto%20Castle%2020170416-1.jpg"
+      alt: "Kumamoto Castle's main keep towers"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Suizenji Jojuen Garden"
     description: "A landscaped garden designed in the 1600s to recreate, in miniature, scenes from the 53 stations of the Tokaido road, including a small hill shaped like Mount Fuji."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Suizenji%20jojuen%20garden.jpg"
+      alt: "The miniature Mount Fuji hill at Suizenji Jojuen Garden"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kurokawa Onsen"
     description: "A hot spring village known for its atmospheric, forested setting and a shared ticket system letting visitors bathe at multiple outdoor inns in one visit."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Street%20in%20Kurokawa%20Onsen.jpg"
+      alt: "A street in the forested hot spring village of Kurokawa Onsen"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Higo Zogan Metal Inlay Accessory"
     description: "Higo zogan is a Kumamoto metalworking tradition combining iron with gold and silver inlay, historically used to decorate samurai sword guards and armor. Confirm AmazonGlobal eligibility before publishing."

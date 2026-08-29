@@ -33,10 +33,22 @@ draft: false
 touristSpots:
   - name: "Takachiho Gorge"
     description: "A narrow, cliff-walled gorge carved by a waterfall-fed river, explorable by rented rowboat, central to the mythology of Japan's imperial founding."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Takachiho%20Gorge%20(52133238898).jpg"
+      alt: "Manai Falls dropping into the cliff-walled Takachiho Gorge"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Miyazaki Shrine"
     description: "A shrine dedicated to Emperor Jimmu, Japan's legendary first emperor, traditionally said to have set out from this region to found the nation."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Facility%20of%20Miyazaki%20jingu%20Shrine.jpg"
+      alt: "A building at Miyazaki Shrine"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Aoshima Island"
     description: "A small subtropical island connected to the mainland by a causeway, ringed by 'Devil's Washboard' — a distinctive wave-cut rock formation of natural ridges."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aoshima,%20Miyazaki%20Prefecture.jpg"
+      alt: "Aoshima Island and its surrounding wave-cut rock formations"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Nichinan Coast"
     description: "A palm-tree-lined coastal drive south of Miyazaki City, central to the region's mid-20th-century 'Japan's Hawaii' branding."
 products:
