@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Nijo Castle"
     description: "A UNESCO World Heritage flatland castle built by Tokugawa Ieyasu as his Kyoto residence, famous for its 'nightingale floors' — floorboards engineered to chirp underfoot as a security measure against intruders."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nijo%20Castle%202017.jpg"
+      alt: "The Ninomaru Palace at Nijo Castle in Kyoto"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Kyoto Imperial Palace"
     description: "The former residence of Japan's imperial family until the 1868 move to Tokyo, set within a large public park in the city center and open for scheduled tours."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20Imperial%20Palace,%20South%20view%2020130811.jpg"
+      alt: "The south view of Kyoto Imperial Palace"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Nishiki Market"
     description: "A narrow, centuries-old covered market street known as 'Kyoto's Kitchen,' lined with stalls selling local produce, pickles, and street food."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hirousu%20in%20Nishiki%20market,%20Kyoto.JPG"
+      alt: "A food stall in Kyoto's Nishiki Market"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Kyoto Tower"
     description: "A distinctive white observation tower directly opposite Kyoto Station, offering panoramic city views and a useful orientation point for first-time visitors."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto%20Tower%20at%20night%2020191006.jpg"
+      alt: "Kyoto Tower illuminated at night"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kyoto-Style Pickles (Kyo-tsukemono)"
     description: "A category of refined vegetable pickles associated with Kyoto's kaiseki and temple-cuisine traditions, widely sold at Nishiki Market and beyond."

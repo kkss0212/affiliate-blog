@@ -4,8 +4,10 @@
 # NOT checked against primary sources (e-Stat, Chiba City statistics) —
 # re-verify population/area before relying on this for anything official.
 # All affiliate URLs are placeholders (no ASP is approved yet). Tourist-spot
-# photos deferred to a separate sourcing pass, same as the 47 prefecture
-# pages (see DECISIONS.md).
+# photos sourced for 3 of 4 spots below; no confirmed Wikimedia Commons
+# filename was found for Chiba Shrine specifically (search kept surfacing
+# other Chiba-prefecture shrines) — still needs a photo before this
+# touristSpot entry is considered fully sourced (see DECISIONS.md).
 name: "Chiba"
 nameJa: "千葉市"
 prefecture: "chiba"
@@ -29,10 +31,22 @@ draft: false
 touristSpots:
   - name: "Kasori Shell Mounds Museum"
     description: "An archaeological park and museum built around one of the world's largest Jomon-period shell mound sites, roughly 5,000-2,500 years old, offering a rare close look at prehistoric Japanese coastal life."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/KasoriShellMoundsMuseum20110918.jpg"
+      alt: "The Kasori Shell Mounds Museum building"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Makuhari Messe"
     description: "A major convention center on reclaimed land in Chiba, host to the Tokyo Game Show, anime and manga conventions, and international trade shows, despite its Tokyo-branded event names."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Makuhari%20Messe%2020111122e.jpg"
+      alt: "The Makuhari Messe convention center in Chiba"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Chiba Port Tower"
     description: "A lattice observation tower on Chiba's waterfront, with views over Tokyo Bay and, on clear days, toward Mount Fuji."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chiba%20Port%20Tower%2001.jpg"
+      alt: "Chiba Port Tower on the Chiba waterfront"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Chiba Shrine"
     description: "A Shinto shrine with roots tracing back over a thousand years, historically associated with the Chiba clan who gave the city its name."
 products:

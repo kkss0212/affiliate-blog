@@ -29,12 +29,28 @@ draft: false
 touristSpots:
   - name: "The Railway Museum, Omiya"
     description: "One of Japan's largest railway museums, in Omiya — historically a major railway hub — with dozens of preserved locomotives and train cars — see also the Saitama prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Front%20of%20Shinkansen%200%20at%20Railway%20Museum.jpg"
+      alt: "A preserved Shinkansen 0 series train on display at the Railway Museum in Omiya"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Omiya Bonsai Village"
     description: "A small residential district of specialist bonsai nurseries, established in the 1920s after growers relocated from Tokyo; several gardens are open to visitors and internationally renowned among bonsai enthusiasts."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bonsai%20nursery%20@%20Omiya%20Bonsai%20Village%20(13593494093).jpg"
+      alt: "A bonsai nursery in Omiya Bonsai Village"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Hikawa Shrine, Omiya"
     description: "One of the oldest and most important Shinto shrines in the wider Kanto region, traditionally regarded as the chief shrine of the historic Musashi province, reached via a roughly 2-km approach avenue lined with trees."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hikawa-jinja%20Omiya%20Saitama%2001.jpg"
+      alt: "Hikawa Shrine in Omiya, Saitama"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Saitama Super Arena"
     description: "One of Japan's largest indoor arenas, hosting major concerts, exhibitions, and international sporting events including World Baseball Classic games."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Saitama%20Super%20Arena%2002.jpg"
+      alt: "Saitama Super Arena, one of Japan's largest indoor arenas"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Omiya Bonsai (Small Tree)"
     description: "A small bonsai tree from a Saitama nursery in the tradition of Omiya Bonsai Village, one of the world's best-known bonsai-growing districts."

@@ -29,12 +29,28 @@ draft: false
 touristSpots:
   - name: "Korakuen Garden"
     description: "One of Japan's 'three great gardens,' built in the late 1600s next to Okayama Castle, with open lawns unusual for a traditional Japanese garden — see also the Okayama prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/160319%20Korakuen%20Okayama%20Japan04s3.jpg"
+      alt: "The open lawns of Korakuen Garden in Okayama"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Okayama Castle"
     description: "A reconstructed castle nicknamed 'Crow Castle' for its black exterior, standing across the river from Korakuen Garden — see also the Okayama prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Okayama%20castle02s3872.jpg"
+      alt: "Okayama Castle's black-walled keep, nicknamed Crow Castle"
+      credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
   - name: "Momotaro-odori Avenue"
     description: "The main pedestrian approach street from Okayama Station, lined with Momotaro-themed statues and decorations that lean fully into the city's folk-hero branding."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Momotaro-odori%20St.%20-%20panoramio.jpg"
+      alt: "Momotaro-odori Avenue, the main pedestrian street from Okayama Station"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Okayama Orient Museum"
     description: "A museum dedicated to ancient Middle Eastern and Central Asian art and archaeology — an unusual specialty for a Japanese regional city, built around a locally donated collection."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/160319%20Okayama%20Orient%20Museum%20Okayama%20Japan04s3.jpg"
+      alt: "The Okayama Orient Museum building"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Okayama Peach (Hakuto)"
     description: "Okayama is one of Japan's premier peach-growing regions, tied closely to the city's Momotaro ('Peach Boy') folk-hero branding."
