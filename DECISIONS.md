@@ -412,27 +412,24 @@ that `/prefectures/` needed to be grouped/scannable by region:
   then the more specific historical claims (dates, casualty estimates,
   named individuals). Two prefectures (Hiroshima, Nagasaki) also want a
   tone re-read given the weight of what they cover.
-- **Tourist-spot photos (2026-08-28 update)**: 33 of 47 prefectures now
-  have sourced `touristSpots` images — all of Tohoku, Kanto, Chubu,
-  Kansai, plus Tokyo/Osaka/Hokkaido/Okinawa/Fukuoka, plus Tottori,
-  Shimane, and most of Okayama/Hiroshima. Same Wikimedia Commons
-  `Special:FilePath` approach as Kyoto (see "Prefecture page format"
-  above); WebFetch/curl to wikimedia.org is blocked by this sandbox's
-  egress proxy (confirmed via 403 on both commons.wikimedia.org and
-  upload.wikimedia.org), so filenames can only be confirmed via
-  `WebSearch`, and rendering can't be verified in-session at all —
-  always ask the user to spot-check on the live site after adding new
-  images. **Still missing images** (render the accent-gradient
-  camera-icon fallback, `src/pages/prefectures/[slug].astro`): all of
-  Yamaguchi (Chugoku); Kurashiki Bikan Historical Quarter (Okayama),
-  Onomichi and Hiroshima Castle (Hiroshima) — this session's
-  `WebSearch` budget (200 calls) was exhausted before these could be
-  sourced; Shosenkyo Gorge (Yamanashi) — no suitable Commons photo was
-  found even before the budget ran out; and all of Shikoku (Tokushima,
-  Kagawa, Ehime, Kochi) and Kyushu (Saga, Nagasaki, Kumamoto, Oita,
-  Miyazaki, Kagoshima) haven't been started. Continue with Yamaguchi,
-  then Shikoku, then Kyushu, then circle back to the handful of gaps
-  above.
+- **Tourist-spot photos (2026-08-29 update — done)**: all 47 prefectures
+  now have sourced `touristSpots` images, via WebSearch-verified
+  Wikimedia Commons `Special:FilePath` URLs (same method as Kyoto; see
+  "Prefecture page format" above). Two spots were deliberately left
+  without an image because no suitable Commons photo exists: Shosenkyo
+  Gorge (Yamanashi) and Nichinan Coast (Miyazaki) — both render the
+  accent-gradient camera-icon fallback
+  (`src/pages/prefectures/[slug].astro`), by design. For the two
+  atomic-bombing memorial sites (Hiroshima's Peace Memorial Park,
+  Nagasaki's Peace Park & Atomic Bomb Museum), a plain daytime
+  documentary photo was chosen deliberately given the weight of what
+  they cover. WebFetch/curl to wikimedia.org is blocked by this
+  sandbox's egress proxy (confirmed via 403 on both
+  commons.wikimedia.org and upload.wikimedia.org), so none of these
+  ~185 images could be rendering-verified in-session — the user
+  confirmed Kyoto's images render correctly in production, validating
+  the method, but a fresh spot-check across a few more prefectures
+  would still be worthwhile.
 - **Municipality pages** (`[prefecture]/[municipality].astro`) still use
   the old plain `dl`-table layout, not the current visual system
   (StatCard/ScoreMeter/ShareBar/hero banner/JapanMap). Only one example
