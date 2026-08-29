@@ -448,8 +448,19 @@ that `/prefectures/` needed to be grouped/scannable by region:
   (same WebSearch/Wikimedia Commons method used for the 47 prefectures
   — a natural next photo-sourcing pass, roughly 70-80 images across the
   20 cities' ~4 spots each).
-- **Music/manga content**: `city-pop.md` and `one-piece.md` are still
-  structural placeholders, `draft: true`.
+- **Music/manga content (2026-08-29 update — done)**: `cultureGuide` schema
+  extended (`genres`, `composition`, `originPrefecture`/
+  `originMunicipality` references, `popularityAbroad`, `forFansOf`), and
+  both `music/[slug].astro`/`manga/[slug].astro` rebuilt to the same
+  visual system as the place pages (hero, StatCard grid, genre-tag pills,
+  ScoreMeter, a `forFansOf` card mirroring `comparedTo`). Two real
+  articles published (`draft: false`): `perfume.md` (Hiroshima-formed
+  technopop trio, linking to both the Hiroshima prefecture and city
+  pages) and a rewritten `one-piece.md` (Eiichiro Oda, linking to
+  Kumamoto). The old genre-overview placeholder `city-pop.md` is
+  untouched, still `draft: true` — harmless, not linked anywhere in a
+  prod build. Natural next step if more culture-guide entries are
+  wanted: same pattern, one more artist/series at a time.
 - **ASP follow-ups** (see `docs/asp-checklist.md` for full detail):
   Amazon Associates can be applied for now (threshold met, 47
   published articles); GetYourGuide via Awin hasn't been started;
