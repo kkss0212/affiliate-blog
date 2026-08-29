@@ -569,6 +569,84 @@ that `/prefectures/` needed to be grouped/scannable by region:
   hover/focus (and clears it on blur/mouseleave) — verified via a
   Playwright DOM check, not just visually.
 
+## Music/Manga expansion: affiliate audit, daily auto-publish, genre categories (2026-08-29)
+
+User reported the Perfume music page appeared to be missing its affiliate
+placements. Investigation found the built HTML actually rendered both the
+"Listen" (Music Unlimited subscription card) and "Own it" (GAME album
+product card) sections correctly — most likely a stale browser cache from
+right after the repo rename (when the site genuinely was unstyled/broken
+for a few minutes), not an actual bug. Verified with a structural audit
+script checking every published article across all four collections
+(prefectures/municipalities/music/manga) for at least one entry in each
+relevant affiliate array (`products`/`experiences` for places,
+`products`/`subscriptions` for music/manga) — **zero gaps found**. Note:
+`experiences` (Viator/GetYourGuide/Rakuten Travel booking links) are still
+`EXAMPLE` placeholders across the board — expected, not a bug, since those
+ASPs aren't fully live yet (see the ASP checklist section above); only the
+Amazon-based `products`/`subscriptions` arrays are real right now.
+
+- **`city-pop.md` was a literal schema-demo placeholder** (`draft: true`,
+  body text literally saying "draft guide goes here") despite already
+  having real affiliate links from an earlier pass — rewritten into a
+  real published article (City Pop the genre, framed around "Plastic
+  Love"'s 2017-18 YouTube-algorithm viral revival) and flipped to
+  `draft: false` directly, since it needed no new research.
+- **8 new draft articles added** as a publish queue: manga —
+  Dragon Ball (Toriyama, Aichi/Kiyosu), Naruto (Kishimoto, Okayama/Nagi —
+  note his birthplace is Nagi, not "Nakasho," which doesn't check out
+  against any source), Attack on Titan (Isayama, Oita — birthplace Oyama,
+  now part of Hita City), Fullmetal Alchemist (Arakawa, Hokkaido — her
+  birthplace is Makubetsu/Tokachi, **not** Tokoro/Kitami as originally
+  assumed, a correction surfaced by research); music — Babymetal (Tokyo,
+  agency-based — members are NOT from Tokyo individually, see the file's
+  own header comment), Hatsune Miku/Vocaloid (Hokkaido/Sapporo — Crypton
+  Future Media's HQ, a clean tie-in to the already-published Sapporo
+  municipality page), Kyary Pamyu Pamyu (Tokyo/Nishitokyo), X Japan
+  (Chiba — formed in Tateyama, a different city from the already-published
+  Chiba City municipality page, so this links Chiba prefecture only, not
+  that municipality). All researched via WebSearch to the same
+  moderate-to-high-confidence-but-unverified standard as existing
+  articles, each with a real Amazon.co.jp product ASIN and (for manga)
+  real Kindle Unlimited + Prime Video referral links, or (for music) a
+  Music Unlimited referral link. None of the four manga creators' actual
+  hometowns are designated-city municipalities published on this site, so
+  each links its prefecture page only — the specific town/city is still
+  named in the article body.
+- **`scripts/daily-publish.mjs`** (new): publishes the single oldest
+  `draft: true` entry across `src/content/music/` + `src/content/manga/`
+  (sorted by `collection/filename` for a stable order) by flipping
+  `draft: true` → `false` and bumping `updatedDate` to today. No separate
+  state file needed — unlike the social-card rotation, this queue is
+  self-consuming: once an entry publishes it's no longer `draft: true`,
+  so it naturally drops out of future runs. `--list` shows the current
+  queue without changing anything; `--dry-run` shows what the next run
+  would publish. Verified end-to-end with a throwaway dummy draft file
+  before relying on it against real content.
+- **`.github/workflows/daily-publish.yml`** (new): cron `0 22 * * *`
+  (07:00 JST), offset an hour from `social-card-daily.yml`'s `23:00 UTC`
+  run so the two don't compete for runner time. Runs the script, then
+  `npm run build` as a safety check (fails the job before committing if
+  the flip somehow broke schema validation), then commits+pushes with
+  `[skip ci]`. `workflow_dispatch` also available for manual runs. Once
+  the 8-article queue above is exhausted, the workflow just logs "nothing
+  to publish" each day — add more `draft: true` files any time to keep it
+  running; there's no need to touch the workflow itself.
+- **Genre-grouped category pages** (`/music/` and `/manga/` index pages):
+  mirrors `prefectures/index.astro`'s region-grouping pattern (anchor nav
+  + `<section>` per group) using each entry's primary genre (`genres[0]`)
+  as the grouping key, via a new shared helper
+  (`src/lib/genreGroups.ts`). Unlike prefectures' fixed `REGION_ORDER`
+  enum, genres are free-form per-entry strings, so the group list itself
+  is derived from whatever's actually in the catalog at build time
+  (sorted by entry count, most-populated genre first) rather than a
+  static ordered list — no code changes needed as new genres get
+  introduced by future articles. Anchor nav only renders once there's
+  more than one group (skips the chrome entirely while the catalog is
+  small). Verified via build output inspection (correct `<h2>` sections:
+  "City Pop"/"Technopop" for music, "Shonen" for manga, before the new
+  drafts publish and add more variety).
+
 ## Remaining tasks (read this first in a new session)
 
 - **Amazon Associates activated (2026-08-29) — product ASIN pass complete

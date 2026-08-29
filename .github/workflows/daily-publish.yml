@@ -1,0 +1,43 @@
+name: Daily article publish
+
+# Publishes the next queued draft article in src/content/music/ or
+# src/content/manga/ — see scripts/daily-publish.mjs for the queue logic.
+# One article goes live per run; the queue empties itself as drafts get
+# written and published, so keep adding new draft:true articles to keep
+# this running.
+on:
+  schedule:
+    # 22:00 UTC = 07:00 JST the next day (offset from the 23:00 UTC
+    # social-card-daily.yml run so the two don't compete for runner time).
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Publish next draft
+        run: node scripts/daily-publish.mjs
+
+      - name: Verify build still passes
+        run: npm run build
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/content/music src/content/manga
+          git diff --cached --quiet && echo "Nothing to publish (queue empty)." || git commit -m "Publish next queued article [skip ci]"
+          git diff --cached --quiet || git push
