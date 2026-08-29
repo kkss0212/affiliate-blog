@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Kintai Bridge, Iwakuni"
     description: "A five-arched wooden bridge over the Nishiki River, first built in 1673 and rebuilt multiple times since, considered one of Japan's most beautiful bridges."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/20100724%20Iwakuni%205235.jpg"
+      alt: "The five-arched wooden Kintai Bridge over the Nishiki River"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Akiyoshido Cave & Akiyoshidai Karst Plateau"
     description: "One of Japan's largest limestone caves, beneath a striking above-ground karst landscape of grassy sinkholes and rock outcrops."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akiyoshidai%20002.jpg"
+      alt: "The grassy karst landscape of the Akiyoshidai plateau"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Shimonoseki & the Kanmon Straits"
     description: "A port city facing Kyushu across a narrow strait, site of the decisive 1185 naval Battle of Dan-no-ura and known today for its fugu (pufferfish) market."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Central%20Shimonoseki%20and%20Kanmon%20Strait.JPG"
+      alt: "Central Shimonoseki along the Kanmon Straits"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Rurikoji Temple"
     description: "A temple in Yamaguchi City with a five-story wooden pagoda dating to 1442, considered one of Japan's three finest."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rurikoji%20temple%20pagoda%20in%20Spring.jpg"
+      alt: "The five-storied pagoda of Rurikoji Temple in spring"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Hagi-yaki Tea Bowl"
     description: "Hagi ware, from the city of Hagi in Yamaguchi, is one of Japan's most prized ceramic traditions for tea ceremony use, ranked second only to Raku ware in a well-known traditional ranking of tea bowls. Confirm AmazonGlobal eligibility before publishing."

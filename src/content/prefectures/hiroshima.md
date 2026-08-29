@@ -48,8 +48,16 @@ touristSpots:
       credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Onomichi"
     description: "A hillside port town of narrow lanes, temples, and cat-filled backstreets, and the western starting point of the Shimanami Kaido cycling route to Shikoku."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Onomichi%20City%20Hiroshima%20Prefecture.jpg"
+      alt: "A view over the hillside port town of Onomichi"
+      credit: "Wikimedia Commons, licensed CC BY-SA 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Hiroshima Castle"
     description: "A reconstructed castle keep (the original was destroyed in the 1945 bombing), with a museum on Hiroshima's samurai-era history."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima-castle-japan.jpg"
+      alt: "The reconstructed keep of Hiroshima Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kumano Fude Makeup Brush"
     description: "Kumano, in Hiroshima, produces the large majority of Japan's handmade brushes, and its cosmetic brushes in particular are used and sought after by makeup artists and brands internationally. Confirm AmazonGlobal eligibility before publishing."

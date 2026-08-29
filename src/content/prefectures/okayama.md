@@ -39,6 +39,10 @@ touristSpots:
       credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Kurashiki Bikan Historical Quarter"
     description: "A preserved Edo-period merchant district of white-walled warehouses along a willow-lined canal, home to the Ohara Museum of Art."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Japan%20Kurashiki%20canal%203%20018.jpg"
+      alt: "The willow-lined canal running through the Kurashiki Bikan Historical Quarter"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Okayama Castle"
     description: "A reconstructed castle nicknamed 'Crow Castle' for its black exterior, standing across the river from Korakuen Garden."
     image:
