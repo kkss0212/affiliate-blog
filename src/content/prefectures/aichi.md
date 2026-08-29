@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Toyota Licensed Die-Cast Model Car"
     description: "Toyota, the world's largest automaker by production volume, has been headquartered in Aichi's Toyota City since the company's founding."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B095RSQPXP?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

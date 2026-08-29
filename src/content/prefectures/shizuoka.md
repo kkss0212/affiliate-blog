@@ -67,7 +67,7 @@ products:
     category: "local-specialty"
   - name: "Yamaha Acoustic Guitar"
     description: "Yamaha has been headquartered in Hamamatsu, Shizuoka since its 1887 founding as a reed organ repair shop, growing into one of the world's largest musical instrument and motorcycle manufacturers."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B01BDMKVA2?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

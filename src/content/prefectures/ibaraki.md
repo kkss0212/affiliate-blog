@@ -67,7 +67,7 @@ products:
     category: "local-specialty"
   - name: "Hitachi Cordless Vacuum"
     description: "Hitachi was founded in 1910 in the town of Hitachi, Ibaraki, as a small electric-motor repair shop before growing into a global electronics and industrial conglomerate."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CF4HZZ9M?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

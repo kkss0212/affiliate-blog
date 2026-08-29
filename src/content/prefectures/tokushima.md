@@ -67,7 +67,7 @@ products:
     category: "local-specialty"
   - name: "Pocari Sweat"
     description: "Otsuka Pharmaceutical, maker of the widely exported sports drink Pocari Sweat, has been headquartered in Tokushima since its founding."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B000K82WFI?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

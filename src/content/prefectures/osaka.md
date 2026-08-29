@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Panasonic LUMIX Camera"
     description: "Panasonic has been headquartered in the Osaka area (Kadoma) since its founding in 1918 as Matsushita Electric."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DQK8N4SC?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

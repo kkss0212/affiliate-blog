@@ -57,7 +57,7 @@ touristSpots:
 products:
   - name: "Fujifilm Instax Instant Camera"
     description: "Fujifilm, headquartered with major operations in Kawasaki, makes the Instax line of instant cameras and film, a globally popular product line."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0BXS47R79?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

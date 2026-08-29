@@ -66,7 +66,7 @@ products:
     category: "local-specialty"
   - name: "Nintendo Switch"
     description: "Nintendo has been headquartered in Kyoto since 1889 (originally as a playing-card maker). Its consoles are the most recognizable product to come out of the prefecture."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CH2KS32M?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Kiyo in Kyoto: From the Maiko House, Vol. 1"

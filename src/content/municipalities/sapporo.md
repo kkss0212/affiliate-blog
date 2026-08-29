@@ -59,7 +59,7 @@ touristSpots:
 products:
   - name: "Sapporo Premium Beer"
     description: "Japan's oldest beer brand, brewed in Hokkaido since 1876 and still headquartered in Sapporo."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0029Z94UQ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Shiroi Koibito Cookies"

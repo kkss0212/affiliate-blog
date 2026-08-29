@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Epson EcoTank Printer"
     description: "Seiko Epson has been headquartered in Suwa, Nagano since its founding in 1942, growing from a watch-parts maker into a major global printer and electronics manufacturer."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CKH9KGX1?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

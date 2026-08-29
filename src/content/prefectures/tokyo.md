@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Sony WH-1000X Headphones"
     description: "Sony has been headquartered in Minato, Tokyo since its founding in 1946 — its audio and PlayStation divisions remain some of the most globally recognizable Japanese consumer electronics."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DGKYNLWF?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Tokyo Revengers, Vol. 1"

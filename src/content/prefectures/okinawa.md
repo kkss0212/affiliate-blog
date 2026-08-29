@@ -66,7 +66,7 @@ products:
     category: "local-specialty"
   - name: "Orion Beer"
     description: "Orion has been Okinawa's own beer brand since 1957, brewed locally and rarely found on mainland Japan shelves outside specialty stores."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B008DBNM1C?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

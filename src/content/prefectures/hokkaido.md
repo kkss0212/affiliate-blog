@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Nitori Storage Organizer Set"
     description: "Nitori, Japan's largest furniture and home goods retailer, was founded in Sapporo in 1972 and remains headquartered there."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0D5YFQMCY?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Golden Kamuy, Vol. 1"
