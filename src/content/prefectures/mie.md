@@ -61,9 +61,9 @@ products:
     url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
-  - name: "Mikimoto Pearl Jewelry"
-    description: "Kokichi Mikimoto founded his pearl company in Toba, Mie in the 1890s after inventing the modern cultured pearl, and it remains one of the world's best-known luxury pearl brands."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Akoya Pearl Necklace & Earring Set"
+    description: "An Akoya pearl set from the same variety Kokichi Mikimoto used to invent the modern cultured pearl in Toba, Mie in the 1890s. The Mikimoto brand itself doesn't sell through Amazon.co.jp, so this is a comparable Akoya pearl jewelry set rather than a Mikimoto-branded piece."
+    url: "https://www.amazon.co.jp/dp/B07P64LGTN?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

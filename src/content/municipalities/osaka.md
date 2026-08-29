@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Panasonic Home Appliance"
     description: "Panasonic (formerly Matsushita Electric) was founded in Osaka in 1918 and remains headquartered in the metropolitan area."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B07VKM95T3?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

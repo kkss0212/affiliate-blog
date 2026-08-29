@@ -66,7 +66,7 @@ products:
     category: "local-specialty"
   - name: "Mazda Model Car"
     description: "Mazda has been headquartered in Fuchu, Hiroshima since its 1920 founding, one of Japan's major global automakers."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B019RAK9ZE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Barefoot Gen, Vol. 1"

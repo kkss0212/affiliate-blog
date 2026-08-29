@@ -61,9 +61,9 @@ products:
     url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
-  - name: "Uniqlo Basics"
-    description: "Fast Retailing, Uniqlo's parent company, has been headquartered in Yamaguchi since Tadashi Yanai founded the company there, growing it into one of the world's largest apparel retailers."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Hanes Beefy-T Classic Cotton T-Shirt"
+    description: "Fast Retailing, Uniqlo's parent company, has been headquartered in Yamaguchi since Tadashi Yanai founded the company there, growing it into one of the world's largest apparel retailers. Uniqlo itself doesn't sell through Amazon.co.jp, so this is a comparable basics T-shirt rather than a Uniqlo-branded one."
+    url: "https://www.amazon.co.jp/dp/B07SQCL2FJ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

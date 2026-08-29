@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Mazda Model Car"
     description: "Mazda, headquartered in Hiroshima, is one of Japan's major automakers, historically known for pioneering rotary engine technology."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B019RAK9ZE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

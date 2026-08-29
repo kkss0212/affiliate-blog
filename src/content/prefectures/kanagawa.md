@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Nissan Model Car"
     description: "Nissan has been headquartered in Yokohama since 2010 (having started in the city over a century earlier), one of Japan's three major global automakers."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B01L89TWTG?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Slam Dunk, Vol. 1"

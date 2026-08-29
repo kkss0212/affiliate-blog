@@ -59,7 +59,7 @@ touristSpots:
 products:
   - name: "Toyota Model Car"
     description: "Toyota's headquarters sits just outside Nagoya, and the wider Chubu region is Japan's automotive manufacturing heartland."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B095RSQPXP?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Hatcho Miso"
