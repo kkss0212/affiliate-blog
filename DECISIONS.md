@@ -430,10 +430,24 @@ that `/prefectures/` needed to be grouped/scannable by region:
   confirmed Kyoto's images render correctly in production, validating
   the method, but a fresh spot-check across a few more prefectures
   would still be worthwhile.
-- **Municipality pages** (`[prefecture]/[municipality].astro`) still use
-  the old plain `dl`-table layout, not the current visual system
-  (StatCard/ScoreMeter/ShareBar/hero banner/JapanMap). Only one example
-  (`uji.md`) exists and it's still `draft: true`.
+- **Municipality pages (2026-08-29 update — done)**: the template now
+  matches the prefecture visual system (StatCard/ScoreMeter/ShareBar/
+  hero banner/JapanMap, which highlights the parent prefecture's shape
+  since municipalities aren't in the `@svg-maps/japan` dataset). All 20
+  designated cities (政令指定都市 — Sapporo, Sendai, Saitama, Chiba,
+  Yokohama, Kawasaki, Sagamihara, Niigata, Shizuoka, Hamamatsu, Nagoya,
+  Kyoto, Osaka, Sakai, Kobe, Okayama, Hiroshima, Kitakyushu, Fukuoka,
+  Kumamoto) are published (`draft: false`), each researched to the same
+  standard as the prefecture articles and — where the city is also a
+  prefecture capital already covered in depth at prefecture level (e.g.
+  Kyoto, Osaka, Fukuoka, Kumamoto, Hiroshima) — deliberately angled at
+  different, city-government/modern-identity material rather than
+  repeating the prefecture page's history section. `uji.md` remains the
+  only non-designated-city example, still `draft: true` as a schema
+  demo. None of the 20 cities' `touristSpots` have sourced images yet
+  (same WebSearch/Wikimedia Commons method used for the 47 prefectures
+  — a natural next photo-sourcing pass, roughly 70-80 images across the
+  20 cities' ~4 spots each).
 - **Music/manga content**: `city-pop.md` and `one-piece.md` are still
   structural placeholders, `draft: true`.
 - **ASP follow-ups** (see `docs/asp-checklist.md` for full detail):
