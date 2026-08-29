@@ -6,17 +6,18 @@ const allEntries = await getCollection("music", ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
 });
 const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Japanese Music Guides | Japan Unpacked"
-  description="Guides to Japanese music, artists, and genres, with ways to listen."
+  description="Guides to Japanese artists and genres that have found an audience beyond Japan, with ways to listen."
 >
   <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Japan Unpacked</p>
   <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">Music</h1>
   <p class="mt-4 max-w-xl text-ink-soft">
-    Guides to Japanese music, artists, and genres for people who want to
-    listen deeper.
+    Japanese artists who've built a real following outside Japan — where
+    they're from, what they sound like, and where to start listening.
   </p>
 
   <ul class="mt-8 grid gap-3 sm:grid-cols-2">
@@ -24,10 +25,21 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
       entries.map((entry) => (
         <li>
           <a
-            href={`${import.meta.env.BASE_URL}music/${entry.id}/`}
+            href={`${base}music/${entry.id}/`}
             class="block rounded-xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <span class="font-medium">{entry.data.title}</span>
+            {entry.data.nameJa && <span class="ml-2 text-xs text-ink-faint">{entry.data.nameJa}</span>}
+            {entry.data.tagline && <p class="mt-1 text-sm text-ink-soft">{entry.data.tagline}</p>}
+            {entry.data.genres.length > 0 && (
+              <div class="mt-2 flex flex-wrap gap-1.5">
+                {entry.data.genres.map((genre) => (
+                  <span class="rounded-full bg-accent-soft/60 px-2 py-0.5 text-[11px] font-medium text-accent">
+                    {genre}
+                  </span>
+                ))}
+              </div>
+            )}
           </a>
         </li>
       ))

@@ -1,9 +1,12 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
 import ProductCard from "../../components/ProductCard.astro";
 import SubscriptionCard from "../../components/SubscriptionCard.astro";
+import StatCard from "../../components/StatCard.astro";
+import ScoreMeter from "../../components/ScoreMeter.astro";
+import { Music2, Users, MapPin, Globe2, BookText, Headphones, ShoppingBag } from "@lucide/astro";
 
 export async function getStaticPaths() {
   const entries = await getCollection("music", ({ data }) => {
@@ -18,18 +21,119 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { data } = entry;
 const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL;
+
+const originPrefecture = data.originPrefecture ? await getEntry(data.originPrefecture) : null;
+const originMunicipality = data.originMunicipality ? await getEntry(data.originMunicipality) : null;
+const originLabel = originMunicipality
+  ? `${originMunicipality.data.name}, ${originPrefecture?.data.name ?? ""}`
+  : originPrefecture?.data.name;
+const originHref = originMunicipality
+  ? `${base}prefectures/${originMunicipality.data.prefecture.id}/${originMunicipality.id}/`
+  : originPrefecture
+    ? `${base}prefectures/${originPrefecture.id}/`
+    : null;
 ---
 
 <BaseLayout
-  title={`${data.title} | Japan Unpacked`}
-  description={data.description}
+  title={`${data.title} — Japanese music guide | Japan Unpacked`}
+  description={data.tagline ?? data.description}
 >
-  <p class="text-sm font-medium uppercase tracking-[0.15em] text-accent">Music</p>
-  <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight">{data.title}</h1>
+  <!-- Hero: full-bleed image/gradient banner -->
+  <div class="relative left-1/2 -mt-10 w-screen -translate-x-1/2 sm:-mt-10">
+    <div class="relative h-[280px] w-full overflow-hidden bg-gradient-to-br from-ink to-accent-hover sm:h-[380px]">
+      {data.heroImage && (
+        <img
+          src={data.heroImage.url}
+          alt={data.heroImage.alt}
+          class="absolute inset-0 h-full w-full object-cover"
+          loading="eager"
+        />
+      )}
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10" />
+      <div class="absolute inset-0 flex items-end">
+        <div class="mx-auto w-full max-w-4xl px-4 pb-8">
+          <p class="flex items-center gap-1.5 text-sm font-medium uppercase tracking-[0.15em] text-white/80">
+            <Music2 size={14} /> Music
+          </p>
+          <h1 class="mt-2 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            {data.title} {data.nameJa && <span class="text-white/60">{data.nameJa}</span>}
+          </h1>
+          {data.tagline && <p class="mt-2 max-w-2xl text-white/90">{data.tagline}</p>}
+        </div>
+      </div>
+      {data.heroImage?.credit && (
+        <p class="absolute bottom-1 right-2 text-[10px] text-white/50">{data.heroImage.credit}</p>
+      )}
+    </div>
+  </div>
 
-  <ul class="mt-4 list-inside list-disc text-sm text-ink-soft">
-    {data.highlights.map((highlight) => <li>{highlight}</li>)}
-  </ul>
+  <!-- Floating "at a glance" panel, overlapping the hero -->
+  <section class="relative z-10 -mt-10 rounded-2xl border border-line bg-white p-4 shadow-lg sm:-mt-14 sm:p-6">
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      {data.composition && (
+        <StatCard label="Lineup" value={data.composition}>
+          <Users slot="icon" size={18} />
+        </StatCard>
+      )}
+      {originLabel && (
+        <StatCard label="Origin" value={originLabel}>
+          <MapPin slot="icon" size={18} />
+        </StatCard>
+      )}
+    </div>
+
+    {data.genres.length > 0 && (
+      <div class="mt-4 flex flex-wrap gap-2">
+        {data.genres.map((genre) => (
+          <span class="rounded-full border border-line bg-accent-soft/60 px-3 py-1 text-xs font-medium text-accent">
+            {genre}
+          </span>
+        ))}
+      </div>
+    )}
+
+    {data.popularityAbroad && (
+      <div class="mt-4">
+        <ScoreMeter label="Popularity abroad" value={data.popularityAbroad} />
+      </div>
+    )}
+
+    <div class="mt-4 grid gap-3 sm:grid-cols-2">
+      {originHref && originLabel && (
+        <div class="rounded-xl bg-accent-soft/60 p-3">
+          <p class="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-accent">
+            <MapPin size={14} /> Where they're from
+          </p>
+          <p class="mt-1 text-sm">
+            <a href={originHref} class="font-medium underline decoration-accent/40 hover:decoration-accent">
+              {originLabel}
+            </a>
+          </p>
+        </div>
+      )}
+      {data.forFansOf && (
+        <div class="rounded-xl bg-accent-soft/60 p-3">
+          <p class="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-accent">
+            <Globe2 size={14} /> For fans of
+          </p>
+          <p class="mt-1 text-sm">
+            <span class="font-medium">{data.forFansOf.name}</span>
+            <span class="block text-ink-soft">{data.forFansOf.reason}</span>
+          </p>
+        </div>
+      )}
+    </div>
+
+    <ul class="mt-4 space-y-1.5 text-sm text-ink-soft">
+      {data.highlights.map((highlight) => (
+        <li class="flex gap-2">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+          {highlight}
+        </li>
+      ))}
+    </ul>
+  </section>
 
   {(data.products.length > 0 || data.subscriptions.length > 0) && (
     <div class="mt-6">
@@ -37,13 +141,18 @@ const { Content } = await render(entry);
     </div>
   )}
 
-  <article class="prose prose-stone mt-6 max-w-none">
+  <article class="prose prose-stone mt-10 max-w-none">
+    <h2 class="flex items-center gap-2 font-display text-lg font-semibold">
+      <BookText size={18} class="text-accent" /> The story so far
+    </h2>
     <Content />
   </article>
 
   {data.subscriptions.length > 0 && (
     <section class="mt-10">
-      <h2 class="font-display text-lg font-semibold">Listen</h2>
+      <h2 class="flex items-center gap-2 font-display text-lg font-semibold">
+        <Headphones size={18} class="text-accent" /> Listen
+      </h2>
       <div class="mt-3 grid gap-3 sm:grid-cols-2">
         {data.subscriptions.map((subscription) => (
           <SubscriptionCard {...subscription} />
@@ -54,7 +163,9 @@ const { Content } = await render(entry);
 
   {data.products.length > 0 && (
     <section class="mt-10">
-      <h2 class="font-display text-lg font-semibold">Own it</h2>
+      <h2 class="flex items-center gap-2 font-display text-lg font-semibold">
+        <ShoppingBag size={18} class="text-accent" /> Own it
+      </h2>
       <div class="mt-3 grid gap-3 sm:grid-cols-2">
         {data.products.map((product) => (
           <ProductCard {...product} />

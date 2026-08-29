@@ -30,12 +30,54 @@ const subscriptionOffer = z.object({
   service: z.enum(["amazon-music-unlimited", "kindle-unlimited"]),
 });
 
+// Shared image shape (with an optional attribution string) used by both
+// place pages (touristSpots/heroImage) and culture guides (heroImage).
+const image = z.object({
+  url: z.string().url(),
+  alt: z.string(),
+  // Attribution string (photographer/source + license), e.g. "Photo by
+  // Jane Doe / Wikimedia Commons, CC BY-SA 4.0". Required in practice for
+  // anything but a public-domain/self-shot photo — enforce at review time,
+  // not in the schema, since some images genuinely need none.
+  credit: z.string().optional(),
+});
+
 // Shared shape for the culture-guide sections (music, manga): an article
 // that recommends specific products (Amazon) alongside a subscription
-// referral offer, same draft/publish gate as prefectures.
+// referral offer, same draft/publish gate as prefectures. Extended with a
+// small set of profile fields (genres/composition/origin/popularity
+// abroad/forFansOf) so an artist or series page can carry the same kind of
+// at-a-glance visual identity as a prefecture page, without trying to force
+// music- and manga-specific facts into oddly-named single-purpose fields —
+// `composition` in particular is deliberately a free string ("Solo artist —
+// female", "Solo creator — male", "3-member group — mixed") so it reads
+// naturally for both a band and a single manga author.
 const cultureGuide = z.object({
   title: z.string(),
+  nameJa: z.string().optional(),
+  // One-line hook shown right under the title in the hero.
+  tagline: z.string().optional(),
+  heroImage: image.optional(),
   description: z.string(),
+  genres: z.array(z.string()).default([]),
+  composition: z.string().optional(),
+  // Where the artist/creator is from — at most one of these should be set
+  // in practice (prefecture-only if the exact city isn't known/relevant).
+  originPrefecture: reference("prefectures").optional(),
+  originMunicipality: reference("municipalities").optional(),
+  // Editorial 1-10 read on how much of a following this act/series has
+  // built outside Japan — same "subjective, not authoritative" caveat as
+  // natureScore/subcultureScore on the place pages.
+  popularityAbroad: z.number().min(1).max(10).optional(),
+  // A "for fans of" pairing with a Western-recognizable act/work, mirroring
+  // the place pages' `comparedTo` card — framed as a starting point for an
+  // unfamiliar reader, not a claim of direct influence either way.
+  forFansOf: z
+    .object({
+      name: z.string(),
+      reason: z.string(),
+    })
+    .optional(),
   highlights: z.array(z.string()),
   products: z.array(product).default([]),
   subscriptions: z.array(subscriptionOffer).default([]),
@@ -48,16 +90,6 @@ const cultureGuide = z.object({
 // municipalities both use this; municipalities add a `prefecture`
 // reference and drop `region` (derived from the parent prefecture instead
 // of duplicated).
-const image = z.object({
-  url: z.string().url(),
-  alt: z.string(),
-  // Attribution string (photographer/source + license), e.g. "Photo by
-  // Jane Doe / Wikimedia Commons, CC BY-SA 4.0". Required in practice for
-  // anything but a public-domain/self-shot photo — enforce at review time,
-  // not in the schema, since some images genuinely need none.
-  credit: z.string().optional(),
-});
-
 const touristSpot = z.object({
   name: z.string(),
   description: z.string(),
