@@ -36,12 +36,28 @@ draft: false
 touristSpots:
   - name: "Kitano-cho"
     description: "A hillside district of preserved Western-style houses ('ijinkan') built by foreign merchants after Kobe opened as a treaty port in 1868 — see also the Hyogo prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kitano-dori%20Street%20in%20Kitano-cho,%20Kobe.jpg"
+      alt: "Preserved Western-style houses along Kitano-dori Street in Kobe"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kobe Harborland & Port Tower"
     description: "Kobe's redeveloped waterfront, with the red steel-frame Port Tower as its landmark, largely rebuilt after the 1995 earthquake — see also the Hyogo prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Kobe%20Port%20Tower%20&%20Maritime%20Museum%203.jpg"
+      alt: "Kobe Port Tower and the Maritime Museum at Harborland"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Nankinmachi (Kobe Chinatown)"
     description: "A compact Chinatown near Kobe's harbor, dating to the same 1868 opening that brought Kitano-cho's foreign residents, dense with food stalls and small restaurants."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kobe%20Nankinmachi%20(chinatown)%20entrance.jpg"
+      alt: "The entrance gate to Nankinmachi, Kobe's Chinatown district"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Nunobiki Herb Garden & Ropeway"
     description: "A hillside herb garden reached by ropeway directly from central Kobe, with views over the city, harbor, and Osaka Bay from partway up the Rokko mountains."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/121208%20Nunobiki%20Herb%20Garden%20Kobe%20Hyogo%20pref%20Japan01s3.jpg"
+      alt: "Nunobiki Herb Garden on the hillside above Kobe"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
 products:
   - name: "Kobe Beef"
     description: "A wagyu brand raised under strict criteria within Hyogo Prefecture, among the most internationally recognized Japanese beef brands. Confirm eligible shipping/import restrictions before publishing."

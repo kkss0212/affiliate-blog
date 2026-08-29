@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Hamamatsu Castle (Shusse-jo)"
     description: "A reconstructed keep on the site of the castle Tokugawa Ieyasu ruled from for about 17 years before his rise to national power, giving it the nickname 'Castle of Success.'"
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamatsu%20Castle%20(36497378365).jpg"
+      alt: "The reconstructed keep of Hamamatsu Castle"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Hamamatsu Museum of Musical Instruments"
     description: "One of the largest instrument museums in the world, with over 3,000 instruments from across the globe — a direct reflection of the city's status as home to Yamaha and Kawai."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamatsu%20Museum%20of%20Musical%20Instruments%2001.JPG"
+      alt: "The exterior of the Hamamatsu Museum of Musical Instruments"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Lake Hamana"
     description: "A large brackish lake southwest of the city center, known for eel (unagi) farming — Hamamatsu-style grilled eel is one of Japan's best-known regional unagi specialties."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Hamana%20eel%20farm%20pass%20by%20Tokaido%20Shinkansen(beach%20ridge).jpg"
+      alt: "Eel farming ponds beside Lake Hamana, with the Tokaido Shinkansen passing by"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Nakatajima Sand Dunes"
     description: "A coastal dune system near the city, a nesting site for loggerhead sea turtles and host each May to a large kite-flying festival."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nakatajima%20Sand%20Dunes%20%26%20Magome%20River%202009-04-30.jpg"
+      alt: "The Nakatajima Sand Dunes near Hamamatsu"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
 products:
   - name: "Yamaha Musical Instrument"
     description: "Yamaha, one of the world's largest musical instrument manufacturers, was founded in Hamamatsu and remains headquartered here."

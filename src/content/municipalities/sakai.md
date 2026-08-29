@@ -33,10 +33,22 @@ draft: false
 touristSpots:
   - name: "Daisen Kofun (Emperor Nintoku's Mausoleum)"
     description: "A massive keyhole-shaped burial mound traditionally attributed to Emperor Nintoku, among the largest tombs in the world by area — best appreciated from the air or a nearby observation deck, since its scale is hard to grasp at ground level."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Daisenryo%20Kofun%20zenkei-2.jpg"
+      alt: "An aerial view of the keyhole-shaped Daisen Kofun burial mound in Sakai"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Sakai Traditional Crafts Museum"
     description: "A museum covering Sakai's centuries-old knife- and blade-making tradition, which grew from Sengoku-era gunsmithing into today's dominant position in Japan's professional kitchen knife industry."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cutlery%20heritage%20museum%20in%20Sakai%20city,%20Japan.jpg"
+      alt: "The Sakai Traditional Crafts Museum, covering the city's cutlery heritage"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Mozu-Furuichi Kofun Group"
     description: "A UNESCO World Heritage-listed cluster of ancient burial mounds spanning Sakai and neighboring cities, dating to the 4th–5th centuries."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shichikanyama%20Kofun%20etc%20aerial.jpg"
+      alt: "An aerial view of burial mounds within the Mozu-Furuichi Kofun Group"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
 products:
   - name: "Sakai Kitchen Knife (Santoku or Gyuto)"
     description: "Professional-grade Japanese kitchen knives made in Sakai, whose blacksmiths supply roughly 90% of Japan's professional chef-knife market."

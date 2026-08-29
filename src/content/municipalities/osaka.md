@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Dotonbori"
     description: "Osaka's neon-lit canal-side eating and entertainment strip, dominated by the running Glico Man sign — see also the Osaka prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/D%C5%8Dtonbori%20at%20night,%20Osaka%20(19551420339).jpg"
+      alt: "The neon signs of Dotonbori canal-side district in Osaka at night"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Nakanoshima"
     description: "A narrow island between two branches of the Yodo River in central Osaka, home to the city's historic Western-style civic architecture, including Osaka City Central Public Hall and the Bank of Japan's Osaka branch."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/CentralPublicHall%20on%20Nakanoshima-dori%20Osaka%20Japan.jpg"
+      alt: "Osaka City Central Public Hall on Nakanoshima island"
+      credit: "Wikimedia Commons — re-confirm author/license on the file page before publishing"
   - name: "Shinsekai & Tsutenkaku Tower"
     description: "An old-fashioned downtown district built around a 1912 observation tower, styled after Paris's Arc de Triomphe and New York's Eiffel-inspired towers of the era, known today for kushikatsu (deep-fried skewers)."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tsutenkaku%20Tower,%20Shinsekai%20(44147478362).jpg"
+      alt: "Tsutenkaku Tower rising over the Shinsekai district in Osaka"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Umeda Sky Building"
     description: "A distinctive twin-tower skyscraper connected by a 'floating garden observatory' bridge near Osaka Station, with panoramic city views."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Umeda%20Sky%20Building%20@%20Osaka%20(13382823963).jpg"
+      alt: "The twin towers of the Umeda Sky Building in Osaka"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Panasonic Home Appliance"
     description: "Panasonic (formerly Matsushita Electric) was founded in Osaka in 1918 and remains headquartered in the metropolitan area."
