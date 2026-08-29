@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Dogo Onsen"
     description: "One of Japan's oldest hot springs, with a distinctive wooden bathhouse (Dogo Onsen Honkan) built in 1894 and designated an Important Cultural Property."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dogo-onsen%20Honkan.jpg"
+      alt: "The historic wooden Dogo Onsen Honkan bathhouse"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Matsuyama Castle"
     description: "One of only twelve Japanese castles with an original keep, on a hilltop in central Matsuyama, reachable by ropeway or chairlift."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Matsuyama%20Castle%20Keep%20Tower%2020170123-1.jpg"
+      alt: "The original keep tower of Matsuyama Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Shimanami Kaido"
     description: "A roughly 70-km cycling and driving route connecting Ehime to Hiroshima's Onomichi across the Seto Inland Sea via six bridges, internationally regarded as one of the world's great cycling routes."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shimanami%20Kaido%20Bikeway%20(14105053043).jpg"
+      alt: "A cyclist on the Shimanami Kaido bikeway"
+      credit: "Wikimedia Commons, licensed CC BY-SA 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Ishite-ji Temple"
     description: "Temple 51 of the Shikoku 88-temple pilgrimage circuit, notable for a dark stone passage pilgrims walk through as part of the visit."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ishiteji%2005.JPG"
+      alt: "A hall at Ishite-ji Temple, the 51st stop on the Shikoku pilgrimage"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Imabari Towel"
     description: "Imabari, in Ehime, produces Japan's most prestigious towel brand, prized for absorbency and softness through a strict quality-certification process. Confirm AmazonGlobal eligibility before publishing."

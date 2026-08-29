@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Katsurahama Beach"
     description: "A pine-lined, moon-viewing beach with a large bronze statue of Sakamoto Ryoma gazing out to sea, one of Kochi's most-visited sites."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Statue%20Sakamoto%20Ryouma.JPG"
+      alt: "The bronze statue of Sakamoto Ryoma overlooking Katsurahama Beach"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kochi Castle"
     description: "One of only twelve Japanese castles with an original keep, notable for retaining both its main tower and its lord's residential palace, a rare combination."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kochi%20Castle.jpg"
+      alt: "The original keep and palace of Kochi Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Shimanto River"
     description: "Often called Japan's cleanest major river, crossed by simple wooden 'chinka-bashi' bridges without railings, deliberately designed to be submerged rather than destroyed during floods."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shimanto%20sada%20chinkabashi%20fukin.jpg"
+      alt: "A wooden chinka-bashi sinking bridge over the Shimanto River"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Sakamoto Ryoma Memorial Museum"
     description: "A museum near Katsurahama dedicated to Sakamoto Ryoma's life and role in the Meiji Restoration, overlooking the Pacific."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kochi%20The%20Sakamoto%20Ryoma%20Memorial%20Museum%20Exterior%201.jpg"
+      alt: "The exterior of the Sakamoto Ryoma Memorial Museum overlooking the Pacific"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Tosa Forged Kitchen Knife"
     description: "Kochi's Tosa region has a centuries-old hand-forging tradition, historically producing agricultural tools and now well-regarded kitchen knives. Confirm AmazonGlobal eligibility before publishing."

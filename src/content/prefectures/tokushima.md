@@ -37,12 +37,28 @@ draft: false
 touristSpots:
   - name: "Naruto Whirlpools"
     description: "Powerful tidal whirlpools in the Naruto Strait, among the largest in the world, best seen from a sightseeing boat or the glass-floored observation deck of the Onaruto Bridge."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Naruto%20whirlpools%2020170609-2.jpg"
+      alt: "Tidal whirlpools swirling in the Naruto Strait"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Awa Odori Kaikan"
     description: "A year-round hall in Tokushima City with daily live performances of the Awa Odori dance, for visitors who can't make the August festival itself."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Awa-dance%20memorial%20hall02n3200.jpg"
+      alt: "The Awa Odori Kaikan hall in Tokushima at night"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Iya Valley"
     description: "A remote, steep-sided gorge considered one of Japan's three most hidden regions, known for its vine suspension bridges, rebuilt periodically using the original construction method."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kazurabashi%20IyaValley2.JPG"
+      alt: "A traditional vine suspension bridge over the Iya Valley gorge"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Ryozen-ji Temple"
     description: "Temple number one of the 88-temple Shikoku Henro pilgrimage circuit, where most pilgrims begin their roughly 1,200-km walking route around the island."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/140712%20Ryozenji%20Naruto%20Tokushima%20pref%20Japan03s3.jpg"
+      alt: "Ryozen-ji Temple, the first temple of the Shikoku 88-temple pilgrimage"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Awa-ai Indigo-Dyed Textile"
     description: "Tokushima's Awa-ai indigo dye was historically so dominant in Japanese clothing that 19th-century Western visitors nicknamed the color 'Japan Blue.' Confirm AmazonGlobal eligibility before publishing."

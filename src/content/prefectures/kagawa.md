@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Naoshima Art Island"
     description: "A small island transformed since the 1990s into a major contemporary art destination, including the underground Chichu Art Museum (housing Monet paintings alongside site-specific installations) and Yayoi Kusama's giant polka-dot pumpkin sculpture on the waterfront."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/150505%20Chichu%20Art%20Museum%20Naoshima%20Island%20Kagawa%20pref%20Japan01s3.jpg"
+      alt: "The Chichu Art Museum on Naoshima Island"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Ritsurin Garden"
     description: "A large Edo-period garden in Takamatsu, incorporating a natural hill and six ponds, sometimes ranked among Japan's very best gardens even outside the official 'three great gardens' list."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ritsurin.JPG"
+      alt: "The South Pond at Ritsurin Garden in Takamatsu"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Kotohira-gu (Konpira-san)"
     description: "A major shrine reached by climbing 1,368 stone steps up a mountainside, one of Shikoku's most significant pilgrimage destinations outside the 88-temple circuit."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Omotesando%20of%20Kotohira-gu16n4410.jpg"
+      alt: "The approach path to Kotohira-gu shrine"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
   - name: "Shodoshima"
     description: "An island known for its Mediterranean-like climate and olive groves — Japan's leading olive-growing region — plus a dramatic gorge, Kankakei."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Shodoshima%20Olive%20Park%20Shodo%20Island%20Japan21bs3.jpg"
+      alt: "Olive groves at Shodoshima Olive Park"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Marugame Uchiwa Fan"
     description: "Marugame, in Kagawa, produces roughly 90% of Japan's uchiwa (flat paper fans), a craft dating to the 1600s. Confirm AmazonGlobal eligibility before publishing."
