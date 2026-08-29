@@ -63,7 +63,7 @@ products:
     category: "local-specialty"
   - name: "Crayon Shin-chan, Vol. 1"
     description: "Yoshito Usui's manga is set in the fictionalized but explicitly named city of Kasukabe, Saitama, following its five-year-old troublemaker protagonist and his family."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/1935548131?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

@@ -71,7 +71,7 @@ products:
     category: "company"
   - name: "Barefoot Gen, Vol. 1"
     description: "Keiji Nakazawa's manga, drawn from his own experience surviving the atomic bombing as a child in Hiroshima, is among the most widely translated and used works in peace and history education worldwide."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/0867196025?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

@@ -69,9 +69,9 @@ products:
     url: "https://www.amazon.co.jp/dp/B0CH2KS32M?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
-  - name: "Kiyo in Kyoto: From the Maiko House, Vol. 1"
-    description: "Aiko Koyama's manga (adapted by Netflix as an anime) follows two teenagers training in a real Gion okiya — a gentle, food-heavy portrait of the neighborhood two blocks over from the tourist route."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Kiyo in Kyoto: From the Maiko House, Vol. 1 (Japanese Edition)"
+    description: "Aiko Koyama's manga (adapted by Netflix as an anime) follows two teenagers training in a real Gion okiya — a gentle, food-heavy portrait of the neighborhood two blocks over from the tourist route. No English-language edition turned up on Amazon.co.jp, so this links the original Japanese volume — swap for an English edition if VIZ or another publisher picks it up."
+    url: "https://www.amazon.co.jp/dp/B06Y5JFLYH?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

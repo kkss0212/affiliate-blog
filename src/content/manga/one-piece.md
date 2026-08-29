@@ -42,7 +42,7 @@ subscriptions:
 products:
   - name: "One Piece, Vol. 1 (Kindle Edition)"
     description: "The first volume, where the story begins."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE4?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00F3HG7ES?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

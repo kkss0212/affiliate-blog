@@ -68,7 +68,7 @@ products:
     category: "company"
   - name: "Golden Kamuy, Vol. 1"
     description: "Satoru Noda's manga is set in Meiji-era Hokkaido during its gold-rush settlement period, built around real Ainu culture and history with an Ainu language consultant credited on the series."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/1421594889?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

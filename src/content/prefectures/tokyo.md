@@ -66,9 +66,9 @@ products:
     url: "https://www.amazon.co.jp/dp/B0DGKYNLWF?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
-  - name: "Tokyo Revengers, Vol. 1"
-    description: "Ken Wakui's manga is explicitly Tokyo-set (the title says so), following a delinquent gang drama that time-travels between present-day and 2000s-era Tokyo suburbs."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Tokyo Revengers, Vol. 1-2 (Omnibus Edition)"
+    description: "Ken Wakui's manga is explicitly Tokyo-set (the title says so), following a delinquent gang drama that time-travels between present-day and 2000s-era Tokyo suburbs. The English edition on Amazon.co.jp ships as a 2-in-1 omnibus rather than single volumes."
+    url: "https://www.amazon.co.jp/dp/1638585717?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

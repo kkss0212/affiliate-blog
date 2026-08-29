@@ -68,7 +68,7 @@ products:
     category: "company"
   - name: "Slam Dunk, Vol. 1"
     description: "Takehiko Inoue's basketball manga is set at a fictional Kanagawa high school, and the real railway crossing near Kamakura High School used in its anime opening has become a genuine pilgrimage site for fans."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/1421506793?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

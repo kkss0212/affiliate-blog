@@ -65,7 +65,7 @@ products:
     category: "local-specialty"
   - name: "JoJo's Bizarre Adventure: Diamond Is Unbreakable, Vol. 1"
     description: "Part 4 of Hirohiko Araki's manga is set in the fictional town of Morioh — widely understood (Araki himself is from Sendai) to be modeled on his hometown."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/1974706524?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:
