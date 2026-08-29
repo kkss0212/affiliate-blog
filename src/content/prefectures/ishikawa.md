@@ -60,9 +60,9 @@ touristSpots:
       alt: "Reconstructed white-walled gates and turrets at Kanazawa Castle Park"
       credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
-  - name: "Kanazawa Gold Leaf Lacquerware"
-    description: "Kanazawa produces roughly 99% of Japan's gold leaf, applied here to lacquerware, ceramics, and decorative objects. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Kanazawa Gold Leaf Sake Cup"
+    description: "Kanazawa produces roughly 99% of Japan's gold leaf, applied here as a decorative finish on a Kutani-yaki ceramic sake cup rather than lacquerware."
+    url: "https://www.amazon.co.jp/dp/B09M429GBW?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

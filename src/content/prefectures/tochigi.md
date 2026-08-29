@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Mashiko-yaki Ceramic Mug"
     description: "Mashiko ware is a rustic stoneware tradition associated with the 20th-century mingei folk-craft movement and potter Shoji Hamada, a Living National Treasure. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B07D8QGHLQ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

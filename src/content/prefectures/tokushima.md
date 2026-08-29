@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Awa-ai Indigo-Dyed Textile"
     description: "Tokushima's Awa-ai indigo dye was historically so dominant in Japanese clothing that 19th-century Western visitors nicknamed the color 'Japan Blue.' Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0GVBJ8PT4?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Pocari Sweat"

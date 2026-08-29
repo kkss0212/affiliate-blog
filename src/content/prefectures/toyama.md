@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Takaoka Copperware Vase"
     description: "Takaoka, in Toyama, produces roughly 90% of Japan's cast copper and bronze ware, a tradition dating to the early 1600s. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B088F8NX2L?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

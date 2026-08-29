@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Kiyomizu-yaki Ceramic Cup"
     description: "Traditional hand-painted pottery from the Kiyomizu district's kilns, one of Kyoto's signature crafts. Confirm AmazonGlobal eligibility for the exact listing before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DDK64853?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Nintendo Switch"

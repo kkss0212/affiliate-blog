@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Yasugi Steel Kitchen Knife"
     description: "Shimane's Yasugi region has produced prized 'tamahagane' steel for traditional Japanese sword- and blade-making for centuries, using the traditional tatara smelting method. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B006M9TH0M?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

@@ -56,9 +56,9 @@ touristSpots:
       alt: "Reconstructed large wooden structures at the Sannai-Maruyama Jomon-period archaeological site"
       credit: "Wikimedia Commons, licensed CC BY 2.5 — re-confirm author/license on the file page before publishing"
 products:
-  - name: "Aomori Nambu Diamond Cut-Glass"
-    description: "A regional glasswork tradition; alternatively, Tsugaru-nuri lacquerware is Aomori's best-known handicraft export. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Tsugaru-nuri Lacquerware Plate"
+    description: "No specific listing for Aomori's Nambu diamond-cut glass turned up on Amazon.co.jp, so this links Tsugaru-nuri instead — the prefecture's better-known handicraft export, a lacquerware tradition distinguished by its multi-layered, hand-polished finish."
+    url: "https://www.amazon.co.jp/dp/B0D8GK5VD2?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

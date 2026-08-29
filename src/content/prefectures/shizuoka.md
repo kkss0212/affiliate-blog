@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Shizuoka Sencha Green Tea"
     description: "Shizuoka produces roughly 40% of Japan's tea, and its sencha (steamed green tea) is considered a national benchmark. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0D4HQ8GPK?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Yamaha Acoustic Guitar"

@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Tosa Forged Kitchen Knife"
     description: "Kochi's Tosa region has a centuries-old hand-forging tradition, historically producing agricultural tools and now well-regarded kitchen knives. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00LBO0QWQ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

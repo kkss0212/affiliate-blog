@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Edo Kiriko Cut Glass Tumbler"
     description: "Faceted cut glassware in a technique developed in Edo-period Tokyo, still hand-cut by small workshops today. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B011AVTENG?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Sony WH-1000X Headphones"

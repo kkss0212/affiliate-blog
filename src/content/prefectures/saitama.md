@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Sayama Tea"
     description: "Sayama, in Saitama, is one of Japan's three major tea-growing regions alongside Shizuoka and Uji (Kyoto) — a regional saying holds that 'the flavor comes from Sayama.' Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00K1XHKCC?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Crayon Shin-chan, Vol. 1"

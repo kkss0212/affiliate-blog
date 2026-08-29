@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Hagi-yaki Tea Bowl"
     description: "Hagi ware, from the city of Hagi in Yamaguchi, is one of Japan's most prized ceramic traditions for tea ceremony use, ranked second only to Raku ware in a well-known traditional ranking of tea bowls. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0FTZD5CHS?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Hanes Beefy-T Classic Cotton T-Shirt"

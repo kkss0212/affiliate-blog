@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Beppu Take-zaiku Bamboo Basket"
     description: "Beppu bamboo craft is a nationally designated traditional Japanese craft, known for intricate hand-woven patterns using locally grown madake bamboo. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B01N5EBI78?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

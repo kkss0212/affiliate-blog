@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Osaka Naniwa Cotton Towel Set"
     description: "Senshu towels, a textile specialty of the Osaka region known for absorbency, produced in the Senshu area since the Meiji era. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00G43XWDY?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Panasonic LUMIX Camera"
