@@ -444,10 +444,22 @@ that `/prefectures/` needed to be grouped/scannable by region:
   different, city-government/modern-identity material rather than
   repeating the prefecture page's history section. `uji.md` remains the
   only non-designated-city example, still `draft: true` as a schema
-  demo. None of the 20 cities' `touristSpots` have sourced images yet
-  (same WebSearch/Wikimedia Commons method used for the 47 prefectures
-  — a natural next photo-sourcing pass, roughly 70-80 images across the
-  20 cities' ~4 spots each).
+  demo. **Tourist-spot photos (2026-08-29 update — done)**: all 20
+  designated cities now have sourced `touristSpots` images, using the
+  same WebSearch/Wikimedia Commons `Special:FilePath` method as the 47
+  prefectures — reusing the exact image block from the parent
+  prefecture page wherever a municipality's spot is the same physical
+  landmark (e.g. Sendai Castle, Nagoya Castle, Dotonbori, Kitano-cho,
+  Kumamoto Castle), and freshly sourcing the rest. Three touristSpot
+  entries were left without a confirmed image after repeated searches
+  turned up nothing specific enough to trust: Chiba's "Chiba Shrine",
+  Kitakyushu's "Space World Site & Kitakyushu Eco-Town", and Kumamoto's
+  "Sakura no Baba Josaien" — each flagged in its file's frontmatter
+  comment for a future pass. As with the prefecture-page images, none
+  of these ~75 municipality images could be rendering-verified
+  in-session (WebFetch/curl to wikimedia.org stays blocked by the
+  sandbox's egress proxy), so a production spot-check is still
+  worthwhile.
 - **Music/manga content (2026-08-29 update — done)**: `cultureGuide` schema
   extended (`genres`, `composition`, `originPrefecture`/
   `originMunicipality` references, `popularityAbroad`, `forFansOf`), and
