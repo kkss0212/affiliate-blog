@@ -15,7 +15,7 @@ draft: true
 subscriptions:
   - name: "Stream City Pop classics on Amazon Music Unlimited"
     description: "Try Amazon Music Unlimited free, then explore City Pop playlists and full discographies."
-    url: "https://www.amazon.co.jp/music/unlimited?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/music/unlimited/?tag=kaorusonoda-22"
     service: "amazon-music-unlimited"
 products:
   - name: "Mariya Takeuchi — VARIETY (Vinyl Reissue)"
