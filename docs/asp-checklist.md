@@ -7,8 +7,12 @@
 リンク切れの場合は各社公式サイトの「Affiliate / Partner Program」ページを検索して
 確認すること。
 
-サイトURL(全ASP共通で使うもの): `https://kkss0212.github.io/japan-unpacked`
-(カスタムドメイン決定後は各ASPの登録情報も忘れず更新すること)
+サイトURL(全ASP共通で使うもの): `https://kkss0212.github.io/`
+(2026-08-29にリポジトリを`kkss0212.github.io`にリネームし、GitHub Pagesの配信URLが
+`https://kkss0212.github.io/japan-unpacked/` からこのルートURLに変わった。**旧URLで
+既に申請・登録済みのASPは登録情報の更新が必要** — 詳細はDECISIONS.mdの「AdSense
+トップレベルドメイン」項目、および本ファイル内の該当セクションのコメントを参照。
+カスタムドメイン決定後は同様に各ASPの登録情報も忘れず更新すること)
 
 ## 今すぐ着手できるもの(コンテンツ件数の要件なし)
 
@@ -16,6 +20,10 @@
 
 **進捗: 手順1〜3(ポータルログイン・商品リンク生成・楽天トラベルリンク生成)まで完了。**
 残りは手順4(記事への埋め込み)・5(成果確認)。
+**要確認(2026-08-29): メディア登録時に登録したサイトURLが旧URL
+(`.../japan-unpacked/`)になっている可能性があるので、楽天アフィリエイトの
+「メディア管理」画面でURLを確認し、必要なら新URL(`https://kkss0212.github.io/`)に
+更新すること。**
 
 - 費用: 無料、審査なし(メディア登録が終われば即利用可能)
 - 報酬: 楽天市場の商品は紹介料率が商品ジャンルごとに設定(数%程度)、楽天トラベルは
@@ -43,6 +51,8 @@
 
 **進捗: 申請フォーム送信+本人確認(ID写真・セルフィー)提出まで完了。
 「Account verification in review」で審査中(最長72時間、2026-08-28提出)。**
+**要対応(2026-08-29): 申請時のサイトURLは旧URL(`.../japan-unpacked/`)。承認後、
+ダッシュボードのサイト設定で新URL(`https://kkss0212.github.io/`)に更新すること。**
 
 - 費用: 無料。トラフィック/フォロワー要件の明記はないが、サイト内容の審査はある
 - 必要な情報(申請フォームで聞かれる想定): サイトURL、サイトの想定読者層・
@@ -115,10 +125,11 @@ W-8BEN要否の確認が必要。Viator・GetYourGuide(Awin)・楽天トラベ�
   frontmatterコメントに記載)。Amazon Associates申請自体は記事内容の正確性を
   厳密審査するものではないため申請は今すぐ可能だが、**申請前にファクトチェック
   パスを済ませておくことを推奨**(DECISIONS.mdの「Open / not yet decided」参照)。
-- **次のアクション**: ユーザーへ、Amazon Associates
-  (affiliate.amazon.co.jp)への申請を案内すること。手順は本ドキュメント冒頭の
-  一般的な流れを参照しつつ、Amazon.co.jpのアソシエイト・プログラム申請フォームで
-  サイトURL(`https://kkss0212.github.io/japan-unpacked/`)を入力して進める。
+- **申請済み(2026-08-28)**: ユーザーがAmazon Associatesに申請し、Associate ID
+  `kaorusonoda-22`を取得。**申請時のサイトURLは旧URL
+  (`https://kkss0212.github.io/japan-unpacked/`)だった可能性が高い** —
+  アソシエイト・セントラルの「サイト・アプリの管理」でサイトURLが新URL
+  (`https://kkss0212.github.io/`)になっているか確認し、必要なら更新すること。
   承認後、Amazon Music Unlimited / Kindle Unlimitedのメンバー紹介プログラムも
   Associates Central経由で有効化できる(下記セクション参照)。
 

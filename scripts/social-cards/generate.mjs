@@ -37,7 +37,7 @@ import { buildCaption } from "./caption.mjs";
 import { notifyNtfy } from "./ntfy.mjs";
 
 const SITE_URL = "https://kkss0212.github.io";
-const BASE_PATH = "/japan-unpacked/";
+const BASE_PATH = "/";
 const SERIES_LABEL = "Japan Unpacked";
 
 const STATE_PATH = path.resolve(import.meta.dirname, "state.json");

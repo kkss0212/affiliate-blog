@@ -6,7 +6,7 @@ Viator, GetYourGuide, Rakuten Travel), shippable products (Amazon
 Associates, Japan Trend Shop), and subscription referrals (Amazon Music
 Unlimited, Kindle Unlimited).
 
-Live at <https://kkss0212.github.io/japan-unpacked/>.
+Live at <https://kkss0212.github.io/>.
 
 See [`DECISIONS.md`](./DECISIONS.md) for the business/architecture decisions
 behind this project and what's still open, and

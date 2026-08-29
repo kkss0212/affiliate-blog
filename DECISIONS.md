@@ -622,27 +622,41 @@ that `/prefectures/` needed to be grouped/scannable by region:
   known legitimate Japan-domestic affiliate program (same conclusion as
   the existing Spotify/LINE Music note in `docs/asp-checklist.md`), worth
   surfacing if the user revisits this.
-- **AdSense "specify a valid top-level domain" (2026-08-29 — resolved,
-  option B chosen, awaiting user's rename)**: AdSense's "Add site" flow
-  suggested the bare `http://kkss0212.github.io` root instead of the
-  actual site URL `https://kkss0212.github.io/japan-unpacked/`, and that
-  bare URL 404s because this is a GitHub Pages *project* page — nothing is
-  served at the bare root. `github.io` being on the Public Suffix List
-  means AdSense wants root-level control (root `ads.txt`, root
-  verification) regardless of where the real content lives. Of the three
-  options previously laid out — (A) enter the full path URL directly, (B)
-  stand up a `kkss0212.github.io` root-level Pages site, (C) buy a custom
-  domain — **user tried (A) and it failed, then explicitly chose (B)**,
-  with (C) noted as a possible future step. Sequencing agreed with the
-  user: **the user renames the GitHub repo to `kkss0212.github.io` first;
-  code changes come after**, since I have no repo-rename tool available.
-  Once the user confirms the rename is done, update: `astro.config.mjs`'s
-  `BASE_PATH` (single source of truth) from `/japan-unpacked/` to `/`;
-  `SITE_URL` stays `https://kkss0212.github.io`; `scripts/social-cards/
-  generate.mjs`'s hardcoded `SITE_URL`/`BASE_PATH` constants; and this
-  session's local git remote if the old URL stops redirecting. Also flag
-  to the user that already-submitted Viator/Amazon Associates site URLs
-  likely need updating to match the new URL.
+- **AdSense "specify a valid top-level domain" (2026-08-29 — fully
+  resolved, code side)**: AdSense's "Add site" flow suggested the bare
+  `http://kkss0212.github.io` root instead of the actual site URL
+  `https://kkss0212.github.io/japan-unpacked/`, and that bare URL 404d
+  because it was a GitHub Pages *project* page — nothing was served at the
+  bare root. Of the three options previously laid out — (A) enter the full
+  path URL directly, (B) stand up a `kkss0212.github.io` root-level Pages
+  site, (C) buy a custom domain — user tried (A), it failed, then chose
+  (B) and **renamed the GitHub repo to `kkss0212.github.io`** (confirmed
+  working: `git ls-remote` on the old name, the new name, and the
+  session's original `affiliate-blog` remote name all resolve to the same
+  HEAD commit, so GitHub's redirect is active regardless of which name is
+  used for git operations). Code side updated to match in the same
+  session: `astro.config.mjs`'s `BASE_PATH` changed from `/japan-unpacked/`
+  to `/` (`SITE_URL` unchanged, `https://kkss0212.github.io`);
+  `scripts/social-cards/generate.mjs`'s matching `BASE_PATH` constant;
+  `public/robots.txt`'s hardcoded `Sitemap:` line (was still pointing at
+  the old project-page sitemap URL — build only regenerates
+  `sitemap-index.xml` itself, not this static file); `README.md`'s "Live
+  at" link; `docs/asp-checklist.md`'s shared site-URL line. Verified via a
+  full rebuild (`rm -rf dist .astro && npm run build`) — confirmed zero
+  remaining `/japan-unpacked` references anywhere under `dist/` — and a
+  local `astro dev` + Playwright screenshot of both the homepage and a
+  prefecture page, confirming CSS/asset links now resolve as root-relative
+  (`/_astro/...`, `/prefectures/...`) instead of 404ing under the old
+  project-page path (the direct cause of the broken/unstyled page the user
+  saw right after the GitHub-side rename, before this session did the
+  matching code update).
+  **Still needs the user's action**: three already-submitted ASPs were
+  registered with the old URL and likely need their site-URL setting
+  updated to `https://kkss0212.github.io/` — Viator (submitted
+  2026-08-28, in review), Amazon Associates (submitted 2026-08-28,
+  approved), and possibly Rakuten Affiliate's media registration. See the
+  "要対応"/"要確認" notes added at each ASP's section in
+  `docs/asp-checklist.md` for exactly where to check in each dashboard.
 - **Fact-check pass — population/area (2026-08-29 update — done)**: every
   `population`/`areaKm2` figure across all 47 prefectures and all 20
   designated-city municipalities was individually cross-checked via
