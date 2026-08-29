@@ -571,76 +571,78 @@ that `/prefectures/` needed to be grouped/scannable by region:
 
 ## Remaining tasks (read this first in a new session)
 
-- **Amazon Associates activated (2026-08-29)**: user's Associate ID is
-  `kaorusonoda-22`. All 102 `tag=YOUR-ASSOCIATE-ID-22` placeholders across
-  71 content files were replaced with the real tag. **Product URLs
-  themselves are a separate, still-in-progress pass**: every `products`
-  entry with `retailer: "amazon"` still points at `dp/EXAMPLE` (a
-  placeholder ASIN) unless swapped for a real one below. PA-API was
-  considered and ruled out — it requires 3 qualifying sales within 180
-  days to even get access (a chicken-and-egg problem with zero sales so
-  far), so real ASINs are being found the same way as the touristSpot
-  photos were: WebSearch each product on amazon.co.jp, confirm a real
-  listing exists, extract the ASIN from the URL, build
-  `https://www.amazon.co.jp/dp/{ASIN}?tag=kaorusonoda-22`.
-  **Progress: 14 of ~97 products done** (all in the `company` category —
-  Nintendo Switch, Sony WH-1000XM5, Panasonic LUMIX DC-TZ99, Epson
-  EcoTank EP-M476T, Hitachi PV-BS1L vacuum, Sapporo black-label beer,
-  Orion Beer, Pocari Sweat 24-pack, Cup Noodle 20-pack, Fujifilm Instax
-  Mini 12, Tomica Toyota Raize, Nitori lidded storage box, Yamaha FG830
-  guitar, TOTO Washlet KM). **Remaining, by category** (full list was
-  extracted to `/tmp/amazon-products-clean.tsv` in-session — regenerate
-  via `loadFeaturablePlaces()` in `scripts/social-cards/content.mjs` if
-  that's gone): ~8 more `company` items (Mazda/Nissan die-cast model cars
-  — WebSearch kept returning category pages, not a specific product, so
-  these need a more targeted search or a specific model chosen by hand;
-  Mikimoto pearl jewelry — same issue; Uniqlo Basics — Uniqlo does not
-  appear to sell on Amazon.co.jp at all based on searches so far, likely
-  needs a different retailer or product entirely, flag to the user);
-  ~8 manga volumes (Barefoot Gen, Golden Kamuy, Slam Dunk, JoJo's
-  Bizarre Adventure, Crayon Shin-chan, Kiyo in Kyoto, Tokyo Revengers,
-  Detective Conan, One Piece — likely straightforward since these are
-  specific book titles, just not done yet); ~65 `local-specialty` items
-  (regional crafts/food — the largest and most ambiguous bucket, each
-  needs a specific real product chosen, not just a category search).
-  Also worth reconfirming per item once assigned: AmazonGlobal
-  international-shipping eligibility (a pre-existing "Open" item below —
-  don't assume every real ASIN found is actually eligible).
-- **Amazon Music Unlimited / Kindle Unlimited referral programs**: user
-  has applied for Amazon Associates (submitted the site URL) but approval
-  may still be pending — member referral programs are normally gated
-  behind Associates approval first. Help pages for reference:
-  music (https://affiliate.amazon.co.jp/help/node/topic/GMZN3JL942CST9EG),
+- **Amazon Associates activated (2026-08-29) — product ASIN pass complete
+  (2026-08-29)**: user's Associate ID is `kaorusonoda-22`. All
+  `tag=YOUR-ASSOCIATE-ID-22` placeholders were replaced with the real tag,
+  and **every `products` entry with `retailer: "amazon"` now links a real,
+  WebSearch-verified Amazon.co.jp ASIN** (`https://www.amazon.co.jp/dp/
+  {ASIN}?tag=kaorusonoda-22`) — the `dp/EXAMPLE`/`dp/EXAMPLE{n}` placeholder
+  pass is done, across all `company`, `manga`, and `local-specialty`
+  products in prefectures, municipalities, music, and manga content (~99
+  amazon-retailer entries total). PA-API was considered and ruled out — it
+  requires 3 qualifying sales within 180 days to even get access (a
+  chicken-and-egg problem with zero sales), so every ASIN was found
+  manually: WebSearch the product on amazon.co.jp, confirm a real listing,
+  extract the ASIN from the URL. Where a brand doesn't sell on Amazon.co.jp
+  at all (Mikimoto pearls, Uniqlo, car brands, Aomori's diamond cut-glass,
+  Kanazawa lacquerware), a real, purchasable analogous product was
+  substituted per the user's explicit "handle by analogy" instruction
+  (Akoya pearl set, Hanes Beefy-T, Tomica die-cast models, Tsugaru-nuri
+  lacquerware, a gold-leaf Kutani-yaki sake cup) — each substitution has a
+  one-line disclosure in its `description` explaining the swap, and (where
+  the substitution changed the product category, not just the specific
+  item) the `name` field was updated to match what's actually linked.
+  Three ASINs are intentionally reused across a prefecture + its
+  designated-city article that share the same company (Tomica Toyota
+  Raize: Aichi/Nagoya; Yamaha FG830 guitar: Shizuoka/Hamamatsu; Tomica
+  Mazda Roadster: Hiroshima pref/city) — not a bug. Remaining caveat: ASINs
+  were extracted from WebSearch result snippets, not confirmed by loading
+  each live Amazon page, so stock/listing status (especially for
+  small-workshop craft items) should be spot-checked before/while
+  publishing. Also still worth reconfirming AmazonGlobal international-
+  shipping eligibility per item (pre-existing "Open" item below).
+- **Amazon Music Unlimited / Kindle Unlimited / Prime Video referral
+  programs (2026-08-29 — links live)**: user confirmed no pending-approval
+  indicator was visible in Associates Central and supplied working
+  referral URLs directly: Music Unlimited
+  `https://www.amazon.co.jp/music/unlimited/?tag=kaorusonoda-22`, Prime
+  Video `https://www.amazon.co.jp/gp/video/storefront?benefitId=default&tag=kaorusonoda-22`,
   Kindle Unlimited
-  (https://affiliate.amazon.co.jp/help/node/topic/GDFUA9UXMWT4L5UR).
-  Once Associates is confirmed approved, walk the user through Associates
-  Central's actual current menu (structure may have changed since
-  training-data knowledge) to find and enroll in both programs, then wire
-  the resulting links into `subscriptions` in `src/content/music/*.md` /
-  `src/content/manga/*.md`.
-- **AdSense "specify a valid top-level domain" / suggested bare-domain
-  404 (2026-08-29)**: AdSense's "Add site" flow suggested
-  `http://kkss0212.github.io` (bare root) instead of the actual site URL
-  `https://kkss0212.github.io/japan-unpacked/`, and the suggested bare
-  URL 404s — because this is a GitHub Pages *project* page (not a
-  user/org root page), so nothing is actually served at
-  `kkss0212.github.io/` itself. `github.io` being on the Public Suffix
-  List means AdSense treats each `username.github.io` as its own site and
-  wants root-level control (root `ads.txt`, root verification) regardless
-  of where the real content lives. Options given to the user, cheapest
-  first: (A) just keep entering the full path URL in AdSense's site
-  field instead of accepting its bare-domain suggestion — reportedly
-  works for other GitHub project-page users, untested here; (B) stand up
-  a `kkss0212.github.io` root-level GitHub Pages site (a new repo with
-  that exact name) — free, but likely needs the *actual* site content at
-  the root (not just a redirect) since ads.txt/verification wants root
-  access, and would invalidate the site URL already submitted to Viator
-  and Amazon Associates, needing those updated too; (C) buy a custom
-  domain — cleanly fixes this and the pre-existing open "custom domain"
-  decision below, but costs money and still requires updating already-
-  submitted ASP URLs. User is trying (A) first; revisit if it doesn't
-  work. `astro.config.mjs`'s `BASE_PATH` is a single source of truth, so
-  a base-path change for (B) is mechanically simple if it comes to that.
+  `https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=kaorusonoda-22`.
+  Applied so far: Kindle Unlimited link corrected in
+  `src/content/manga/one-piece.md`; a new Prime Video `subscriptionOffer`
+  added there too (schema's `service` enum extended with `"prime-video"`,
+  `SubscriptionCard.astro` updated with a Clapperboard icon/label); Music
+  Unlimited link corrected in `src/content/music/perfume.md`. **Not yet
+  checked**: whether other music/manga articles have their own
+  `subscriptionOffer` entries still needing the same URL corrections —
+  sweep `src/content/music/*.md` and `src/content/manga/*.md` for any
+  remaining placeholder subscription URLs. User floated possibly featuring
+  Prime Video/Netflix more directly in article content — Netflix has no
+  known legitimate Japan-domestic affiliate program (same conclusion as
+  the existing Spotify/LINE Music note in `docs/asp-checklist.md`), worth
+  surfacing if the user revisits this.
+- **AdSense "specify a valid top-level domain" (2026-08-29 — resolved,
+  option B chosen, awaiting user's rename)**: AdSense's "Add site" flow
+  suggested the bare `http://kkss0212.github.io` root instead of the
+  actual site URL `https://kkss0212.github.io/japan-unpacked/`, and that
+  bare URL 404s because this is a GitHub Pages *project* page — nothing is
+  served at the bare root. `github.io` being on the Public Suffix List
+  means AdSense wants root-level control (root `ads.txt`, root
+  verification) regardless of where the real content lives. Of the three
+  options previously laid out — (A) enter the full path URL directly, (B)
+  stand up a `kkss0212.github.io` root-level Pages site, (C) buy a custom
+  domain — **user tried (A) and it failed, then explicitly chose (B)**,
+  with (C) noted as a possible future step. Sequencing agreed with the
+  user: **the user renames the GitHub repo to `kkss0212.github.io` first;
+  code changes come after**, since I have no repo-rename tool available.
+  Once the user confirms the rename is done, update: `astro.config.mjs`'s
+  `BASE_PATH` (single source of truth) from `/japan-unpacked/` to `/`;
+  `SITE_URL` stays `https://kkss0212.github.io`; `scripts/social-cards/
+  generate.mjs`'s hardcoded `SITE_URL`/`BASE_PATH` constants; and this
+  session's local git remote if the old URL stops redirecting. Also flag
+  to the user that already-submitted Viator/Amazon Associates site URLs
+  likely need updating to match the new URL.
 - **Fact-check pass — population/area (2026-08-29 update — done)**: every
   `population`/`areaKm2` figure across all 47 prefectures and all 20
   designated-city municipalities was individually cross-checked via
