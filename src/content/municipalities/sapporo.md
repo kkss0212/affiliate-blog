@@ -34,12 +34,28 @@ draft: false
 touristSpots:
   - name: "Sapporo Beer Museum & Garden"
     description: "A red-brick former brewery building turned museum tracing Sapporo Beer's history back to 1876, with a beer hall serving genghis khan (grilled lamb) alongside tastings."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sapporo%20Beer%20Museum.JPG"
+      alt: "The red-brick Sapporo Beer Museum building"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Susukino"
     description: "Japan's northernmost major entertainment district, a dense grid of bars, ramen shops, and neon signs a short walk from the city center — home to the famous ramen alley, Ramen Yokocho."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Susukino%20by%20flimdy%20in%20Sapporo.jpg"
+      alt: "Neon signs lighting up the Susukino entertainment district at night"
+      credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
   - name: "Hokkaido University & the Clock Tower"
     description: "A leafy university campus founded in 1876 under American educator William S. Clark, whose parting words to students — 'Boys, be ambitious' — are still a well-known phrase in Japan; the wooden Sapporo Clock Tower nearby is one of the city's most recognizable landmarks."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sapporo%20Clock%20Tower%20Hokkaido%20Japan.jpg"
+      alt: "The wooden Sapporo Clock Tower, a remnant of the former Sapporo Agricultural College"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Odori Park & Sapporo TV Tower"
     description: "A 1.5-km strip park running through the city center, host to the Sapporo Snow Festival each February and several other seasonal festivals, with the red Sapporo TV Tower marking its eastern end."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sapporo%20TV%20Tower%20and%20Odori%20park.JPG"
+      alt: "The Sapporo TV Tower rising above Odori Park"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
 products:
   - name: "Sapporo Premium Beer"
     description: "Japan's oldest beer brand, brewed in Hokkaido since 1876 and still headquartered in Sapporo."

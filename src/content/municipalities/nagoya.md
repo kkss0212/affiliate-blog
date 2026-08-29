@@ -34,12 +34,28 @@ draft: false
 touristSpots:
   - name: "Nagoya Castle"
     description: "A large reconstructed castle known for its golden shachihoko roof ornaments (mythical tiger-headed fish), built by Tokugawa Ieyasu as the seat of one of the three main Tokugawa branch families — see also the Aichi prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya%20Castle%20Golden%20Shachi-Hoko%20Statue01.jpg"
+      alt: "A golden shachihoko roof ornament from Nagoya Castle"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Atsuta Shrine"
     description: "One of Japan's most important Shinto shrines, said to enshrine the sacred sword Kusanagi-no-Tsurugi, one of the three Imperial Regalia — see also the Aichi prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta%20Shrine.jpg"
+      alt: "The forested grounds of Atsuta Shrine in Nagoya"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "SCMaglev and Railway Park"
     description: "A large railway museum near Nagoya Port covering Japan's rail history, including a preserved Shinkansen 0-series and a maglev test vehicle that once set a world speed record."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/SCMaglev%20and%20Railway%20Park1.JPG"
+      alt: "Preserved trains on display at the SCMaglev and Railway Park in Nagoya"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Osu Shopping District"
     description: "A dense, eclectic covered arcade district mixing a historic temple (Osu Kannon), electronics and anime shops, secondhand clothing stores, and street food."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Osu%20Kannon%20panorama.jpg"
+      alt: "Osu Kannon Temple at the heart of Nagoya's Osu shopping district"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Toyota Model Car"
     description: "Toyota's headquarters sits just outside Nagoya, and the wider Chubu region is Japan's automotive manufacturing heartland."

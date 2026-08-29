@@ -36,12 +36,28 @@ draft: false
 touristSpots:
   - name: "Sendai Tanabata Festival"
     description: "A massive early-August star festival where the city's shopping arcades are hung with thousands of large, elaborate paper streamers — one of Japan's three great Tanabata celebrations."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Sendai%20Tanabata%20Festival.JPG"
+      alt: "Large paper streamers hung over a shopping arcade during the Sendai Tanabata Festival"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Zuihoden"
     description: "Date Masamune's ornately decorated mausoleum, rebuilt after wartime destruction based on the original's surviving blueprints — see also the Miyagi prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zuiho-den17s3872.jpg"
+      alt: "The ornately decorated Zuihoden mausoleum of Date Masamune in Sendai"
+      credit: "Wikimedia Commons, licensed CC BY 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Sendai Castle Ruins (Aoba Castle)"
     description: "Little remains of the original castle beyond stone walls, but the hilltop site has sweeping views over Sendai and a statue of Date Masamune on horseback — see also the Miyagi prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20statue%20Date%20Masamune.jpg"
+      alt: "The equestrian statue of Date Masamune at the Sendai Castle ruins"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Jozenji-dori Avenue"
     description: "A broad, tree-lined boulevard through the city center that gives Sendai's 'City of Trees' nickname its clearest expression, especially striking during the December Pageant of Starlight illumination."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jozenji-dori%20Avenue%20rev.jpg"
+      alt: "The tree-lined Jozenji-dori Avenue in central Sendai"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Sendai Gyutan (Beef Tongue) Set"
     description: "Grilled beef tongue is Sendai's best-known food export, a dish said to have originated here after WWII; vacuum-packed sets are widely sold as souvenirs."

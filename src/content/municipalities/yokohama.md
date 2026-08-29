@@ -34,12 +34,28 @@ draft: false
 touristSpots:
   - name: "Minato Mirai"
     description: "Yokohama's modern waterfront district, with the Cosmo Clock 21 ferris wheel, Landmark Tower, and a preserved 1911 sailing ship, Nippon Maru, docked as a museum — see also the Kanagawa prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cosmo%20clock%2021%20ferris%20wheel%20yokohama.jpg"
+      alt: "The Cosmo Clock 21 ferris wheel in Yokohama's Minato Mirai district"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Yokohama Chinatown"
     description: "Japan's largest Chinatown, dating to Yokohama's 1859 opening as a treaty port, packed with restaurants and shops across a compact, gated district — see also the Kanagawa prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Chinatown%20entrance.jpg"
+      alt: "An ornate gate at the entrance to Yokohama Chinatown"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Sankeien Garden"
     description: "A large traditional Japanese garden assembled in the early 1900s by a silk trader, incorporating relocated historic buildings from around Japan, including a three-story pagoda."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sankeien%20sanjuunotou.jpg"
+      alt: "The relocated three-story pagoda at Sankeien Garden in Yokohama"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Cup Noodles Museum"
     description: "A museum in Minato Mirai dedicated to instant ramen's invention by Momofuku Ando, with a hands-on workshop for making a custom cup of instant noodles."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cup%20Noodle%20Museum%20Yokohama.jpg"
+      alt: "The Cup Noodles Museum building in Yokohama's Minato Mirai district"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Cup Noodle (Original)"
     description: "Nissin's instant cup noodle, invented by Momofuku Ando and commercialized from Yokohama, is one of the most globally recognizable Japanese food products."
