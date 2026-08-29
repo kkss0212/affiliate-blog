@@ -64,7 +64,7 @@ products:
     category: "company"
   - name: "Hatcho Miso"
     description: "A dark, intensely savory soybean miso made in the Nagoya area for centuries, the base of local specialties like misokatsu (miso-glazed pork cutlet)."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B004WHTL7A?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

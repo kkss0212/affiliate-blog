@@ -64,7 +64,7 @@ products:
     category: "company"
   - name: "Shiroi Koibito Cookies"
     description: "Sapporo's best-known confectionery export — thin white-chocolate-filled langue de chat cookies, made by Ishiya since 1976."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B017PYLPWK?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

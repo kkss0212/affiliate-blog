@@ -62,12 +62,12 @@ touristSpots:
 products:
   - name: "Hakata Ramen"
     description: "Fukuoka's Hakata district is the birthplace of tonkotsu (pork bone broth) ramen, one of Japan's most globally recognized ramen styles."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B07P6DKSVY?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Hakata Ori Textile Goods"
     description: "Hakata-ori is a traditional woven textile from Fukuoka dating back roughly 770 years, historically used for kimono obi sashes."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DKJCY6MP?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Sendai Gyutan (Beef Tongue) Set"
     description: "Grilled beef tongue is Sendai's best-known food export, a dish said to have originated here after WWII; vacuum-packed sets are widely sold as souvenirs."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CJHSVMRY?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

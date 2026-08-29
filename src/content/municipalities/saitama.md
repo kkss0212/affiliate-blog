@@ -54,7 +54,7 @@ touristSpots:
 products:
   - name: "Omiya Bonsai (Small Tree)"
     description: "A small bonsai tree from a Saitama nursery in the tradition of Omiya Bonsai Village, one of the world's best-known bonsai-growing districts."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CBNZ3KDZ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

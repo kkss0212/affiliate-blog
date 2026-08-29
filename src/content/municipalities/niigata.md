@@ -49,12 +49,12 @@ touristSpots:
 products:
   - name: "Niigata Koshihikari Rice"
     description: "Rice from Niigata, especially the Uonuma area, is widely regarded as Japan's premium standard-bearer for the Koshihikari variety."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B01KTBN7K4?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Niigata Junmai Ginjo Sake"
     description: "Niigata's cold winters, snowmelt water, and rice quality make it one of Japan's most respected sake-producing regions."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B001W43MD0?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

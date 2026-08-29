@@ -63,7 +63,7 @@ products:
     category: "company"
   - name: "Hamamatsu Unagi (Grilled Eel), Vacuum-Packed"
     description: "Hamamatsu-style grilled eel, tied to Lake Hamana's historic eel farming industry, is one of the city's best-known food exports."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B09VKZDF6R?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:
