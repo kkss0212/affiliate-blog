@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Choshi Soy Sauce"
     description: "Choshi, on Chiba's coast, has been a center of Japanese soy sauce production for around 400 years, and remains home to two of the country's best-known brands. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

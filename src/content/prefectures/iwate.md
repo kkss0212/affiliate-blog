@@ -59,7 +59,7 @@ touristSpots:
 products:
   - name: "Nanbu Tekki Cast Iron Teapot"
     description: "Nanbu ironware, produced in the Morioka area for roughly 400 years, is one of Japan's best-known traditional crafts internationally. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

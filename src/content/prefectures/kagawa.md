@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Marugame Uchiwa Fan"
     description: "Marugame, in Kagawa, produces roughly 90% of Japan's uchiwa (flat paper fans), a craft dating to the 1600s. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

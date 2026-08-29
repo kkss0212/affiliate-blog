@@ -59,12 +59,12 @@ touristSpots:
 products:
   - name: "Toyota Model Car"
     description: "Toyota's headquarters sits just outside Nagoya, and the wider Chubu region is Japan's automotive manufacturing heartland."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Hatcho Miso"
     description: "A dark, intensely savory soybean miso made in the Nagoya area for centuries, the base of local specialties like misokatsu (miso-glazed pork cutlet)."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

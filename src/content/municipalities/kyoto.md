@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Kyoto-Style Pickles (Kyo-tsukemono)"
     description: "A category of refined vegetable pickles associated with Kyoto's kaiseki and temple-cuisine traditions, widely sold at Nishiki Market and beyond."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

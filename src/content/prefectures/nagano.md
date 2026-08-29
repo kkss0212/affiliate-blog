@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Kiso Lacquerware Bowl"
     description: "Kiso lacquerware, from Nagano's Kiso Valley, is one of Japan's major regional lacquerware traditions, developed alongside the historic Nakasendo trade route. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Epson EcoTank Printer"
     description: "Seiko Epson has been headquartered in Suwa, Nagano since its founding in 1942, growing from a watch-parts maker into a major global printer and electronics manufacturer."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

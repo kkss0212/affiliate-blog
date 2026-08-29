@@ -54,7 +54,7 @@ touristSpots:
 products:
   - name: "Okayama Peach (Hakuto)"
     description: "Okayama is one of Japan's premier peach-growing regions, tied closely to the city's Momotaro ('Peach Boy') folk-hero branding."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

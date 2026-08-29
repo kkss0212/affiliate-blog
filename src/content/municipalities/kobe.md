@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Kobe Beef"
     description: "A wagyu brand raised under strict criteria within Hyogo Prefecture, among the most internationally recognized Japanese beef brands. Confirm eligible shipping/import restrictions before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

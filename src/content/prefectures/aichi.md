@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Arimatsu Shibori Tie-Dye Textile"
     description: "Arimatsu, now part of Nagoya, has produced this distinctive hand-tied indigo textile since the early 1600s, historically sold to travelers on the Tokaido road. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Toyota Licensed Die-Cast Model Car"
     description: "Toyota, the world's largest automaker by production volume, has been headquartered in Aichi's Toyota City since the company's founding."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

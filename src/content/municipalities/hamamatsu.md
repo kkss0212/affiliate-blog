@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Yamaha Musical Instrument"
     description: "Yamaha, one of the world's largest musical instrument manufacturers, was founded in Hamamatsu and remains headquartered here."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Hamamatsu Unagi (Grilled Eel), Vacuum-Packed"
     description: "Hamamatsu-style grilled eel, tied to Lake Hamana's historic eel farming industry, is one of the city's best-known food exports."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

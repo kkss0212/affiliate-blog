@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Shizuoka Green Tea (Sencha)"
     description: "Shizuoka Prefecture, centered on this city and its surrounding tea hills, produces more green tea by volume than any other part of Japan."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

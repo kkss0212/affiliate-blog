@@ -59,12 +59,12 @@ touristSpots:
 products:
   - name: "Sapporo Premium Beer"
     description: "Japan's oldest beer brand, brewed in Hokkaido since 1876 and still headquartered in Sapporo."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
   - name: "Shiroi Koibito Cookies"
     description: "Sapporo's best-known confectionery export — thin white-chocolate-filled langue de chat cookies, made by Ishiya since 1976."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

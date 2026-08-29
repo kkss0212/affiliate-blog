@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Mino Washi Paper"
     description: "Mino washi, from Gifu's Mino region, is one of three traditional Japanese papermaking techniques recognized on UNESCO's Intangible Cultural Heritage list. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

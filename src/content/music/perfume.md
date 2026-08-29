@@ -34,12 +34,12 @@ draft: false
 subscriptions:
   - name: "Stream Perfume on Amazon Music Unlimited"
     description: "Try Amazon Music Unlimited free, then explore Perfume's discography from 'Polyrhythm' onward."
-    url: "https://www.amazon.co.jp/music/unlimited?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/music/unlimited?tag=kaorusonoda-22"
     service: "amazon-music-unlimited"
 products:
   - name: "Perfume — GAME (Album)"
     description: "Perfume's 2008 breakthrough album, including 'Polyrhythm' and 'Chocolate Disco.'"
-    url: "https://www.amazon.co.jp/dp/EXAMPLE6?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE6?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

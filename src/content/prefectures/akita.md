@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Odate Magewappa Bentwood Container"
     description: "A traditional Akita craft bending thin sheets of natural cedar or cypress into round boxes and containers, prized for the wood's grain and mild scent. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

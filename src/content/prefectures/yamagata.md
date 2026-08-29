@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Yamagata Cherry (Sakuranbo) Preserves"
     description: "Yamagata's cherry harvest (late June-July) is a major regional event; preserved or dried cherries travel well outside the short fresh season. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

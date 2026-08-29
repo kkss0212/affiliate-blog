@@ -56,7 +56,7 @@ touristSpots:
 products:
   - name: "Kumamon Merchandise"
     description: "Kumamon, the black bear mascot created in 2011 for Kumamoto Prefecture's Kyushu Shinkansen marketing campaign, has become one of Japan's best-known and most commercially successful regional mascots."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

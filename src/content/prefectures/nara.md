@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Nara Fude Calligraphy Brush Set"
     description: "Nara has produced calligraphy brushes since the 800s and remains one of Japan's leading centers for the craft. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

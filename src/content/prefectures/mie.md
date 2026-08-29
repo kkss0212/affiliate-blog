@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Ise-katagami Stencil Print"
     description: "Ise-katagami are intricately hand-cut paper stencils historically used to dye kimono fabric, produced in Mie for centuries and once supplied to textile dyers across Japan. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Mikimoto Pearl Jewelry"
     description: "Kokichi Mikimoto founded his pearl company in Toba, Mie in the 1890s after inventing the modern cultured pearl, and it remains one of the world's best-known luxury pearl brands."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

@@ -52,7 +52,7 @@ touristSpots:
 products:
   - name: "Chiba Peanuts (Rakkasei)"
     description: "Chiba Prefecture is Japan's leading peanut-producing region, and the crop is closely associated with the area around the city."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Shigaraki-yaki Tanuki Statue"
     description: "Shigaraki ware is one of Japan's 'Six Ancient Kilns,' best known outside Japan for its ceramic tanuki (raccoon dog) statues, a common sight outside shops and restaurants nationwide. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

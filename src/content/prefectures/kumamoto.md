@@ -60,7 +60,7 @@ touristSpots:
 products:
   - name: "Higo Zogan Metal Inlay Accessory"
     description: "Higo zogan is a Kumamoto metalworking tradition combining iron with gold and silver inlay, historically used to decorate samurai sword guards and armor. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

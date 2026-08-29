@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Bizen-yaki Unglazed Ceramic Cup"
     description: "Bizen ware is one of Japan's 'Six Ancient Kilns,' known for unglazed, wood-fired stoneware whose color and texture come entirely from the firing process itself. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Kojima Selvedge Denim Jeans"
     description: "Kurashiki's Kojima district is considered the birthplace of Japanese denim manufacturing, and its selvedge denim is internationally regarded among the finest made anywhere. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

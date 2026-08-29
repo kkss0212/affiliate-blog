@@ -59,7 +59,7 @@ touristSpots:
 products:
   - name: "Cup Noodle (Original)"
     description: "Nissin's instant cup noodle, invented by Momofuku Ando and commercialized from Yokohama, is one of the most globally recognizable Japanese food products."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

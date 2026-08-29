@@ -61,12 +61,12 @@ touristSpots:
 products:
   - name: "Ryukyu Bingata Dyed Coasters"
     description: "Bingata is a centuries-old Okinawan stencil-dyeing technique, historically reserved for Ryukyu royalty, using bright subtropical colors and motifs. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Orion Beer"
     description: "Orion has been Okinawa's own beer brand since 1957, brewed locally and rarely found on mainland Japan shelves outside specialty stores."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

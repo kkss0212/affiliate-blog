@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Niigata Junmai Sake"
     description: "Niigata's heavy snowmelt and rice-growing conditions have made it one of Japan's most respected sake-producing regions, home to dozens of breweries. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

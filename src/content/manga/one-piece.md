@@ -33,12 +33,12 @@ draft: false
 subscriptions:
   - name: "Read One Piece on Kindle Unlimited"
     description: "Try Kindle Unlimited free, then read through the One Piece back catalog."
-    url: "https://www.amazon.co.jp/kindle-dbs/hz/subscribe/ku?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/kindle-dbs/hz/subscribe/ku?tag=kaorusonoda-22"
     service: "kindle-unlimited"
 products:
   - name: "One Piece, Vol. 1 (Kindle Edition)"
     description: "The first volume, where the story begins."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE4?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE4?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

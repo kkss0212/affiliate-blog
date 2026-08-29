@@ -15,12 +15,12 @@ draft: true
 subscriptions:
   - name: "Stream City Pop classics on Amazon Music Unlimited"
     description: "Try Amazon Music Unlimited free, then explore City Pop playlists and full discographies."
-    url: "https://www.amazon.co.jp/music/unlimited?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/music/unlimited?tag=kaorusonoda-22"
     service: "amazon-music-unlimited"
 products:
   - name: "Mariya Takeuchi — VARIETY (Vinyl Reissue)"
     description: "The 1984 album featuring 'Plastic Love'."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE3?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE3?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

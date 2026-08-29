@@ -56,7 +56,7 @@ touristSpots:
 products:
   - name: "TOTO Bathroom Fixture"
     description: "TOTO, one of the world's largest manufacturers of toilets and bathroom fixtures (including the Washlet), was founded in Kitakyushu in 1917."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

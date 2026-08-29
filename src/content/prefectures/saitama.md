@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Sayama Tea"
     description: "Sayama, in Saitama, is one of Japan's three major tea-growing regions alongside Shizuoka and Uji (Kyoto) — a regional saying holds that 'the flavor comes from Sayama.' Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Crayon Shin-chan, Vol. 1"
     description: "Yoshito Usui's manga is set in the fictionalized but explicitly named city of Kasukabe, Saitama, following its five-year-old troublemaker protagonist and his family."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

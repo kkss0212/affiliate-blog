@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Arita-yaki (Imari) Porcelain Plate"
     description: "Arita ware was Japan's first porcelain and one of its earliest major exports to Europe, shipped from the nearby port of Imari starting in the 1650s. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

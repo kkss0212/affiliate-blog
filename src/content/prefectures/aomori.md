@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Aomori Nambu Diamond Cut-Glass"
     description: "A regional glasswork tradition; alternatively, Tsugaru-nuri lacquerware is Aomori's best-known handicraft export. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

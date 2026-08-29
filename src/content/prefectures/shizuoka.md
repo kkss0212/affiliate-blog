@@ -62,12 +62,12 @@ touristSpots:
 products:
   - name: "Shizuoka Sencha Green Tea"
     description: "Shizuoka produces roughly 40% of Japan's tea, and its sencha (steamed green tea) is considered a national benchmark. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Yamaha Acoustic Guitar"
     description: "Yamaha has been headquartered in Hamamatsu, Shizuoka since its 1887 founding as a reed organ repair shop, growing into one of the world's largest musical instrument and motorcycle manufacturers."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "company"
 experiences:

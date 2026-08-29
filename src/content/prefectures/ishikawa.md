@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Kanazawa Gold Leaf Lacquerware"
     description: "Kanazawa produces roughly 99% of Japan's gold leaf, applied here to lacquerware, ceramics, and decorative objects. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

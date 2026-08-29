@@ -58,12 +58,12 @@ touristSpots:
 products:
   - name: "Inshu Washi Paper"
     description: "Inshu washi, from Tottori's Inshu region, is a traditional handmade paper known for its strength, historically used for painting and calligraphy. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Detective Conan (Case Closed), Vol. 1"
     description: "Gosho Aoyama, born in Tottori's Hokuei, created one of the best-selling and most internationally translated manga series ever, still running after 30+ years."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "manga"
 experiences:

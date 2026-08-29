@@ -60,7 +60,7 @@ touristSpots:
 products:
   - name: "Tamba-yaki Ceramic Vase"
     description: "Tamba ware, from Hyogo's Tamba region, is one of Japan's 'Six Ancient Kilns,' known for simple, earthy glazes produced with minimal decoration. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

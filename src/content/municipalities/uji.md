@@ -26,7 +26,7 @@ draft: true
 products:
   - name: "Uji Matcha, Ceremonial Grade"
     description: "Stone-ground matcha from a long-established Uji tea house."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE5?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE5?tag=kaorusonoda-22"
     retailer: "amazon"
 experiences:
   - name: "Uji Tea Fields & Byodo-in Half-Day Tour"

@@ -48,7 +48,7 @@ touristSpots:
 products:
   - name: "JAXA Hayabusa Model Kit"
     description: "A scale model of the Hayabusa spacecraft, whose mission operations were run from JAXA's Sagamihara Campus."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

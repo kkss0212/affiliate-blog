@@ -54,7 +54,7 @@ touristSpots:
 products:
   - name: "Kofu Cut Crystal Jewelry"
     description: "Kofu has been a center of crystal and gemstone carving since the Edo period, and remains a major jewelry-manufacturing hub in Japan today. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

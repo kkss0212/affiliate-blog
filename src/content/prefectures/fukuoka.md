@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Hakata Ori Woven Obi Belt"
     description: "Hakata-ori is a centuries-old woven textile tradition from Fukuoka, historically used for kimono obi sashes. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=YOUR-ASSOCIATE-ID-22"
+    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:
