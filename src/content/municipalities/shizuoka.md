@@ -10,7 +10,7 @@ name: "Shizuoka"
 nameJa: "静岡市"
 prefecture: "shizuoka"
 kind: "city"
-tagline: "Tokugawa Ieyasu's retirement city, and by land area the largest of Japan's twenty designated cities — most of it mountainous green-tea country."
+tagline: "Tokugawa Ieyasu's retirement city, and by land area one of the largest of Japan's twenty designated cities — much of it mountainous green-tea country."
 population: 693389
 populationSourceYear: 2020
 populationTrend: "decreasing"
@@ -24,7 +24,7 @@ comparedTo:
   country: "USA"
   reason: "Both are administrative cities that, thanks to a large 2000s-era merger with surrounding mountainous farmland, ended up with a metro area far larger and greener than their downtown-city image would suggest."
 highlights:
-  - "By land area, the largest of Japan's twenty designated cities, after a 2003 merger absorbed a large mountainous rural area"
+  - "By land area, one of the largest of Japan's twenty designated cities, after a 2003 merger absorbed a large mountainous rural area (second only to neighboring Hamamatsu)"
   - "Where Tokugawa Ieyasu chose to retire after founding the Edo shogunate, ruling from Sunpu Castle until his death in 1616"
   - "Japan's largest green tea-producing region by volume, with tea fields covering much of the surrounding hills"
   - "Views of Mount Fuji from the city and coastline are among the clearest and most iconic in Japan"
@@ -77,9 +77,9 @@ be close to ideal for tea cultivation, and by the late 19th and 20th
 centuries the wider Shizuoka region had grown into Japan's largest green-tea
 producing area by volume — a status the 2003 merger that folded a large
 swath of mountainous farmland into Shizuoka City limits made especially
-visible, since much of the city's now-considerable land area (the largest
-of any of Japan's twenty designated cities) is tea field rather than urban
-development.
+visible, since much of the city's now-considerable land area (second only
+to neighboring Hamamatsu among Japan's twenty designated cities) is tea
+field rather than urban development.
 
 ### A city split between mountains and a mid-sized downtown
 
