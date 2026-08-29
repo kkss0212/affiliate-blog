@@ -1,11 +1,11 @@
 ---
-import { Music, BookOpen } from "@lucide/astro";
+import { Music, BookOpen, Clapperboard } from "@lucide/astro";
 
 interface Props {
   name: string;
   description: string;
   url: string;
-  service: "amazon-music-unlimited" | "kindle-unlimited";
+  service: "amazon-music-unlimited" | "kindle-unlimited" | "prime-video";
 }
 
 const { name, description, url, service } = Astro.props;
@@ -13,8 +13,14 @@ const { name, description, url, service } = Astro.props;
 const serviceLabel: Record<Props["service"], string> = {
   "amazon-music-unlimited": "Try Amazon Music Unlimited",
   "kindle-unlimited": "Try Kindle Unlimited",
+  "prime-video": "Watch on Prime Video",
 };
-const ServiceIcon = service === "amazon-music-unlimited" ? Music : BookOpen;
+const serviceIcon: Record<Props["service"], typeof Music> = {
+  "amazon-music-unlimited": Music,
+  "kindle-unlimited": BookOpen,
+  "prime-video": Clapperboard,
+};
+const ServiceIcon = serviceIcon[service];
 ---
 
 <a

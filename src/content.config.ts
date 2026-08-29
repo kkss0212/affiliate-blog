@@ -20,14 +20,14 @@ const experience = z.object({
 });
 
 // Amazon's own "member referral" programs (Amazon Music Unlimited, Kindle
-// Unlimited) — flat fee per new sign-up, generated from Associates Central
-// under the same Amazon Associates account. Not a product purchase link, so
-// modeled separately from `product`.
+// Unlimited, Prime Video) — flat fee per new sign-up, generated from
+// Associates Central under the same Amazon Associates account. Not a
+// product purchase link, so modeled separately from `product`.
 const subscriptionOffer = z.object({
   name: z.string(),
   description: z.string(),
   url: z.string().url(),
-  service: z.enum(["amazon-music-unlimited", "kindle-unlimited"]),
+  service: z.enum(["amazon-music-unlimited", "kindle-unlimited", "prime-video"]),
 });
 
 // Shared image shape (with an optional attribution string) used by both

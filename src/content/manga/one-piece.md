@@ -33,8 +33,12 @@ draft: false
 subscriptions:
   - name: "Read One Piece on Kindle Unlimited"
     description: "Try Kindle Unlimited free, then read through the One Piece back catalog."
-    url: "https://www.amazon.co.jp/kindle-dbs/hz/subscribe/ku?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=kaorusonoda-22"
     service: "kindle-unlimited"
+  - name: "Watch the One Piece anime on Prime Video"
+    description: "The long-running Toei Animation series is part of Prime Video Japan's catalog alongside other seasonal anime — confirm current availability before publishing, since streaming catalogs change."
+    url: "https://www.amazon.co.jp/gp/video/storefront?benefitId=default&tag=kaorusonoda-22"
+    service: "prime-video"
 products:
   - name: "One Piece, Vol. 1 (Kindle Edition)"
     description: "The first volume, where the story begins."
