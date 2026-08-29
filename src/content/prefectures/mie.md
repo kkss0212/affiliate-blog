@@ -56,9 +56,9 @@ touristSpots:
       alt: "The final corner of the Suzuka Circuit racetrack"
       credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
-  - name: "Ise-katagami Stencil Print"
-    description: "Ise-katagami are intricately hand-cut paper stencils historically used to dye kimono fabric, produced in Mie for centuries and once supplied to textile dyers across Japan. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Ise-katagami Stencil Paper"
+    description: "Ise-katagami are intricately hand-cut paper stencils historically used to dye kimono fabric, produced in Mie for centuries and once supplied to textile dyers across Japan. This links the genuine persimmon-tannin-treated stencil paper itself rather than a finished dyed print."
+    url: "https://www.amazon.co.jp/dp/B06WRRKPG2?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Akoya Pearl Necklace & Earring Set"

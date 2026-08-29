@@ -60,7 +60,7 @@ touristSpots:
 products:
   - name: "Nagasaki Bidoro Glassware"
     description: "Nagasaki glasswork ('bidoro,' from the Portuguese 'vidro') developed from glassmaking techniques introduced through Dutch and Portuguese trade at Dejima, one of Japan's earliest points of contact with Western craft techniques. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DCNNYKL5?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

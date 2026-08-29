@@ -59,9 +59,9 @@ touristSpots:
       alt: "Clear turquoise water off one of the Kerama Islands"
       credit: "Wikimedia Commons, licensed CC BY 2.0 — re-confirm author/license on the file page before publishing"
 products:
-  - name: "Ryukyu Bingata Dyed Coasters"
-    description: "Bingata is a centuries-old Okinawan stencil-dyeing technique, historically reserved for Ryukyu royalty, using bright subtropical colors and motifs. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Ryukyu Bingata Dyed Art Panel (Framed)"
+    description: "Bingata is a centuries-old Okinawan stencil-dyeing technique, historically reserved for Ryukyu royalty, using bright subtropical colors and motifs. No bingata-dyed coasters turned up on Amazon.co.jp, so this links a framed hand-dyed bingata piece instead."
+    url: "https://www.amazon.co.jp/dp/B0DBT8LHCQ?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Orion Beer"

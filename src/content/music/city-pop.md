@@ -20,7 +20,7 @@ subscriptions:
 products:
   - name: "Mariya Takeuchi — VARIETY (Vinyl Reissue)"
     description: "The 1984 album featuring 'Plastic Love'."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE3?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B09DL45G98?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

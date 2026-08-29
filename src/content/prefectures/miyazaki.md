@@ -54,7 +54,7 @@ touristSpots:
 products:
   - name: "Miyazaki Premium Mango"
     description: "Miyazaki's top-grade 'Taiyo no Tamago' mangoes are among Japan's most prized gift fruits, grown under strict quality standards. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0CGH2FLCV?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

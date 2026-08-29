@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Kiso Lacquerware Bowl"
     description: "Kiso lacquerware, from Nagano's Kiso Valley, is one of Japan's major regional lacquerware traditions, developed alongside the historic Nakasendo trade route. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DCP5TBW6?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Epson EcoTank Printer"

@@ -39,7 +39,7 @@ subscriptions:
 products:
   - name: "Perfume — GAME (Album)"
     description: "Perfume's 2008 breakthrough album, including 'Polyrhythm' and 'Chocolate Disco.'"
-    url: "https://www.amazon.co.jp/dp/EXAMPLE6?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00132S3SK?tag=kaorusonoda-22"
     retailer: "amazon"
 ---
 

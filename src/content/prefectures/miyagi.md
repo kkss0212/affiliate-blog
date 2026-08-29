@@ -60,7 +60,7 @@ touristSpots:
 products:
   - name: "Kokeshi Wooden Doll"
     description: "Simple, hand-painted wooden dolls originating in the Tohoku region's hot-spring towns during the Edo period, now a widely recognized Japanese folk-craft souvenir. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0GZZL8P4D?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "JoJo's Bizarre Adventure: Diamond Is Unbreakable, Vol. 1"

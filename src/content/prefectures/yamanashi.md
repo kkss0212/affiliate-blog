@@ -52,9 +52,9 @@ touristSpots:
       alt: "The main hall of Takeda Shrine in Kofu"
       credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
-  - name: "Kofu Cut Crystal Jewelry"
-    description: "Kofu has been a center of crystal and gemstone carving since the Edo period, and remains a major jewelry-manufacturing hub in Japan today. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+  - name: "Kofu Crystal Power-Stone Bracelet"
+    description: "Kofu has been a center of crystal and gemstone carving since the Edo period, and remains a major jewelry-manufacturing hub in Japan today — this links a genuine Kofu-region crystal bracelet rather than a faceted cut-crystal piece specifically."
+    url: "https://www.amazon.co.jp/dp/B07NVM6NDB?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:
