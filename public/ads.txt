@@ -2,12 +2,9 @@
 # Declares who is allowed to sell/serve ads on this domain, so ad
 # networks and buyers can verify inventory isn't being spoofed.
 #
-# PLACEHOLDER — AdSense is not yet approved for this site. Once approved,
-# replace the line below with the real one from your AdSense account
-# (Sites > [this domain] > "View site" banner, or Account > Settings >
-# Sites), which looks like:
-#
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-#
-# The "pub-..." value must match ADSENSE_CLIENT_ID in src/consts.ts.
-# See DECISIONS.md "Display ads (AdSense)" for the full checklist.
+# AdSense account added 2026-08-29 (pub-7352447371048101). Used for the
+# "ads.txt snippet" site-ownership verification method instead of the
+# unconditional <head> script snippet, since AdSlot.astro deliberately
+# only loads the AdSense script after cookie consent is granted — see
+# DECISIONS.md "Display ads (AdSense)" for the full checklist.
+google.com, pub-7352447371048101, DIRECT, f08c47fec0942fa0

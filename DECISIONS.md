@@ -657,6 +657,26 @@ that `/prefectures/` needed to be grouped/scannable by region:
   approved), and possibly Rakuten Affiliate's media registration. See the
   "要対応"/"要確認" notes added at each ASP's section in
   `docs/asp-checklist.md` for exactly where to check in each dashboard.
+- **AdSense account created, site-ownership verification pending
+  (2026-08-29)**: user created an AdSense account (publisher ID
+  `pub-7352447371048101`) and reached the "verify site ownership" step,
+  which offered three methods (code snippet, ads.txt snippet, meta tag).
+  **Chose ads.txt over the code-snippet method deliberately**: the
+  code-snippet method requires an unconditional `<script>` tag in every
+  page's `<head>`, which would load the AdSense library for every visitor
+  regardless of cookie consent — directly conflicting with `AdSlot.astro`'s
+  consent-gating design (see above). `public/ads.txt` was already
+  scaffolded for exactly this purpose, so filled in the real line
+  (`google.com, pub-7352447371048101, DIRECT, f08c47fec0942fa0`) and
+  pushed it — no code/consent-gating changes needed, verification just
+  reads the live `https://kkss0212.github.io/ads.txt`.
+  **`ADSENSE_CLIENT_ID` in `src/consts.ts` deliberately left blank** —
+  per its own comment, that's the switch that turns on actual ad
+  rendering (`AdSlot.astro` starts emitting `<ins class="adsbygoogle">`
+  units site-wide), and the account isn't approved yet. Flip it to
+  `"ca-pub-7352447371048101"` once AdSense approval comes through, then
+  create real ad units in the dashboard and swap the placeholder
+  `"0000000000"` slot IDs at each `<AdSlot slot="...">` call site.
 - **Fact-check pass — population/area (2026-08-29 update — done)**: every
   `population`/`areaKm2` figure across all 47 prefectures and all 20
   designated-city municipalities was individually cross-checked via
