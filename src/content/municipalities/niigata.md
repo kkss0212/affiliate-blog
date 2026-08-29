@@ -30,10 +30,22 @@ draft: false
 touristSpots:
   - name: "Niigata City Furumachi & Bandai Bridge"
     description: "Niigata City's historic entertainment district and its landmark early-20th-century bridge over the Shinano River, Japan's longest — see also the Niigata prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bandai%20Bridge,%20Niigata,%20Japan%20001.JPG"
+      alt: "Bandai Bridge crossing the Shinano River in Niigata City"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Sake no Jinbee & Furumachi Sake Tasting"
     description: "Tasting venues in central Niigata showcasing the region's dense concentration of sake breweries, taking advantage of the area's rice, snowmelt water, and cold winters."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Niigata%20Kami-furumachi%20Shopping%20Street%20August2023.jpg"
+      alt: "The Kami-Furumachi shopping street in central Niigata"
+      credit: "Wikimedia Commons, licensed CC BY 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Niigata City Aquarium (Marinpia Nihonkai)"
     description: "A Sea of Japan-focused aquarium on the coast near central Niigata, with exhibits on the marine life of the surrounding waters."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Niigata%20City%20Aquarium%20(MARINEPIA%20NIHONKAI).jpg"
+      alt: "The Niigata City Aquarium (Marinpia Nihonkai) building"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "Niigata Koshihikari Rice"
     description: "Rice from Niigata, especially the Uonuma area, is widely regarded as Japan's premium standard-bearer for the Koshihikari variety."

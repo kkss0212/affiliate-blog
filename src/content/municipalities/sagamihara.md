@@ -29,10 +29,22 @@ draft: false
 touristSpots:
   - name: "JAXA Sagamihara Campus"
     description: "The Japan Aerospace Exploration Agency's space-science research center, which served as mission control for the Hayabusa and Hayabusa2 missions; its visitor center is open to the public and displays mission hardware and asteroid-sample research."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/ISAS%20Sagamihara%20Campus%20P4037803.jpg"
+      alt: "A facility building at JAXA's Sagamihara Campus"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Lake Sagami"
     description: "A reservoir lake in Sagamihara's hillier northern reaches, popular for boating, cherry blossoms in spring, and an autumn illumination event."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagami%20Dam%20and%20lake.jpg"
+      alt: "Lake Sagami, the reservoir formed by the Sagami Dam"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
   - name: "Sagamihara City Museum"
     description: "A local museum covering the city's history and natural environment, including a planetarium, reflecting Sagamihara's strong civic connection to its space-research institutions."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagamihara%20City%20Museum%20the%20front%20in%20Winter.jpg"
+      alt: "The front of Sagamihara City Museum in winter"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing"
 products:
   - name: "JAXA Hayabusa Model Kit"
     description: "A scale model of the Hayabusa spacecraft, whose mission operations were run from JAXA's Sagamihara Campus."

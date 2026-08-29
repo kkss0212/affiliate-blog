@@ -33,12 +33,28 @@ draft: false
 touristSpots:
   - name: "Sunpu Castle Park"
     description: "The ruins and reconstructed gates of Sunpu Castle, where Tokugawa Ieyasu retired after founding the Edo shogunate and lived until his death in 1616 — see also the Shizuoka prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sunpu%20castle%20park.JPG"
+      alt: "Reconstructed gates at Sunpu Castle Park in Shizuoka"
+      credit: "Wikimedia Commons, licensed CC BY-SA 3.0 — re-confirm author/license on the file page before publishing"
   - name: "Nihondaira & Mount Fuji Ropeway"
     description: "A hilltop viewpoint over Shizuoka City and Suruga Bay, connected by ropeway to Kunozan Toshogu, with clear-day views of Mount Fuji — see also the Shizuoka prefecture page."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Fuji%20from%20Nihondaira.JPG"
+      alt: "A view of Mount Fuji from the Nihondaira hilltop viewpoint"
+      credit: "Wikimedia Commons, licensed CC BY-SA 4.0 — re-confirm author/license on the file page before publishing"
   - name: "Shizuoka Tea Fields (Makinohara Plateau area)"
     description: "Rolling tea-field hills in Shizuoka's rural stretches, the visible source of the region's status as Japan's largest green-tea producer, with tea-picking experiences offered seasonally."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tea-plantation%20Shizuoka-Fukuroi.jpg"
+      alt: "Rolling green tea plantation hills in Shizuoka Prefecture"
+      credit: "Wikimedia Commons, licensed CC BY-SA — re-confirm author/license on the file page before publishing. Photographed in Fukuroi, a different Shizuoka Prefecture city, as a representative tea-field image — swap for a Makinohara-specific photo if one turns up."
   - name: "Shimizu Port & Jirocho's Hometown"
     description: "Shizuoka's port district, historically associated with the folk-hero-turned-yakuza-boss Shimizu no Jirocho, and today home to a large tuna-landing fishing port and the Shimizu S-Pulse football club."
+    image:
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/231027%20Shimizu%20Port%20Shizuoka%20Japan01s3.jpg"
+      alt: "Shimizu Port in Shizuoka"
+      credit: "Wikimedia Commons, licensed CC BY — re-confirm author/license on the file page before publishing"
 products:
   - name: "Shizuoka Green Tea (Sencha)"
     description: "Shizuoka Prefecture, centered on this city and its surrounding tea hills, produces more green tea by volume than any other part of Japan."
