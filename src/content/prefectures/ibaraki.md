@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Kasama-yaki Ceramic Bowl"
     description: "Kasama ware, produced in Ibaraki since the late 1700s, is one of Japan's major pottery traditions, known for simple, functional glazed stoneware. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DBC5191D?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Hitachi Cordless Vacuum"

@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Imabari Towel"
     description: "Imabari, in Ehime, produces Japan's most prestigious towel brand, prized for absorbency and softness through a strict quality-certification process. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00K14B2ZC?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

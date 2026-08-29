@@ -64,7 +64,7 @@ touristSpots:
 products:
   - name: "Satsuma-yaki Ceramic Vase"
     description: "Satsuma ware developed from techniques brought by Korean potters relocated to the region in the late 1500s, producing both an elegant crackle-glazed white style and a darker everyday black style. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0G8F7CYZX?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

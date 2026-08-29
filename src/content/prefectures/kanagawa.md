@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Hakone Yosegi-zaiku Puzzle Box"
     description: "A Hakone marquetry tradition using thin strips of naturally colored wood to create geometric patterns, often built into secret 'puzzle boxes' that require a specific sequence of moves to open. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B07B8HHJH4?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Nissan Model Car"

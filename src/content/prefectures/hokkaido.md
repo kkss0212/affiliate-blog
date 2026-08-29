@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Otaru Glass Craft Tumbler"
     description: "Hand-blown glassware from Otaru's glassworking tradition, which began with fishing-float production in the early 1900s. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DDPM9Q7W?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Nitori Storage Organizer Set"

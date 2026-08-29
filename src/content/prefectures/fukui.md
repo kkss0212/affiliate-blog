@@ -58,7 +58,7 @@ touristSpots:
 products:
   - name: "Echizen Washi Paper Set"
     description: "Echizen, in Fukui, has produced handmade Japanese paper (washi) for over 1,500 years, historically used for official documents and fine art. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B0DPH934KG?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

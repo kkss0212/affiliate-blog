@@ -62,7 +62,7 @@ touristSpots:
 products:
   - name: "Aizu-nuri Lacquerware Bowl"
     description: "Aizu lacquerware is a roughly 400-year-old regional craft tradition, among the most recognized lacquerware styles in Japan. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B089VY9P8Z?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:

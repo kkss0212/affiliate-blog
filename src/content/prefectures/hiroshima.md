@@ -61,7 +61,7 @@ touristSpots:
 products:
   - name: "Kumano Fude Makeup Brush"
     description: "Kumano, in Hiroshima, produces the large majority of Japan's handmade brushes, and its cosmetic brushes in particular are used and sought after by makeup artists and brands internationally. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B00WTSUG8C?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
   - name: "Mazda Model Car"

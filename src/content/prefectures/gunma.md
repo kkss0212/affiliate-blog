@@ -60,7 +60,7 @@ touristSpots:
 products:
   - name: "Takasaki Daruma Doll"
     description: "Takasaki, in Gunma, produces roughly 80% of Japan's daruma dolls — round, hollow papier-mache figures traditionally given blank eyes, one filled in when a goal is set and the other when it's achieved. Confirm AmazonGlobal eligibility before publishing."
-    url: "https://www.amazon.co.jp/dp/EXAMPLE?tag=kaorusonoda-22"
+    url: "https://www.amazon.co.jp/dp/B005EP6MSA?tag=kaorusonoda-22"
     retailer: "amazon"
     category: "local-specialty"
 experiences:
