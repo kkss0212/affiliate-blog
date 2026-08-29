@@ -1,0 +1,13 @@
+# ads.txt — Authorized Digital Sellers (IAB Tech Lab standard).
+# Declares who is allowed to sell/serve ads on this domain, so ad
+# networks and buyers can verify inventory isn't being spoofed.
+#
+# PLACEHOLDER — AdSense is not yet approved for this site. Once approved,
+# replace the line below with the real one from your AdSense account
+# (Sites > [this domain] > "View site" banner, or Account > Settings >
+# Sites), which looks like:
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# The "pub-..." value must match ADSENSE_CLIENT_ID in src/consts.ts.
+# See DECISIONS.md "Display ads (AdSense)" for the full checklist.

@@ -8,6 +8,7 @@ import JapanMap from "../../../components/JapanMap.astro";
 import StatCard from "../../../components/StatCard.astro";
 import ScoreMeter from "../../../components/ScoreMeter.astro";
 import ShareBar from "../../../components/ShareBar.astro";
+import AdSlot from "../../../components/AdSlot.astro";
 import {
   Users,
   Landmark,
@@ -192,6 +193,8 @@ const otherPicks = data.products.filter((p) => p.category === "other");
     <Content />
   </article>
 
+  <AdSlot slot="0000000002" />
+
   {data.touristSpots.length > 0 && (
     <section class="mt-10">
       <h2 class="flex items-center gap-2 font-display text-lg font-semibold">
@@ -293,4 +296,6 @@ const otherPicks = data.products.filter((p) => p.category === "other");
       </div>
     </section>
   )}
+
+  <AdSlot slot="0000000003" />
 </BaseLayout>

@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard.astro";
 import SubscriptionCard from "../../components/SubscriptionCard.astro";
 import StatCard from "../../components/StatCard.astro";
 import ScoreMeter from "../../components/ScoreMeter.astro";
+import AdSlot from "../../components/AdSlot.astro";
 import { Music2, Users, MapPin, Globe2, BookText, Headphones, ShoppingBag } from "@lucide/astro";
 
 export async function getStaticPaths() {
@@ -147,6 +148,8 @@ const originHref = originMunicipality
     </h2>
     <Content />
   </article>
+
+  <AdSlot slot="0000000004" />
 
   {data.subscriptions.length > 0 && (
     <section class="mt-10">

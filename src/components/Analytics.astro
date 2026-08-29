@@ -1,5 +1,5 @@
 ---
-import { GA_MEASUREMENT_ID } from "../consts";
+import { GA_MEASUREMENT_ID, ADSENSE_CLIENT_ID } from "../consts";
 ---
 
 {
@@ -12,8 +12,8 @@ import { GA_MEASUREMENT_ID } from "../consts";
         <div class="mx-auto flex max-w-3xl flex-col gap-3 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p class="text-ink-soft">
             We use Google Analytics to see how many people visit and which
-            affiliate links they follow. Nothing is collected until you
-            accept. See our{" "}
+            affiliate links they follow{ADSENSE_CLIENT_ID && ", and Google AdSense to show ads that help cover running costs"}.
+            Nothing is collected until you accept. See our{" "}
             <a href={`${import.meta.env.BASE_URL}privacy/`} class="underline">
               Privacy Policy
             </a>

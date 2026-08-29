@@ -1,0 +1,66 @@
+---
+// A single Google AdSense display-ad unit. Renders nothing at all while
+// ADSENSE_CLIENT_ID is blank (see consts.ts) — same graceful-degradation
+// pattern as GA_MEASUREMENT_ID/Analytics.astro, so this is safe to drop
+// into templates today and it simply activates once an AdSense account is
+// approved and a real client ID + slot ID exist.
+//
+// Consent: does NOT load the AdSense library or push an ad unless the same
+// cookie-consent flag Analytics.astro sets ("ju-analytics-consent" ===
+// "granted") is already present. If the visitor hasn't answered the
+// consent banner yet on this pageview, the slot just stays empty — it
+// will start showing ads on their next pageview after they accept. This
+// keeps ad-serving consent-gated without needing a full third-party CMP
+// for the EEA/UK, but re-check that's still sufficient before running
+// meaningful EEA traffic (see DECISIONS.md).
+import { ADSENSE_CLIENT_ID } from "../consts";
+
+interface Props {
+  // AdSense ad unit slot ID (from the AdSense dashboard). Placeholder
+  // "0000000000" is fine until real units are created — the component
+  // still renders nothing while ADSENSE_CLIENT_ID is blank regardless.
+  slot: string;
+  class?: string;
+}
+
+const { slot, class: className = "" } = Astro.props;
+---
+
+{
+  ADSENSE_CLIENT_ID && (
+    <div class={`my-8 ${className}`}>
+      <p class="mb-1 text-center text-[10px] uppercase tracking-wide text-ink-faint">
+        Advertisement
+      </p>
+      <ins
+        class="adsbygoogle block"
+        style="display:block"
+        data-ad-client={ADSENSE_CLIENT_ID}
+        data-ad-slot={slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+      <script define:vars={{ ADSENSE_CLIENT_ID }}>
+        (function () {
+          try {
+            if (localStorage.getItem("ju-analytics-consent") !== "granted") return;
+          } catch {
+            return;
+          }
+          if (!window.__adsenseLoaded) {
+            window.__adsenseLoaded = true;
+            const script = document.createElement("script");
+            script.async = true;
+            script.src =
+              "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+              ADSENSE_CLIENT_ID;
+            script.crossOrigin = "anonymous";
+            document.head.appendChild(script);
+          }
+          window.adsbygoogle = window.adsbygoogle || [];
+          window.adsbygoogle.push({});
+        })();
+      </script>
+    </div>
+  )
+}

@@ -12,3 +12,12 @@ export const GA_MEASUREMENT_ID = "G-ZF4DS1T7V5";
 export const JAPAN_TOTAL_POPULATION = 126146099;
 export const JAPAN_TOTAL_POPULATION_YEAR = 2020;
 export const JAPAN_TOTAL_AREA_KM2 = 377975;
+
+// Google AdSense publisher ID (format: "ca-pub-XXXXXXXXXXXXXXXX").
+// Not a secret — publisher IDs are always visible in page source. Leave
+// empty until an AdSense account is approved; AdSlot.astro renders nothing
+// while this is blank, same graceful-degradation pattern as GA_MEASUREMENT_ID
+// above. Once set, also fill in public/ads.txt with the real publisher ID —
+// see that file's placeholder comment. See DECISIONS.md "Display ads
+// (AdSense)" for the full setup checklist.
+export const ADSENSE_CLIENT_ID = "";

@@ -105,6 +105,82 @@ set foot in Japan can still buy (see "Monetization").
   sales within its trial window (currently 180 days at signup — reconfirm
   the exact terms at signup time since ASP terms change).
 
+## Display ads (AdSense) — 2026-08-29
+
+Pageview-based revenue (CPM/RPM), layered on top of the affiliate model
+rather than replacing it — a request from the user to add a monetization
+track that doesn't depend on a reader clicking through to book/buy.
+
+- **Network: Google AdSense**, chosen because it has no official minimum-
+  traffic requirement (unlike Mediavine/AdThrive, which gate on ~50k
+  monthly sessions) — original content and policy compliance matter more
+  for approval, and the site already has 67+ published articles. Apply
+  now rather than waiting for traffic, since approval can take days to
+  weeks regardless. Fallback/complementary networks if AdSense rejects or
+  fill rate is thin at low traffic: Ezoic (accepts lower-traffic sites),
+  Media.net (contextual, can run alongside AdSense).
+- **What's built (code side, all inert until an account exists)**:
+  - `ADSENSE_CLIENT_ID` in `src/consts.ts` — blank by default. Every piece
+    below is a no-op while it's blank, exactly like `GA_MEASUREMENT_ID`
+    was before the GA4 property existed.
+  - `public/ads.txt` — placeholder with instructions; needs the real
+    `pub-...` line once an AdSense account exists.
+  - `src/components/AdSlot.astro` — one ad unit. Renders nothing while
+    `ADSENSE_CLIENT_ID` is blank. When set, it only loads the AdSense
+    library and pushes an ad *after* the visitor has already granted
+    cookie consent via the existing banner (`ju-analytics-consent` ===
+    `"granted"` in localStorage, the same flag `Analytics.astro` sets) —
+    if they haven't answered yet on this pageview, the slot just stays
+    empty until their next pageview. This keeps ad-serving consent-gated
+    without standing up a full third-party CMP, but re-verify that's
+    still sufficient before running meaningful EEA/UK traffic; Google's
+    own EU User Consent Policy may require a certified CMP (e.g. Google's
+    free Funding Choices, or Cookiebot) once volume is real.
+  - Wired into templates with placement chosen to never sit adjacent to
+    an affiliate CTA (ProductCard/ExperienceCard/SubscriptionCard),
+    consistent with both AdSense policy (no incentivizing/accidental
+    clicks) and not cannibalizing affiliate CTR:
+    - `prefectures/[slug].astro` — after the History article, before
+      "Where to go"; and after the product sections, before
+      "Municipalities in X".
+    - `prefectures/[prefecture]/[municipality].astro` — after History,
+      before "Where to go"; and at the very end, after all product
+      sections.
+    - `music/[slug].astro` / `manga/[slug].astro` — one slot after the
+      story/history article (these pages are shorter, so one slot each
+      rather than two).
+    - `index.astro` — one slot after Rankings, before Latest Updates (no
+      affiliate CTAs on the homepage at all, so placement is unconstrained
+      there).
+    - All slot IDs are `"0000000000"`–`"0000000006"` placeholders — swap
+      each for a real AdSense ad-unit ID once created (one real unit per
+      slot is fine, or reuse a single auto-sized unit across all of them).
+  - `Analytics.astro`'s consent-banner copy now conditionally mentions
+    AdSense ("...and Google AdSense to show ads...") once
+    `ADSENSE_CLIENT_ID` is set — silent about ads until then, so the
+    banner never claims something not yet true.
+  - `privacy.astro` has a new "Advertising" section covering AdSense,
+    consent-gating, and links to Google's Ads Settings / aboutads.info
+    opt-outs — live now regardless of whether ads are enabled yet, so the
+    policy is ready the moment `ADSENSE_CLIENT_ID` is filled in.
+- **What only the account owner can do**: create the AdSense account,
+  verify the site (domain ownership), get approved, create real ad units,
+  and fill in the real `pub-...`/slot IDs. Steps: (1) go to
+  adsense.google.com and sign up with the site's URL, (2) add the
+  site-verification snippet or use the "ads.txt" method (this project
+  already has the placeholder file ready), (3) wait for review (content
+  quality + policy compliance are the main gates, not traffic volume),
+  (4) once approved, create ad units in the AdSense dashboard and note
+  each unit's slot ID, (5) hand the publisher ID (`ca-pub-...`) and slot
+  IDs back so `ADSENSE_CLIENT_ID`/the six `slot=` values and `ads.txt`
+  can be filled in for real.
+- **Revenue expectations**: CPM-based, so near-zero until there's
+  meaningful traffic — travel/culture-blog RPM (revenue per 1,000
+  pageviews) is typically in the low single-digit-dollars range. This is
+  a passive layer that compounds with traffic growth, not a near-term
+  income source; the acquisition-channel work below is what actually
+  moves it.
+
 ## Traffic
 
 - Primary channels: Instagram and X, plus organic SEO on the blog itself.
