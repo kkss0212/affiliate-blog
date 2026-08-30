@@ -249,6 +249,35 @@ per post ("Today: Kyoto"), for Instagram and X.
   X/Instagram captions are shared as one draft rather than written
   separately per platform, per explicit direction — differentiate later
   only if it turns out to matter.
+- **First real GitHub Actions run (2026-08-29 23:07 UTC) failed — found
+  and fixed a real bug (2026-08-30)**: `NTFY_TOPIC` was set correctly
+  this time (unlike the first manual test run, which failed on a missing
+  secret), so the job got much further, but still failed:
+  `Cannot convert argument to a ByteString because the character at
+  index 8 has a value of 8212 which is greater than 255.` Root cause:
+  `ntfy.mjs`'s `Title` headers were built with a template literal
+  containing an em dash (`—`, U+2014) — e.g. `` `Caption — ${place.name}
+  (copy me)` `` — and this site's copy uses em dashes constantly. Node's
+  `fetch()`/`Headers` implementation requires header values to be a
+  ByteString (Latin-1 range, code points 0-255 only); anything outside
+  that throws before the request is even sent. The request *body*
+  (caption text) is unaffected — UTF-8 is fine there — this was strictly
+  a header-value problem. **Fixed** by adding `toHeaderSafeAscii()` in
+  `ntfy.mjs`, applied to every header value (`Title`/`Message`/
+  `Filename`/`Tags`/`Click`/`Actions`): converts em/en dashes to a plain
+  hyphen, curly quotes to straight quotes, and anything else outside
+  Latin-1 to `?` as a last-resort fallback. Verified two ways: (1) a
+  standalone repro confirming the exact same error message from the
+  unsanitized string, and no error after sanitizing, using Node's real
+  `Headers` class; (2) ran `generate.mjs --notify` for real in this
+  sandbox — it got past card generation and the header-construction step
+  cleanly and only failed at the actual network call (`403 Host not in
+  allowlist: ntfy.sh`), which is this sandbox's known, unrelated egress
+  block, not a code bug. Next real GitHub Actions run should reach an
+  actual ntfy delivery. If the notification still doesn't arrive after
+  this fix, check the Actions run logs directly rather than assuming
+  another header/encoding issue — the sanitizer now covers the specific
+  failure mode found here, but a *new* unrelated failure is possible.
 
 ### Other acquisition channels considered
 

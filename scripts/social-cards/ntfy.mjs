@@ -22,12 +22,27 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
+// fetch()'s Headers implementation requires header values to be a
+// ByteString (Latin-1 range only, code points 0-255) — it throws
+// "Cannot convert argument to a ByteString" for anything outside that,
+// silently killing the whole publish call. This site's copy uses em
+// dashes (—, U+2014) constantly in place names/taglines, which is fine
+// in the request *body* (caption text, UTF-8) but fatal in a *header*
+// value (Title/Message). Sanitize any header value before sending.
+function toHeaderSafeAscii(value) {
+  return String(value)
+    .replace(/[‒-―−]/g, "-") // em/en dash, minus sign -> hyphen
+    .replace(/[‘’]/g, "'") // curly single quotes -> straight
+    .replace(/[“”]/g, '"') // curly double quotes -> straight
+    .replace(/[^\x00-\xFF]/g, "?"); // anything else outside Latin-1 -> "?"
+}
+
 async function publishText(server, topic, { title, body, tags, click, actions, priority }) {
-  const headers = { Title: title };
-  if (tags) headers.Tags = tags;
-  if (click) headers.Click = click;
-  if (actions) headers.Actions = actions;
-  if (priority) headers.Priority = priority;
+  const headers = { Title: toHeaderSafeAscii(title) };
+  if (tags) headers.Tags = toHeaderSafeAscii(tags);
+  if (click) headers.Click = toHeaderSafeAscii(click);
+  if (actions) headers.Actions = toHeaderSafeAscii(actions);
+  if (priority) headers.Priority = toHeaderSafeAscii(priority);
   const res = await fetch(`${server}/${topic}`, { method: "POST", headers, body });
   if (!res.ok) {
     throw new Error(`ntfy text publish failed (${res.status}): ${await res.text()}`);
@@ -37,11 +52,11 @@ async function publishText(server, topic, { title, body, tags, click, actions, p
 async function publishAttachment(server, topic, { title, message, filename, filePath, tags }) {
   const bytes = readFileSync(filePath);
   const headers = {
-    Title: title,
-    Message: message,
-    Filename: filename,
+    Title: toHeaderSafeAscii(title),
+    Message: toHeaderSafeAscii(message),
+    Filename: toHeaderSafeAscii(filename),
   };
-  if (tags) headers.Tags = tags;
+  if (tags) headers.Tags = toHeaderSafeAscii(tags);
   const res = await fetch(`${server}/${topic}`, { method: "POST", headers, body: bytes });
   if (!res.ok) {
     throw new Error(`ntfy attachment publish failed (${res.status}): ${await res.text()}`);
